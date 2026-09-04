@@ -39,7 +39,8 @@ Neįtraukti non-subscribed ir bounced kontaktų.
 - Antraštės: Playfair Display su Georgia fallback.
 - Funkcinis tekstas: Inter su sisteminiais sans-serif fallback.
 - Mygtukai: tamsūs arba gintaro spalvos, baltas tekstas, 6 px kampai.
-- Viršuje įtrauktas tikslus oficialus Bakli logotipas, brand pažadas ir tamsi trijų nuorodų navigacijos juosta. Teisinis footer paliktas native Omnisend wrapper.
+- Viršuje įtrauktas tikslus oficialus Bakli logotipas, brand pažadas ir tamsi trijų nuorodų navigacijos juosta.
+- Visuose trijuose laiškuose įtrauktas tamsus Bakli turinio footeris su kategorijų, Instagram, Facebook, svetainės ir `info@bakli.lt` nuorodomis. Teisinį footerį bei atsisakymo elementą po juo prideda native Omnisend wrapper.
 
 ## Subject ir preheader
 
@@ -94,6 +95,10 @@ Teiginys „100 % natūrali oda“ netaikomas visam katalogui, nes dalis auginti
 
 ### E2
 
+- [Odinė piniginė Jacob Crazy Horse](https://www.bakli.lt/lt/dovanu-idejos/boso-diena/odine-pinigine-jacob-crazy-horse)
+- [Odinė piniginė Grant Crazy Horse 3in1](https://www.bakli.lt/lt/70-100-eur/odine-pinigine-grant-crazy-horse-3in1)
+- [Vyriškas diržas Karter su Vyčiu 40 mm](https://www.bakli.lt/lt/dirzai/vyriskas-dirzas-karter-su-vyciu-40mm)
+- [Antkaklio rinkinys šunims „Pink“ MAXI](https://www.bakli.lt/lt/aksesuarai-augintiniams/antkaklio-rinkinys-sunims-pink-maxi)
 - [Piniginės ir dėklai](https://www.bakli.lt/lt/pinigines-deklai)
 - [Raktų pakabukai](https://www.bakli.lt/lt/raktu-pakabukai)
 - [Aksesuarai augintiniams](https://www.bakli.lt/lt/aksesuarai-augintiniams)
@@ -102,8 +107,9 @@ Teiginys „100 % natūrali oda“ netaikomas visam katalogui, nes dalis auginti
 ### E3
 
 - [Piniginės Sofia, kosmetinės Vanessa Mini ir telefono dėklo rinkinys](https://www.bakli.lt/lt/70-100-eur/pinigines-sofia-kosmetines-vanessa-mini-ir-telefono-deklo-rinkinys)
-- [Piniginės Evan ir kosmetinės Walter rinkinys](https://www.bakli.lt/lt/70-100-eur/pinigines-evan-ir-kosmetines-walter-rinkinys)
-- [Piniginės Jacob Crazy Horse ir odinio automobilio kvapo rinkinys](https://www.bakli.lt/lt/70-100-eur/pinigines-jacob-crazy-horse-su-spaude-ir-odinio-automobilio-kvapo-rinkinys)
+- [Piniginės Evan ir kosmetinės Walter rinkinys](https://www.bakli.lt/lt/dovanu-idejos/dovanos-tecio-dienos-proga/pinigines-evan-ir-kosmetines-walter-rinkinys)
+- [Piniginės Jacob Crazy Horse ir odinio automobilio kvapo rinkinys](https://www.bakli.lt/lt/dovanos-vyrams/pinigines-jacob-crazy-horse-su-spaude-ir-odinio-automobilio-kvapo-rinkinys)
+- [Antkaklio rinkinys šunims „Pink“ MAXI](https://www.bakli.lt/lt/aksesuarai-augintiniams/antkaklio-rinkinys-sunims-pink-maxi)
 
 ## Vizualų kilmė
 
@@ -128,7 +134,7 @@ Native Omnisend wrapper privalo pridėti:
 - privatumo / pageidavimų nuorodas pagal paskyros nustatymus;
 - veikiantį `[[unsubscribe_link]]` atsisakymo elementą.
 
-Omnisend wrapper neturi pridėti antro logotipo viršuje, nes oficialus Bakli logo jau įtrauktas į body fragmentą.
+Omnisend wrapper neturi pridėti antro logotipo viršuje ar antro branded turinio footerio, nes abu jau įtraukti į body fragmentą.
 
 Galutinį testą daryti su realiu testiniu kontaktu, nes editoriaus testas gali rodyti laikinus vaizdų URL ar neapdorotas personalizacijos žymas.
 

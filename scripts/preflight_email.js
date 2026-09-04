@@ -28,6 +28,10 @@ const EMAILS = [
       'https://www.bakli.lt/lt/raktu-pakabukai',
       'https://www.bakli.lt/lt/aksesuarai-augintiniams',
       'https://www.bakli.lt/lt/personalizuotos-dovanos',
+      'https://www.bakli.lt/lt/dovanu-idejos/boso-diena/odine-pinigine-jacob-crazy-horse',
+      'https://www.bakli.lt/lt/70-100-eur/odine-pinigine-grant-crazy-horse-3in1',
+      'https://www.bakli.lt/lt/dirzai/vyriskas-dirzas-karter-su-vyciu-40mm',
+      'https://www.bakli.lt/lt/aksesuarai-augintiniams/antkaklio-rinkinys-sunims-pink-maxi',
     ],
     requiresGiftWrapPrice: false,
   },
@@ -37,6 +41,7 @@ const EMAILS = [
       'https://www.bakli.lt/lt/dovanu-idejos',
       'https://www.bakli.lt/lt/dovanu-rinkiniai',
       'https://www.bakli.lt/lt/personalizuotos-dovanos',
+      'https://www.bakli.lt/lt/aksesuarai-augintiniams/antkaklio-rinkinys-sunims-pink-maxi',
     ],
     requiresGiftWrapPrice: true,
   },
@@ -55,6 +60,16 @@ const APPROVED_SOCIAL_URLS = new Set([
   'https://www.youtube.com/@BakliLeatherCrafts',
   'https://www.tiktok.com/@thebakli',
 ]);
+
+const REQUIRED_BRAND_END_URLS = [
+  'https://www.bakli.lt/lt/',
+  'https://www.bakli.lt/lt/pinigines-deklai',
+  'https://www.bakli.lt/lt/personalizuotos-dovanos',
+  'https://www.bakli.lt/lt/dovanu-idejos',
+  'https://www.instagram.com/thebakli',
+  'https://www.facebook.com/BakliLT',
+  'mailto:info@bakli.lt',
+];
 
 function readUtf8(filePath) {
   if (!fs.existsSync(filePath) || !fs.statSync(filePath).isFile()) {
@@ -144,7 +159,8 @@ function isApprovedNewsletterHref(value) {
 }
 
 function isApprovedOmnisendHref(value) {
-  return isApprovedBakliDestination(value);
+  if (/^mailto:info@bakli\.lt$/i.test(value)) return true;
+  return isApprovedBakliDestination(value) || isApprovedSocialDestination(value);
 }
 
 function isApprovedRemoteImage(value) {
@@ -285,6 +301,27 @@ function main() {
     check('Omnisend body includes the exact official BAKLI logo', officialLogoCount === 1, `${officialLogoCount} exact official logo image(s).`);
     check('Omnisend body omits native-wrapper footer', !omnisendHasFooter, 'The Omnisend native wrapper supplies the footer.');
     check('Omnisend body omits unsubscribe and preference links', !omnisendHasUnsubscribe, 'The Omnisend native wrapper supplies compliance links.');
+    const newsletterBrandEndCount = (html.match(/class=["'][^"']*\bsection-brand-end\b[^"']*["']/gi) || []).length;
+    const omnisendBrandEndCount = (omnisendBody.match(/class=["'][^"']*\bsection-brand-end\b[^"']*["']/gi) || []).length;
+    check(
+      'Branded Bakli footer in both HTML versions',
+      newsletterBrandEndCount === 1 && omnisendBrandEndCount === 1,
+      `newsletter: ${newsletterBrandEndCount}; omnisend: ${omnisendBrandEndCount}.`,
+    );
+    const missingBrandEndHtmlUrls = REQUIRED_BRAND_END_URLS.filter((url) => !html.includes(url));
+    const missingBrandEndOmnisendUrls = REQUIRED_BRAND_END_URLS.filter((url) => !omnisendBody.includes(url));
+    check(
+      'Branded footer uses verified links',
+      missingBrandEndHtmlUrls.length === 0 && missingBrandEndOmnisendUrls.length === 0,
+      [...missingBrandEndHtmlUrls, ...missingBrandEndOmnisendUrls].join(', ') || 'All branded footer links present.',
+    );
+    check(
+      'Plain text includes branded footer contacts',
+      /LIKIME RYŠYJE/.test(plain)
+        && plain.includes('info@bakli.lt')
+        && REQUIRED_BRAND_END_URLS.filter((url) => url !== 'mailto:info@bakli.lt').every((url) => plain.includes(url)),
+      'Expected brand links and info@bakli.lt in newsletter.txt.',
+    );
 
     const responsiveStyles = /@media\b[\s\S]*?\(\s*max-width\s*:/i.test(omnisendStyles);
     check('Omnisend styles include a responsive media rule', responsiveStyles, 'Expected an @media (max-width: ...) rule.');

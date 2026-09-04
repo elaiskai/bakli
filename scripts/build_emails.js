@@ -21,8 +21,8 @@ const URLS = {
   grant: 'https://www.bakli.lt/lt/70-100-eur/odine-pinigine-grant-crazy-horse-3in1',
   jacob: 'https://www.bakli.lt/lt/dovanu-idejos/boso-diena/odine-pinigine-jacob-crazy-horse',
   giftSofia: 'https://www.bakli.lt/lt/70-100-eur/pinigines-sofia-kosmetines-vanessa-mini-ir-telefono-deklo-rinkinys',
-  giftEvan: 'https://www.bakli.lt/lt/70-100-eur/pinigines-evan-ir-kosmetines-walter-rinkinys',
-  giftJacob: 'https://www.bakli.lt/lt/70-100-eur/pinigines-jacob-crazy-horse-su-spaude-ir-odinio-automobilio-kvapo-rinkinys',
+  giftEvan: 'https://www.bakli.lt/lt/dovanu-idejos/dovanos-tecio-dienos-proga/pinigines-evan-ir-kosmetines-walter-rinkinys',
+  giftJacob: 'https://www.bakli.lt/lt/dovanos-vyrams/pinigines-jacob-crazy-horse-su-spaude-ir-odinio-automobilio-kvapo-rinkinys',
 };
 
 const ASSETS = {
@@ -142,6 +142,11 @@ a { color: inherit; text-decoration: none; }
   .offer-pad { padding: 30px 22px !important; }
   .detail-cell { padding: 15px 4px !important; }
   .detail-word { font-size: 12px !important; line-height: 16px !important; }
+  .idea-cell { display: block !important; width: 100% !important; box-sizing: border-box !important; border-left: 0 !important; border-top: 1px solid #654a3e !important; padding: 22px 10px !important; }
+  .formula-cell { display: block !important; width: 100% !important; box-sizing: border-box !important; border-right: 0 !important; border-bottom: 1px solid #d8c1b0 !important; padding: 20px 14px !important; }
+  .formula-action { display: block !important; width: fit-content !important; margin: 8px auto 0 !important; }
+  .brand-end-pad { padding: 30px 20px 27px !important; }
+  .brand-end-link { font-size: 9px !important; letter-spacing: 0.7px !important; }
 }
 `;
 
@@ -292,8 +297,38 @@ function shellStart(preheader, send) {
           </tr>`;
 }
 
+function brandEnd() {
+  return `
+          <tr class="section-brand-end">
+            <td class="brand-end-pad" align="center" bgcolor="#2f211b" style="padding: 34px 28px 30px; border-top: 3px solid #9d4d07; color: #f7efe8;">
+              <div class="eyebrow" style="color: #d6a37c;">LIKIME RYŠYJE</div>
+              <div style="padding-top: 9px; font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-size: 23px; line-height: 29px; color: #ffffff;">Personalizuoti aksesuarai su istorija</div>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin-top: 23px; border-top: 1px solid #5d4439; border-bottom: 1px solid #5d4439;">
+                <tr>
+                  <td width="33.33%" align="center" style="padding: 13px 3px; border-right: 1px solid #5d4439;">
+                    <a class="brand-end-link" href="${URLS.wallets}" target="_blank" style="font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 9px; line-height: 13px; font-weight: 700; letter-spacing: 1px; color: #f7efe8; text-transform: uppercase;">Piniginės</a>
+                  </td>
+                  <td width="33.33%" align="center" style="padding: 13px 3px; border-right: 1px solid #5d4439;">
+                    <a class="brand-end-link" href="${URLS.personalize}" target="_blank" style="font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 9px; line-height: 13px; font-weight: 700; letter-spacing: 1px; color: #f7efe8; text-transform: uppercase;">Sukurkite</a>
+                  </td>
+                  <td width="33.33%" align="center" style="padding: 13px 3px;">
+                    <a class="brand-end-link" href="${URLS.gifts}" target="_blank" style="font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 9px; line-height: 13px; font-weight: 700; letter-spacing: 1px; color: #f7efe8; text-transform: uppercase;">Dovanos</a>
+                  </td>
+                </tr>
+              </table>
+              <div style="padding-top: 19px; font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 19px; color: #cbb9ab;">Turite klausimų? <a href="mailto:info@bakli.lt" style="color: #ffffff; border-bottom: 1px solid #9d4d07;">info@bakli.lt</a></div>
+              <div style="padding-top: 12px; font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 10px; line-height: 17px; font-weight: 700; letter-spacing: 0.6px; color: #d6a37c; text-transform: uppercase;">
+                <a href="https://www.instagram.com/thebakli" target="_blank" style="color: #d6a37c;">Instagram</a>&nbsp;&nbsp;·&nbsp;&nbsp;
+                <a href="https://www.facebook.com/BakliLT" target="_blank" style="color: #d6a37c;">Facebook</a>&nbsp;&nbsp;·&nbsp;&nbsp;
+                <a href="${URLS.home}" target="_blank" style="color: #d6a37c;">bakli.lt</a>
+              </div>
+            </td>
+          </tr>`;
+}
+
 function shellEnd() {
   return `
+          ${brandEnd()}
           <tr><td bgcolor="#ffffff" style="height: 3px; font-size: 0; line-height: 0; border-bottom: 3px solid #9d4d07;">&nbsp;</td></tr>
         </table>
         <!--[if mso]></td></tr></table><![endif]-->
@@ -372,10 +407,11 @@ function e2Markup(send, preheader) {
     { src: asset('step3', send), alt: 'Personalizavimo vietos simbolis', number: '03', title: 'Pridėkite personalizavimą' },
     { src: asset('step4', send), alt: 'Dovanos simbolis', number: '04', title: 'Džiaukitės unikaliu gaminiu' },
   ];
-  const categories = [
-    { src: asset('wallets', send), href: URLS.wallets, alt: 'Personalizuojamos Bakli odinės piniginės', name: 'Piniginės ir dėklai', copy: 'Inicialai, data ar trumpa žinutė.' },
-    { src: asset('keychains', send), href: URLS.keychains, alt: 'Bakli raktų pakabukas su šeimos graviūra', name: 'Raktų pakabukai', copy: 'Tekstas, simbolis ar Jūsų pačių idėja.' },
-    { src: asset('pets', send), href: URLS.pets, alt: 'Bakli odinis antkaklis su vardiniu pakabuku', name: 'Aksesuarai augintiniams', copy: 'Vardas ir telefono numeris visada šalia.' },
+  const products = [
+    { src: asset('jacob', send), href: URLS.jacob, alt: 'Žalia odinė piniginė Jacob Crazy Horse', name: 'Odinė piniginė Jacob Crazy Horse', kicker: 'Perkamiausia' },
+    { src: asset('grant', send), href: URLS.grant, alt: 'Ruda odinė piniginė Grant Crazy Horse 3in1', name: 'Odinė piniginė Grant Crazy Horse 3in1', kicker: 'Naujiena' },
+    { src: asset('karter', send), href: URLS.karter, alt: 'Juodas diržas Karter su Vyčio graviūra', name: 'Vyriškas diržas Karter su Vyčiu', kicker: 'Su Vyčiu' },
+    { src: asset('pinkSet', send), href: URLS.pinkSet, alt: 'Personalizuojamas antkaklio rinkinys šunims Pink MAXI', name: 'Antkaklio rinkinys šunims „Pink“ MAXI', kicker: 'Su vardu' },
   ];
 
   return `${shellStart(preheader, send)}
@@ -413,47 +449,73 @@ function e2Markup(send, preheader) {
               </table>
             </td>
           </tr>
-          <tr class="section-categories">
+          <tr class="section-products">
             <td class="section-pad" bgcolor="#ffffff" style="padding: 46px 28px 18px;">
-              <div class="eyebrow">KĄ GALITE PERSONALIZUOTI</div>
-              <h2 class="section-title" style="padding-top: 10px;">Išsirinkite artimiausią kategoriją</h2>
+              <div class="eyebrow">MŪSŲ KLIENTŲ MĖGSTAMIAUSI</div>
+              <h2 class="section-title" style="padding-top: 10px;">Keturi daiktai Jūsų idėjai</h2>
             </td>
           </tr>
           <tr>
-            <td bgcolor="#ffffff" style="padding: 0 20px 34px;">
+            <td bgcolor="#ffffff" style="padding: 0 24px 30px;">
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                <tr class="category-row">
-                  ${categories.map((category, index) => `<td class="mobile-stack card-pad category-cell" width="33.33%" valign="top" style="width: 33.33%; padding: ${index === 0 ? '0 7px 0 0' : index === 1 ? '0 7px' : '0 0 0 7px'};">${categoryCard(category)}</td>`).join('')}
+                <tr class="product-row">
+                  <td class="mobile-stack card-pad product-cell" width="50%" valign="top" style="width: 50%; padding: 0 8px 16px 0;">${productCard(products[0])}</td>
+                  <td class="mobile-stack card-pad product-cell" width="50%" valign="top" style="width: 50%; padding: 0 0 16px 8px;">${productCard(products[1])}</td>
+                </tr>
+                <tr class="product-row">
+                  <td class="mobile-stack card-pad product-cell" width="50%" valign="top" style="width: 50%; padding: 0 8px 16px 0;">${productCard(products[2])}</td>
+                  <td class="mobile-stack card-pad product-cell" width="50%" valign="top" style="width: 50%; padding: 0 0 16px 8px;">${productCard(products[3])}</td>
+                </tr>
+              </table>
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center"><tr><td style="padding-top: 4px;">${button('Žiūrėti klientų mėgstamiausius', URLS.popular, '#9d4d07')}</td></tr></table>
+            </td>
+          </tr>
+          <tr class="section-category-links">
+            <td bgcolor="#faf7f2" style="padding: 25px 22px;">
+              <div class="eyebrow" style="text-align: center;">RINKITĖS PAGAL GAMINĮ</div>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin-top: 15px;">
+                <tr>
+                  <td width="33.33%" align="center" style="padding: 10px 5px; border-right: 1px solid #e1d4c9;"><a href="${URLS.wallets}" target="_blank" style="font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 11px; line-height: 16px; font-weight: 700; border-bottom: 1px solid #9d4d07;">Piniginės</a></td>
+                  <td width="33.33%" align="center" style="padding: 10px 5px; border-right: 1px solid #e1d4c9;"><a href="${URLS.keychains}" target="_blank" style="font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 11px; line-height: 16px; font-weight: 700; border-bottom: 1px solid #9d4d07;">Pakabukai</a></td>
+                  <td width="33.33%" align="center" style="padding: 10px 5px;"><a href="${URLS.pets}" target="_blank" style="font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 11px; line-height: 16px; font-weight: 700; border-bottom: 1px solid #9d4d07;">Augintiniams</a></td>
                 </tr>
               </table>
             </td>
           </tr>
-          <tr class="section-emotion">
-            <td class="section-pad" bgcolor="#2f211b" style="padding: 48px 42px 50px; color: #ffffff;">
-              <div class="eyebrow" style="color: #d6a37c;">DAIKTAS SU ISTORIJA</div>
-              <h2 class="section-title" style="padding-top: 11px; color: #ffffff;">Prasminga sau. Įsimintina dovanoti.</h2>
-              <div class="body-copy" style="padding-top: 14px; color: #eadfd6;">Personalizavimas susieja daiktą su žmogumi, proga ar prisiminimu. Todėl jis tampa daugiau nei praktišku aksesuaru.</div>
-              <div style="padding-top: 24px;">${button('Sukurkite savo aksesuarą', URLS.personalize, '#9d4d07')}</div>
+          <tr class="section-personalization-specimen">
+            <td bgcolor="#efe0d4">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="mobile-stack" width="42%" align="center" valign="middle" bgcolor="#efe0d4" style="width: 42%; padding: 38px 24px;">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+                      <tr><td align="center" style="padding: 20px 24px; border: 1px solid #9d4d07; font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-size: 38px; line-height: 42px; color: #2f211b;">A · K</td></tr>
+                    </table>
+                    <div style="padding-top: 13px; font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 9px; line-height: 14px; font-weight: 700; letter-spacing: 1.3px; color: #9d4d07;">VARDAS · DATA · ŽINUTĖ</div>
+                  </td>
+                  <td class="mobile-stack split-copy" width="58%" valign="middle" bgcolor="#2f211b" style="width: 58%; padding: 43px 38px 42px;">
+                    <div class="eyebrow" style="color: #d6a37c;">KĄ UŽRAŠYTUMĖTE JŪS?</div>
+                    <h2 class="section-title" style="padding-top: 10px; color: #ffffff;">Maža detalė, kuri kasdien primena</h2>
+                    <div class="body-copy" style="padding-top: 13px; color: #eadfd6;">Inicialai, svarbi data ar trumpa žinutė daiktą susieja su žmogumi ir prisiminimu.</div>
+                    <div style="padding-top: 22px;">${button('Sukurti savo aksesuarą', URLS.personalize, '#9d4d07')}</div>
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
           ${offerBlock({
             headline: '10 % nuolaida Jūsų pasirinkimui',
-            body: 'Jūsų pasveikinimo kodas tebėra čia. Įveskite jį krepšelyje.',
+            body: 'Įveskite kodą krepšelyje.',
             background: '#efe0d4',
           })}
-          ${proofStrip([
-            { value: 'Vardas', label: 'ar inicialai' },
-            { value: 'Data', label: 'ar žinutė' },
-            { value: 'Jūsų idėja', label: 'graviravimui' },
-          ])}
           ${shellEnd()}`;
 }
 
 function e3Markup(send, preheader) {
   const gifts = [
-    { src: asset('giftSofia', send), href: URLS.giftSofia, alt: 'Sofia piniginės, Vanessa Mini kosmetinės ir telefono dėklo rinkinys', name: 'Sofia ir Vanessa dovanų rinkinys', kicker: 'Dovanų rinkinys' },
-    { src: asset('giftEvan', send), href: URLS.giftEvan, alt: 'Evan piniginės ir Walter kosmetinės rinkinys', name: 'Evan ir Walter dovanų rinkinys', kicker: 'Dovanų rinkinys' },
-    { src: asset('giftJacob', send), href: URLS.giftJacob, alt: 'Jacob Crazy Horse piniginės ir odinio automobilio kvapo rinkinys', name: 'Jacob ir automobilio kvapo rinkinys', kicker: 'Dovanų rinkinys' },
+    { src: asset('giftSofia', send), href: URLS.giftSofia, alt: 'Sofia piniginės, Vanessa Mini kosmetinės ir telefono dėklo rinkinys', name: 'Sofia ir Vanessa dovanų rinkinys', kicker: 'Rinkinys jai' },
+    { src: asset('giftEvan', send), href: URLS.giftEvan, alt: 'Evan piniginės ir Walter kosmetinės rinkinys', name: 'Evan ir Walter dovanų rinkinys', kicker: 'Rinkinys jam' },
+    { src: asset('giftJacob', send), href: URLS.giftJacob, alt: 'Jacob Crazy Horse piniginės ir odinio automobilio kvapo rinkinys', name: 'Jacob ir automobilio kvapo rinkinys', kicker: 'Kasdienai' },
+    { src: asset('pinkSet', send), href: URLS.pinkSet, alt: 'Personalizuojamas antkaklio rinkinys šunims Pink MAXI', name: 'Antkaklio rinkinys šunims „Pink“ MAXI', kicker: 'Dovana augintiniui' },
   ];
 
   return `${shellStart(preheader, send)}
@@ -491,27 +553,43 @@ function e3Markup(send, preheader) {
           <tr class="section-gifts">
             <td class="section-pad" bgcolor="#ffffff" style="padding: 46px 28px 18px;">
               <div class="eyebrow">IŠRINKITE LENGVIAU</div>
-              <h2 class="section-title" style="padding-top: 10px;">Derantys aksesuarai viename rinkinyje</h2>
+              <h2 class="section-title" style="padding-top: 10px;">Daugiau asmeniškų dovanų idėjų</h2>
             </td>
           </tr>
           <tr>
             <td bgcolor="#ffffff" style="padding: 0 20px 34px;">
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                <tr class="gift-row">
-                  ${gifts.map((gift, index) => `<td class="mobile-stack card-pad gift-cell" width="33.33%" valign="top" style="width: 33.33%; padding: ${index === 0 ? '0 7px 0 0' : index === 1 ? '0 7px' : '0 0 0 7px'};">${productCard({ ...gift, width: 500, height: 500 })}</td>`).join('')}
-                </tr>
+                ${[gifts.slice(0, 2), gifts.slice(2, 4)].map((row) => `<tr class="gift-row">
+                  <td class="mobile-stack card-pad gift-cell" width="50%" valign="top" style="width: 50%; padding: 0 8px 16px 0;">${productCard({ ...row[0], width: 500, height: 500 })}</td>
+                  <td class="mobile-stack card-pad gift-cell" width="50%" valign="top" style="width: 50%; padding: 0 0 16px 8px;">${productCard({ ...row[1], width: 500, height: 500 })}</td>
+                </tr>`).join('')}
               </table>
               <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center"><tr><td style="padding-top: 4px;">${button('Peržiūrėti rinkinius', URLS.giftSets, '#9d4d07')}</td></tr></table>
             </td>
           </tr>
-          <tr class="section-gift-help">
-            <td class="section-pad" bgcolor="#faf7f2" style="padding: 46px 38px 42px;">
-              <div class="eyebrow">NEŽINOTE, NUO KO PRADĖTI?</div>
-              <h2 class="section-title" style="padding-top: 10px;">Atraskite idėjas pagal žmogų, progą ar biudžetą</h2>
-              <div class="body-copy" style="padding-top: 13px;">Bakli dovanų gide lengvai rasite asmenišką pasirinkimą gimtadieniui, vestuvėms, sukaktuvėms ir kitoms svarbioms progoms.</div>
-              <div style="padding-top: 17px; font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 13px; line-height: 24px; font-weight: 700; color: #141414;">
-                <a href="${URLS.gifts}" target="_blank" style="border-bottom: 1px solid #9d4d07;">Dovanos pagal progą</a>&nbsp;&nbsp;&nbsp;
-                <a href="${URLS.personalize}" target="_blank" style="border-bottom: 1px solid #9d4d07;">Personalizuotos dovanos</a>
+          <tr class="section-gift-formula">
+            <td bgcolor="#faf7f2" style="padding: 42px 24px 34px;">
+              <div class="eyebrow" style="text-align: center;">DOVANOS FORMULĖ</div>
+              <h2 class="section-title" style="padding-top: 10px; text-align: center;">Trys žingsniai iki dovanos su istorija</h2>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#efe0d4" style="margin-top: 25px; border: 1px solid #d8c1b0;">
+                <tr>
+                  <td class="formula-cell" width="33.33%" align="center" valign="top" style="width: 33.33%; padding: 24px 12px; border-right: 1px solid #d8c1b0;">
+                    <div style="font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-size: 25px; line-height: 29px; color: #9d4d07;">01</div>
+                    <div style="padding-top: 8px; font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; font-weight: 700; color: #2f211b;">Išrinkite aksesuarą</div>
+                  </td>
+                  <td class="formula-cell" width="33.33%" align="center" valign="top" style="width: 33.33%; padding: 24px 12px; border-right: 1px solid #d8c1b0;">
+                    <div style="font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-size: 25px; line-height: 29px; color: #9d4d07;">02</div>
+                    <div style="padding-top: 8px; font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; font-weight: 700; color: #2f211b;">Pridėkite vardą, datą ar žinutę</div>
+                  </td>
+                  <td class="formula-cell" width="33.33%" align="center" valign="top" style="width: 33.33%; padding: 24px 12px;">
+                    <div style="font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-size: 25px; line-height: 29px; color: #9d4d07;">03</div>
+                    <div style="padding-top: 8px; font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; font-weight: 700; color: #2f211b;">Pasirinkite dovanų pakavimą</div>
+                  </td>
+                </tr>
+              </table>
+              <div align="center" style="padding-top: 22px; font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 13px; line-height: 22px; font-weight: 700;">
+                <a class="formula-action" href="${URLS.gifts}" target="_blank" style="display: inline-block; border-bottom: 1px solid #9d4d07;">Dovanos pagal progą</a>&nbsp;&nbsp;&nbsp;
+                <a class="formula-action" href="${URLS.personalize}" target="_blank" style="display: inline-block; border-bottom: 1px solid #9d4d07;">Personalizuotos dovanos</a>
               </div>
             </td>
           </tr>
@@ -595,7 +673,49 @@ function plainDocument(email) {
     '02-personalizavimas': 'JŪSŲ PASVEIKINIMO KODAS\n\nHELLO10 · 10 % nuolaida\nĮveskite kodą krepšelyje.',
     '03-dovanos': 'KODAS JŪSŲ DOVANAI\n\n10 % nuolaida su kodu HELLO10\nIšsirinkite personalizuojamą aksesuarą ar dovanų rinkinį ir įveskite kodą krepšelyje.',
   }[email.dir];
-  return `BAKLI WELCOME FLOW\n${email.label}\nSiuntimas: ${email.timing}\n\nTema A: ${email.subjectA}\nTema B: ${email.subjectB}\nPreheader: ${email.preheader}\n\n${copy}\n\n${offerCopy}\n`;
+  const supplementalCopy = {
+    '01-pasveikinimas': '',
+    '02-personalizavimas': `MŪSŲ KLIENTŲ MĖGSTAMIAUSI
+
+Odinė piniginė Jacob Crazy Horse
+${URLS.jacob}
+
+Odinė piniginė Grant Crazy Horse 3in1
+${URLS.grant}
+
+Vyriškas diržas Karter su Vyčiu
+${URLS.karter}
+
+Antkaklio rinkinys šunims „Pink“ MAXI
+${URLS.pinkSet}
+
+KĄ UŽRAŠYTUMĖTE JŪS?
+
+A · K | Vardas · Data · Žinutė
+Maža detalė, kuri kasdien primena.`,
+    '03-dovanos': `DAUGIAU ASMENIŠKŲ DOVANŲ IDĖJŲ
+
+Antkaklio rinkinys šunims „Pink“ MAXI
+${URLS.pinkSet}
+
+DOVANOS FORMULĖ
+
+1. Išrinkite aksesuarą
+2. Pridėkite vardą, datą ar žinutę
+3. Pasirinkite dovanų pakavimą`,
+  }[email.dir];
+  const brandEndCopy = `LIKIME RYŠYJE
+
+Personalizuoti aksesuarai su istorija
+
+Piniginės: ${URLS.wallets}
+Sukurkite: ${URLS.personalize}
+Dovanos: ${URLS.gifts}
+Instagram: https://www.instagram.com/thebakli
+Facebook: https://www.facebook.com/BakliLT
+Klausimai: info@bakli.lt
+Bakli: ${URLS.home}`;
+  return `BAKLI WELCOME FLOW\n${email.label}\nSiuntimas: ${email.timing}\n\nTema A: ${email.subjectA}\nTema B: ${email.subjectB}\nPreheader: ${email.preheader}\n\n${copy}${supplementalCopy ? `\n\n${supplementalCopy}` : ''}\n\n${offerCopy}\n\n${brandEndCopy}\n`;
 }
 
 function build() {

@@ -35,4 +35,9 @@ a { color: inherit; text-decoration: none; }
   .offer-pad { padding: 30px 22px !important; }
   .detail-cell { padding: 15px 4px !important; }
   .detail-word { font-size: 12px !important; line-height: 16px !important; }
+  .idea-cell { display: block !important; width: 100% !important; box-sizing: border-box !important; border-left: 0 !important; border-top: 1px solid #654a3e !important; padding: 22px 10px !important; }
+  .formula-cell { display: block !important; width: 100% !important; box-sizing: border-box !important; border-right: 0 !important; border-bottom: 1px solid #d8c1b0 !important; padding: 20px 14px !important; }
+  .formula-action { display: block !important; width: fit-content !important; margin: 8px auto 0 !important; }
+  .brand-end-pad { padding: 30px 20px 27px !important; }
+  .brand-end-link { font-size: 9px !important; letter-spacing: 0.7px !important; }
 }

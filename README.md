@@ -19,7 +19,7 @@ Pirkimas iš karto išima kontaktą iš flow. Rekomenduojama riboti iki vieno au
 - `omnisend-body.html` - body fragmentas, skirtas Omnisend HTML blokui;
 - `omnisend-styles.css` - responsive CSS, skirtas Omnisend Styles laukui.
 
-`newsletter.html` peržiūrose naudojami trys nauji AI asistuoti Bakli produktų fotosesijų hero vaizdai. `omnisend-body.html` iki jų įkėlimo į Omnisend vaizdų biblioteką naudoja veikiančius oficialius `https://www.bakli.lt/resized/` fallback vaizdus; kiekviename body faile palikta tiksli pakeitimo pastaba. Stipresnis brand header su oficialiu Bakli logotipu, pažadu ir kategorijų navigacija jau įtrauktas laiško viršuje. Native Omnisend wrapper turi pridėti footer, teisinę informaciją ir veikiantį `[[unsubscribe_link]]`, bet neturi dubliuoti headerio.
+`newsletter.html` peržiūrose naudojami trys nauji AI asistuoti Bakli produktų fotosesijų hero vaizdai. `omnisend-body.html` iki jų įkėlimo į Omnisend vaizdų biblioteką naudoja veikiančius oficialius `https://www.bakli.lt/resized/` fallback vaizdus; kiekviename body faile palikta tiksli pakeitimo pastaba. Visuose laiškuose yra oficialus brand header ir tamsus Bakli turinio footeris su kategorijomis, socialiniais kanalais bei `info@bakli.lt`. Native Omnisend wrapper po juo turi pridėti teisinę informaciją ir veikiantį `[[unsubscribe_link]]`, bet neturi dubliuoti headerio.
 
 ## Temos
 
@@ -31,7 +31,7 @@ Pirkimas iš karto išima kontaktą iš flow. Rekomenduojama riboti iki vieno au
 
 ## Kokybės patikra
 
-- Preflight: 139/139 patikrų praėjo.
+- Preflight: 148/148 patikrų praėjo.
 - Renderiai: 12/12 praėjo.
 - Vidinis automation overview: 1200 px ir 390 px peržiūros praėjo be horizontal overflow.
 - Plotis: 600 px desktop; 390, 375 ir 320 px mobile.
@@ -41,6 +41,7 @@ Pirkimas iš karto išima kontaktą iš flow. Rekomenduojama riboti iki vieno au
 - Po pirmo vizualinio ciklo E3 kortelių pavadinimai sutrumpinti ir visas renderių ciklas pakartotas.
 - Po papildomos brand pastabos visuose trijuose laiškuose sustiprintas header: didesnis oficialus Bakli logotipas, brand pažadas ir trijų kategorijų navigacija. Po mobilios tipografijos korekcijos naujas 12 renderių ciklas pakartotinai praėjo be klaidų.
 - Po fotosesijų ir `HELLO10` integracijos E2 pasiūlymo antraštė sutrumpinta, kad kodas vizualiai nesikartotų. Pakartotinis 12 renderių ciklas praėjo be klaidų.
+- E2 papildytas keturiais klientų mėgstamais gaminiais ir graviravimo pavyzdžio bloku, E3 - keturių dovanų 2×2 vitrina bei „Dovanos formule“. Pridėjus bendrą branded footerį ir pataisius mobilių nuorodų ritmą, galutinis 12 renderių ciklas pakartotinai praėjo be klaidų.
 
 Pilni duomenys: `reports/preflight-report.json`, `reports/render-report.json` ir `reports/flow-overview-report.json`. Peržiūros: `previews/`.
 
