@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bakli Welcome Automation · Flow 1</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #eee8e0; color: #141414; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
+    a { color: inherit; }
+    .page { width: min(1180px, calc(100% - 32px)); margin: 28px auto 48px; }
+    .topline { height: 4px; background: #9d4d07; }
+    .hero { background: #fff; padding: 34px 40px 38px; border-bottom: 1px solid #ddcfc2; }
+    .hero-grid { display: grid; grid-template-columns: 180px 1fr auto; gap: 30px; align-items: center; }
+    .logo { display: block; width: 150px; height: auto; }
+    .eyebrow { color: #9d4d07; font-size: 11px; line-height: 16px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+    h1 { margin: 8px 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(32px, 5vw, 54px); line-height: 1.05; font-weight: 400; }
+    .intro { margin: 0; color: #5a554f; font-size: 15px; line-height: 23px; max-width: 680px; }
+    .status { display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; background: #f8f3ee; color: #4d382f; font-size: 12px; font-weight: 700; white-space: nowrap; }
+    .dot { width: 9px; height: 9px; border-radius: 50%; background: #9d4d07; }
+    .scope { display: grid; grid-template-columns: repeat(3, 1fr); background: #2f211b; color: #fff; }
+    .scope-item { padding: 19px 24px; border-right: 1px solid #5d4439; }
+    .scope-item:last-child { border-right: 0; }
+    .scope-label { color: #d9ae8e; font-size: 9px; line-height: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+    .scope-value { margin-top: 4px; font-family: Georgia, "Times New Roman", serif; font-size: 19px; line-height: 25px; }
+    .content { background: #faf7f2; padding: 44px 36px 46px; }
+    .content h2, .rules h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 30px; line-height: 38px; font-weight: 400; }
+    .flow { display: grid; grid-template-columns: minmax(190px, 1fr) 54px minmax(190px, 1fr) 54px minmax(190px, 1fr); gap: 12px; align-items: stretch; margin-top: 26px; }
+    .email-card { display: flex; flex-direction: column; background: #fff; border: 1px solid #dfd1c5; min-width: 0; }
+    .card-head { padding: 20px 20px 17px; border-bottom: 1px solid #eadfd5; }
+    .card-number { color: #9d4d07; font-size: 10px; line-height: 14px; font-weight: 700; letter-spacing: 1.7px; text-transform: uppercase; }
+    .card-head h3 { margin: 8px 0 5px; font-family: Georgia, "Times New Roman", serif; font-size: 23px; line-height: 29px; font-weight: 400; }
+    .timing { color: #5a554f; font-size: 12px; line-height: 18px; font-weight: 700; }
+    .card-body { display: flex; flex-direction: column; flex: 1; padding: 18px 20px 20px; }
+    .goal { margin: 0; color: #4e4944; font-size: 13px; line-height: 20px; }
+    .subject-label { margin-top: 17px; color: #9d4d07; font-size: 9px; line-height: 13px; font-weight: 700; letter-spacing: 1.3px; text-transform: uppercase; }
+    .subject { margin: 5px 0 18px; font-family: Georgia, "Times New Roman", serif; font-size: 16px; line-height: 22px; }
+    .preview { display: inline-block; align-self: flex-start; margin-top: auto; padding: 11px 15px; background: #141414; color: #fff; text-decoration: none; font-size: 12px; line-height: 15px; font-weight: 700; border-radius: 5px; }
+    .connector { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #725039; }
+    .connector strong { font-size: 12px; line-height: 16px; }
+    .connector span { margin-top: 5px; font-size: 11px; line-height: 15px; }
+    .arrow { margin-top: 11px; font-size: 26px; line-height: 26px; color: #9d4d07; }
+    .exit { display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: center; margin-top: 26px; padding: 18px 20px; background: #efe5dc; border-left: 4px solid #9d4d07; }
+    .exit strong { font-family: Georgia, "Times New Roman", serif; font-size: 19px; line-height: 25px; }
+    .exit span { color: #5a554f; font-size: 13px; line-height: 20px; }
+    .rules { background: #fff; padding: 36px; }
+    .rule-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 20px; }
+    .rule { padding: 16px; background: #faf7f2; border-top: 2px solid #9d4d07; color: #4e4944; font-size: 12px; line-height: 18px; }
+    .rule strong { display: block; margin-bottom: 4px; color: #141414; font-size: 13px; }
+    .internal-note { margin: 0; padding: 14px 20px; background: #141414; color: #eadfd6; text-align: center; font-size: 11px; line-height: 17px; letter-spacing: .4px; }
+    @media (max-width: 860px) {
+      .hero-grid { grid-template-columns: 140px 1fr; }
+      .status { grid-column: 1 / -1; justify-self: start; }
+      .flow { grid-template-columns: 1fr; }
+      .connector { min-height: 74px; }
+      .arrow { transform: rotate(90deg); }
+      .rule-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      .page { width: 100%; margin: 0; }
+      .hero { padding: 26px 20px 28px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 18px; }
+      .logo { width: 130px; }
+      .scope { grid-template-columns: 1fr; }
+      .scope-item { border-right: 0; border-bottom: 1px solid #5d4439; }
+      .scope-item:last-child { border-bottom: 0; }
+      .content, .rules { padding: 32px 20px; }
+      .rule-grid { grid-template-columns: 1fr; }
+      .exit { grid-template-columns: 1fr; gap: 5px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="topline"></div>
+    <section class="hero">
+      <div class="hero-grid">
+        <img class="logo" src="assets/brand/bakli-logo.jpg" width="500" height="222" alt="Bakli">
+        <div>
+          <div class="eyebrow">Flow 1 iš 5 · Omnisend automation</div>
+          <h1>Welcome / Sign-up</h1>
+          <p class="intro">Šiame pakete realizuota viena automatizacija: trijų laiškų welcome serija naujam Bakli prenumeratoriui. Krepšelio, checkout, naršymo ir po pirkimo flow'ai dar nėra šio paketo dalis.</p>
+        </div>
+        <div class="status"><span class="dot"></span> 3 laiškai paruošti</div>
+      </div>
+    </section>
+
+    <section class="scope" aria-label="Welcome automatizacijos pagrindinės taisyklės">
+      <div class="scope-item"><div class="scope-label">Trigger</div><div class="scope-value">Nauja prenumerata</div></div>
+      <div class="scope-item"><div class="scope-label">Šaltinis</div><div class="scope-value">Forma arba laimės ratas</div></div>
+      <div class="scope-item"><div class="scope-label">Global exit</div><div class="scope-value">Įvykęs pirkimas</div></div>
+    </section>
+
+    <section class="content">
+      <div class="eyebrow">Automatizacijos seka</div>
+      <h2>Ką gauna naujas prenumeratorius</h2>
+      <div class="flow">
+        <article class="email-card">
+          <div class="card-head"><div class="card-number">E1 · Welcome</div><h3>Pasveikinimas</h3><div class="timing">Siunčiamas iškart</div></div>
+          <div class="card-body">
+            <p class="goal">Pristato Bakli, personalizavimo idėją ir populiariausius gaminius.</p>
+            <div class="subject-label">Tema A</div><p class="subject">Sveiki atvykę į Bakli: 10 % nuolaida Jums</p>
+            <a class="preview" href="emails/01-pasveikinimas/newsletter.html" target="_blank">Atidaryti E1</a>
+          </div>
+        </article>
+        <div class="connector" aria-label="Laukti dvi dienas ir tęsti tik jei nepirko"><strong>+2 dienos</strong><span>jei nepirko</span><div class="arrow">→</div></div>
+        <article class="email-card">
+          <div class="card-head"><div class="card-number">E2 · Education</div><h3>Personalizavimo galia</h3><div class="timing">Tik nepirkusiems</div></div>
+          <div class="card-body">
+            <p class="goal">Parodo personalizavimo eigą ir emocinę gaminio vertę.</p>
+            <div class="subject-label">Tema A</div><p class="subject">Sukurta Jums, iki mažiausios detalės</p>
+            <a class="preview" href="emails/02-personalizavimas/newsletter.html" target="_blank">Atidaryti E2</a>
+          </div>
+        </article>
+        <div class="connector" aria-label="Laukti tris arba keturias dienas ir tęsti tik jei nepirko"><strong>+3–4 dienos</strong><span>jei nepirko</span><div class="arrow">→</div></div>
+        <article class="email-card">
+          <div class="card-head"><div class="card-number">E3 · Reminder</div><h3>Dovanos kampas</h3><div class="timing">Tik nepirkusiems</div></div>
+          <div class="card-body">
+            <p class="goal">Primena apie Bakli per personalizuotos dovanos ir rinkinių kampą.</p>
+            <div class="subject-label">Tema A</div><p class="subject">Dovana, kuri pasako daugiau</p>
+            <a class="preview" href="emails/03-dovanos/newsletter.html" target="_blank">Atidaryti E3</a>
+          </div>
+        </article>
+      </div>
+      <div class="exit"><strong>Pirkimas bet kuriame etape → EXIT</strong><span>Kontaktas nebeturi gauti likusių welcome laiškų. Visuose trijuose laiškuose įtrauktas 10 % kodas HELLO10; prieš aktyvavimą patikrinti, ar jis įjungtas.</span></div>
+    </section>
+
+    <section class="rules">
+      <div class="eyebrow">Omnisend guardrails</div>
+      <h2>Kas turi būti nustatyta automation'e</h2>
+      <div class="rule-grid">
+        <div class="rule"><strong>Frequency cap</strong>Ne daugiau kaip 1 automation laiškas per dieną kontaktui.</div>
+        <div class="rule"><strong>Broadcast suppression</strong>Welcome gavėjui tą pačią dieną nesiųsti kampanijos.</div>
+        <div class="rule"><strong>Audience hygiene</strong>Neįtraukti non-subscribed ir bounced kontaktų.</div>
+        <div class="rule"><strong>Purchase condition</strong>Prieš E2 ir E3 patikrinti, ar kontaktas nepirko.</div>
+      </div>
+    </section>
+    <p class="internal-note">Vidinis flow overview. Šis puslapis klientams nesiunčiamas.</p>
+  </main>
+</body>
+</html>

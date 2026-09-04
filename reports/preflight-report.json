@@ -1,0 +1,1011 @@
+{
+  "generatedAt": "2026-09-04T09:19:09.166Z",
+  "gmailClipThresholdBytes": 102400,
+  "approvedRemoteImagePattern": "https://www.bakli.lt/resized/...",
+  "pass": true,
+  "summary": {
+    "emailsPassed": 3,
+    "emailsFailed": 0,
+    "totalEmails": 3,
+    "checksPassed": 139,
+    "checksFailed": 0
+  },
+  "emails": [
+    {
+      "id": "01-pasveikinimas",
+      "directory": "emails/01-pasveikinimas",
+      "pass": true,
+      "summary": {
+        "passed": 46,
+        "failed": 0,
+        "total": 46
+      },
+      "files": {
+        "newsletterHtml": {
+          "path": "emails/01-pasveikinimas/newsletter.html",
+          "exists": true,
+          "validUtf8": true,
+          "bytes": 21913
+        },
+        "plainText": {
+          "path": "emails/01-pasveikinimas/newsletter.txt",
+          "exists": true,
+          "validUtf8": true,
+          "bytes": 1382
+        },
+        "omnisendBody": {
+          "path": "emails/01-pasveikinimas/omnisend-body.html",
+          "exists": true,
+          "validUtf8": true,
+          "bytes": 18043
+        },
+        "omnisendStyles": {
+          "path": "emails/01-pasveikinimas/omnisend-styles.css",
+          "exists": true,
+          "validUtf8": true,
+          "bytes": 3360
+        }
+      },
+      "requiredUrls": [
+        "https://www.bakli.lt/lt/",
+        "https://www.bakli.lt/lt/populiariausios-prekes"
+      ],
+      "newsletterImages": [
+        {
+          "src": "../../assets/brand/bakli-logo.jpg",
+          "type": "local-relative",
+          "approved": true,
+          "exists": true,
+          "resolved": "assets/brand/bakli-logo.jpg"
+        },
+        {
+          "src": "../../assets/generated/welcome-wallets-v1.jpg",
+          "type": "local-relative",
+          "approved": true,
+          "exists": true,
+          "resolved": "assets/generated/welcome-wallets-v1.jpg"
+        },
+        {
+          "src": "../../assets/products/jacob.jpg",
+          "type": "local-relative",
+          "approved": true,
+          "exists": true,
+          "resolved": "assets/products/jacob.jpg"
+        },
+        {
+          "src": "../../assets/products/grant.jpg",
+          "type": "local-relative",
+          "approved": true,
+          "exists": true,
+          "resolved": "assets/products/grant.jpg"
+        },
+        {
+          "src": "../../assets/products/karter.jpg",
+          "type": "local-relative",
+          "approved": true,
+          "exists": true,
+          "resolved": "assets/products/karter.jpg"
+        },
+        {
+          "src": "../../assets/products/pink-set.jpg",
+          "type": "local-relative",
+          "approved": true,
+          "exists": true,
+          "resolved": "assets/products/pink-set.jpg"
+        }
+      ],
+      "omnisendImages": [
+        "https://www.bakli.lt/resized/4065f0e86f548349d849495de0204b08-500x500-max.jpg",
+        "https://www.bakli.lt/resized/95d9c31f1c22f62c3c2c58c57f782d99-500x500-maxq.jpg",
+        "https://www.bakli.lt/resized/ae544acab6ef6416830c7f72a02e282c-500x500-max.jpg",
+        "https://www.bakli.lt/resized/1c8864f1228b3d8407afb8364922c9ce-500x500-max.jpg",
+        "https://www.bakli.lt/resized/a951968027c82fb512d8e928cf225885-500x500-max.jpg",
+        "https://www.bakli.lt/resized/6985991b38c9abec7c9a9da5d3b67741-500x500-max.jpg"
+      ],
+      "checks": [
+        {
+          "name": "newsletter.html exists",
+          "pass": true,
+          "detail": "emails/01-pasveikinimas/newsletter.html"
+        },
+        {
+          "name": "newsletter.html is valid UTF-8",
+          "pass": true,
+          "detail": "21913 byte(s)."
+        },
+        {
+          "name": "newsletter.txt exists",
+          "pass": true,
+          "detail": "emails/01-pasveikinimas/newsletter.txt"
+        },
+        {
+          "name": "newsletter.txt is valid UTF-8",
+          "pass": true,
+          "detail": "1382 byte(s)."
+        },
+        {
+          "name": "omnisend-body.html exists",
+          "pass": true,
+          "detail": "emails/01-pasveikinimas/omnisend-body.html"
+        },
+        {
+          "name": "omnisend-body.html is valid UTF-8",
+          "pass": true,
+          "detail": "18043 byte(s)."
+        },
+        {
+          "name": "omnisend-styles.css exists",
+          "pass": true,
+          "detail": "emails/01-pasveikinimas/omnisend-styles.css"
+        },
+        {
+          "name": "omnisend-styles.css is valid UTF-8",
+          "pass": true,
+          "detail": "3360 byte(s)."
+        },
+        {
+          "name": "Lithuanian language declaration",
+          "pass": true,
+          "detail": "Expected lang=\"lt\" on the local newsletter document."
+        },
+        {
+          "name": "UTF-8 meta declaration",
+          "pass": true,
+          "detail": "Expected UTF-8 charset meta."
+        },
+        {
+          "name": "Responsive viewport meta",
+          "pass": true,
+          "detail": "Expected viewport meta."
+        },
+        {
+          "name": "Apple reformatting protection",
+          "pass": true,
+          "detail": "Expected x-apple-disable-message-reformatting."
+        },
+        {
+          "name": "Format-detection control",
+          "pass": true,
+          "detail": "Expected format-detection meta."
+        },
+        {
+          "name": "Hidden preheader",
+          "pass": true,
+          "detail": "Expected an email-safe hidden preheader in newsletter.html."
+        },
+        {
+          "name": "Newsletter presentation-table semantics",
+          "pass": true,
+          "detail": "17/17 table(s)."
+        },
+        {
+          "name": "Omnisend presentation-table semantics",
+          "pass": true,
+          "detail": "17/17 table(s)."
+        },
+        {
+          "name": "No JavaScript, forms, video, or embedded frames",
+          "pass": true,
+          "detail": "Email markup must not contain executable or webpage-only elements."
+        },
+        {
+          "name": "No em dash",
+          "pass": true,
+          "detail": "Use a short hyphen or Lithuanian punctuation instead of an em dash."
+        },
+        {
+          "name": "No hexadecimal HTML entities",
+          "pass": true,
+          "detail": "Hexadecimal HTML entities are not allowed."
+        },
+        {
+          "name": "No unfinished or legacy placeholders",
+          "pass": true,
+          "detail": "No unfinished placeholders."
+        },
+        {
+          "name": "No dummy URLs or workstation paths",
+          "pass": true,
+          "detail": "No dummy or workstation paths."
+        },
+        {
+          "name": "Newsletter images have non-empty alt text",
+          "pass": true,
+          "detail": "6/6 image(s)."
+        },
+        {
+          "name": "Newsletter images declare numeric dimensions",
+          "pass": true,
+          "detail": "6/6 image(s)."
+        },
+        {
+          "name": "Omnisend images have non-empty alt text",
+          "pass": true,
+          "detail": "6/6 image(s)."
+        },
+        {
+          "name": "Omnisend images declare numeric dimensions",
+          "pass": true,
+          "detail": "6/6 image(s)."
+        },
+        {
+          "name": "Newsletter image sources resolve safely",
+          "pass": true,
+          "detail": "6 image(s) resolve."
+        },
+        {
+          "name": "Omnisend images use exact BAKLI HTTPS image paths",
+          "pass": true,
+          "detail": "6 image(s) use https://www.bakli.lt/resized/."
+        },
+        {
+          "name": "Omnisend body is a body-only fragment",
+          "pass": true,
+          "detail": "DOCTYPE, html, head, body, and style tags belong outside the Omnisend body fragment."
+        },
+        {
+          "name": "Omnisend body includes the exact official BAKLI logo",
+          "pass": true,
+          "detail": "1 exact official logo image(s)."
+        },
+        {
+          "name": "Omnisend body omits native-wrapper footer",
+          "pass": true,
+          "detail": "The Omnisend native wrapper supplies the footer."
+        },
+        {
+          "name": "Omnisend body omits unsubscribe and preference links",
+          "pass": true,
+          "detail": "The Omnisend native wrapper supplies compliance links."
+        },
+        {
+          "name": "Omnisend styles include a responsive media rule",
+          "pass": true,
+          "detail": "Expected an @media (max-width: ...) rule."
+        },
+        {
+          "name": "Omnisend styles define mobile stacking",
+          "pass": true,
+          "detail": "Expected .mobile-stack display:block in the responsive CSS."
+        },
+        {
+          "name": "Newsletter links use approved current BAKLI destinations",
+          "pass": true,
+          "detail": "16 approved link(s)."
+        },
+        {
+          "name": "Omnisend body links use only current BAKLI destinations",
+          "pass": true,
+          "detail": "16 approved link(s)."
+        },
+        {
+          "name": "Approved 10 % HELLO10 offer in all content versions",
+          "pass": true,
+          "detail": "{\"newsletterHtml\":{\"code\":true,\"percent\":true},\"plainText\":{\"code\":true,\"percent\":true},\"omnisendBody\":{\"code\":true,\"percent\":true}}"
+        },
+        {
+          "name": "No conflicting discount percentage",
+          "pass": true,
+          "detail": "10, 10, 10, 10, 10, 10"
+        },
+        {
+          "name": "No unapproved legacy promo code",
+          "pass": true,
+          "detail": "Only HELLO10 is approved."
+        },
+        {
+          "name": "No invented discount deadline",
+          "pass": true,
+          "detail": "No unapproved deadline."
+        },
+        {
+          "name": "No 4.9 rating claim",
+          "pass": true,
+          "detail": "No 4.9 claim."
+        },
+        {
+          "name": "No 2,370 review-count claim",
+          "pass": true,
+          "detail": "No 2,370 claim."
+        },
+        {
+          "name": "No outdated 5,95 € gift-wrap price",
+          "pass": true,
+          "detail": "Outdated gift-wrap price absent."
+        },
+        {
+          "name": "Newsletter HTML stays below Gmail clipping threshold",
+          "pass": true,
+          "detail": "21913/102400 UTF-8 byte(s)."
+        },
+        {
+          "name": "Omnisend body and styles stay below Gmail clipping threshold",
+          "pass": true,
+          "detail": "21403/102400 UTF-8 byte(s)."
+        },
+        {
+          "name": "Plain text includes all relevant destinations",
+          "pass": true,
+          "detail": "2 required URL(s)."
+        },
+        {
+          "name": "HTML content versions include all relevant destinations",
+          "pass": true,
+          "detail": "2 required URL(s) in both HTML versions."
+        }
+      ]
+    },
+    {
+      "id": "02-personalizavimas",
+      "directory": "emails/02-personalizavimas",
+      "pass": true,
+      "summary": {
+        "passed": 46,
+        "failed": 0,
+        "total": 46
+      },
+      "files": {
+        "newsletterHtml": {
+          "path": "emails/02-personalizavimas/newsletter.html",
+          "exists": true,
+          "validUtf8": true,
+          "bytes": 24104
+        },
+        "plainText": {
+          "path": "emails/02-personalizavimas/newsletter.txt",
+          "exists": true,
+          "validUtf8": true,
+          "bytes": 1254
+        },
+        "omnisendBody": {
+          "path": "emails/02-personalizavimas/omnisend-body.html",
+          "exists": true,
+          "validUtf8": true,
+          "bytes": 20377
+        },
+        "omnisendStyles": {
+          "path": "emails/02-personalizavimas/omnisend-styles.css",
+          "exists": true,
+          "validUtf8": true,
+          "bytes": 3360
+        }
+      },
+      "requiredUrls": [
+        "https://www.bakli.lt/lt/pinigines-deklai",
+        "https://www.bakli.lt/lt/raktu-pakabukai",
+        "https://www.bakli.lt/lt/aksesuarai-augintiniams",
+        "https://www.bakli.lt/lt/personalizuotos-dovanos"
+      ],
+      "newsletterImages": [
+        {
+          "src": "../../assets/brand/bakli-logo.jpg",
+          "type": "local-relative",
+          "approved": true,
+          "exists": true,
+          "resolved": "assets/brand/bakli-logo.jpg"
+        },
+        {
+          "src": "../../assets/generated/personalization-keychain-v1.jpg",
+          "type": "local-relative",
+          "approved": true,
+          "exists": true,
+          "resolved": "assets/generated/personalization-keychain-v1.jpg"
+        },
+        {
+          "src": "../../assets/steps/step-1.jpg",
+          "type": "local-relative",
+          "approved": true,
+          "exists": true,
+          "resolved": "assets/steps/step-1.jpg"
+        },
+        {
+          "src": "../../assets/steps/step-2.jpg",
+          "type": "local-relative",
+          "approved": true,
+          "exists": true,
+          "resolved": "assets/steps/step-2.jpg"
+        },
+        {
+          "src": "../../assets/steps/step-3.jpg",
+          "type": "local-relative",
+          "approved": true,
+          "exists": true,
+          "resolved": "assets/steps/step-3.jpg"
+        },
+        {
+          "src": "../../assets/steps/step-4.jpg",
+          "type": "local-relative",
+          "approved": true,
+          "exists": true,
+          "resolved": "assets/steps/step-4.jpg"
+        },
+        {
+          "src": "../../assets/categories/wallets.jpg",
+          "type": "local-relative",
+          "approved": true,
+          "exists": true,
+          "resolved": "assets/categories/wallets.jpg"
+        },
+        {
+          "src": "../../assets/categories/keychains.jpg",
+          "type": "local-relative",
+          "approved": true,
+          "exists": true,
+          "resolved": "assets/categories/keychains.jpg"
+        },
+        {
+          "src": "../../assets/categories/pets.jpg",
+          "type": "local-relative",
+          "approved": true,
+          "exists": true,
+          "resolved": "assets/categories/pets.jpg"
+        }
+      ],
+      "omnisendImages": [
+        "https://www.bakli.lt/resized/4065f0e86f548349d849495de0204b08-500x500-max.jpg",
+        "https://www.bakli.lt/resized/a372aa0f952b42d908eb2107dd4519cd-500x500-maxq.jpg",
+        "https://www.bakli.lt/resized/310dbbadf2ce9e37f793ba996b6687f2-500x500-max.jpg",
+        "https://www.bakli.lt/resized/f5e7dd2fac9e36826d7634ff650b67a3-500x500-max.jpg",
+        "https://www.bakli.lt/resized/9908674cede49c05fe9be6a644aad3df-500x500-max.jpg",
+        "https://www.bakli.lt/resized/f1f878cad649a6418c62d66cd89411ae-500x500-max.jpg",
+        "https://www.bakli.lt/resized/95d9c31f1c22f62c3c2c58c57f782d99-500x500-maxq.jpg",
+        "https://www.bakli.lt/resized/a372aa0f952b42d908eb2107dd4519cd-500x500-maxq.jpg",
+        "https://www.bakli.lt/resized/adf0ff4278de15d5015690019f7f4adc-500x500-maxq.jpg"
+      ],
+      "checks": [
+        {
+          "name": "newsletter.html exists",
+          "pass": true,
+          "detail": "emails/02-personalizavimas/newsletter.html"
+        },
+        {
+          "name": "newsletter.html is valid UTF-8",
+          "pass": true,
+          "detail": "24104 byte(s)."
+        },
+        {
+          "name": "newsletter.txt exists",
+          "pass": true,
+          "detail": "emails/02-personalizavimas/newsletter.txt"
+        },
+        {
+          "name": "newsletter.txt is valid UTF-8",
+          "pass": true,
+          "detail": "1254 byte(s)."
+        },
+        {
+          "name": "omnisend-body.html exists",
+          "pass": true,
+          "detail": "emails/02-personalizavimas/omnisend-body.html"
+        },
+        {
+          "name": "omnisend-body.html is valid UTF-8",
+          "pass": true,
+          "detail": "20377 byte(s)."
+        },
+        {
+          "name": "omnisend-styles.css exists",
+          "pass": true,
+          "detail": "emails/02-personalizavimas/omnisend-styles.css"
+        },
+        {
+          "name": "omnisend-styles.css is valid UTF-8",
+          "pass": true,
+          "detail": "3360 byte(s)."
+        },
+        {
+          "name": "Lithuanian language declaration",
+          "pass": true,
+          "detail": "Expected lang=\"lt\" on the local newsletter document."
+        },
+        {
+          "name": "UTF-8 meta declaration",
+          "pass": true,
+          "detail": "Expected UTF-8 charset meta."
+        },
+        {
+          "name": "Responsive viewport meta",
+          "pass": true,
+          "detail": "Expected viewport meta."
+        },
+        {
+          "name": "Apple reformatting protection",
+          "pass": true,
+          "detail": "Expected x-apple-disable-message-reformatting."
+        },
+        {
+          "name": "Format-detection control",
+          "pass": true,
+          "detail": "Expected format-detection meta."
+        },
+        {
+          "name": "Hidden preheader",
+          "pass": true,
+          "detail": "Expected an email-safe hidden preheader in newsletter.html."
+        },
+        {
+          "name": "Newsletter presentation-table semantics",
+          "pass": true,
+          "detail": "14/14 table(s)."
+        },
+        {
+          "name": "Omnisend presentation-table semantics",
+          "pass": true,
+          "detail": "14/14 table(s)."
+        },
+        {
+          "name": "No JavaScript, forms, video, or embedded frames",
+          "pass": true,
+          "detail": "Email markup must not contain executable or webpage-only elements."
+        },
+        {
+          "name": "No em dash",
+          "pass": true,
+          "detail": "Use a short hyphen or Lithuanian punctuation instead of an em dash."
+        },
+        {
+          "name": "No hexadecimal HTML entities",
+          "pass": true,
+          "detail": "Hexadecimal HTML entities are not allowed."
+        },
+        {
+          "name": "No unfinished or legacy placeholders",
+          "pass": true,
+          "detail": "No unfinished placeholders."
+        },
+        {
+          "name": "No dummy URLs or workstation paths",
+          "pass": true,
+          "detail": "No dummy or workstation paths."
+        },
+        {
+          "name": "Newsletter images have non-empty alt text",
+          "pass": true,
+          "detail": "9/9 image(s)."
+        },
+        {
+          "name": "Newsletter images declare numeric dimensions",
+          "pass": true,
+          "detail": "9/9 image(s)."
+        },
+        {
+          "name": "Omnisend images have non-empty alt text",
+          "pass": true,
+          "detail": "9/9 image(s)."
+        },
+        {
+          "name": "Omnisend images declare numeric dimensions",
+          "pass": true,
+          "detail": "9/9 image(s)."
+        },
+        {
+          "name": "Newsletter image sources resolve safely",
+          "pass": true,
+          "detail": "9 image(s) resolve."
+        },
+        {
+          "name": "Omnisend images use exact BAKLI HTTPS image paths",
+          "pass": true,
+          "detail": "9 image(s) use https://www.bakli.lt/resized/."
+        },
+        {
+          "name": "Omnisend body is a body-only fragment",
+          "pass": true,
+          "detail": "DOCTYPE, html, head, body, and style tags belong outside the Omnisend body fragment."
+        },
+        {
+          "name": "Omnisend body includes the exact official BAKLI logo",
+          "pass": true,
+          "detail": "1 exact official logo image(s)."
+        },
+        {
+          "name": "Omnisend body omits native-wrapper footer",
+          "pass": true,
+          "detail": "The Omnisend native wrapper supplies the footer."
+        },
+        {
+          "name": "Omnisend body omits unsubscribe and preference links",
+          "pass": true,
+          "detail": "The Omnisend native wrapper supplies compliance links."
+        },
+        {
+          "name": "Omnisend styles include a responsive media rule",
+          "pass": true,
+          "detail": "Expected an @media (max-width: ...) rule."
+        },
+        {
+          "name": "Omnisend styles define mobile stacking",
+          "pass": true,
+          "detail": "Expected .mobile-stack display:block in the responsive CSS."
+        },
+        {
+          "name": "Newsletter links use approved current BAKLI destinations",
+          "pass": true,
+          "detail": "12 approved link(s)."
+        },
+        {
+          "name": "Omnisend body links use only current BAKLI destinations",
+          "pass": true,
+          "detail": "12 approved link(s)."
+        },
+        {
+          "name": "Approved 10 % HELLO10 offer in all content versions",
+          "pass": true,
+          "detail": "{\"newsletterHtml\":{\"code\":true,\"percent\":true},\"plainText\":{\"code\":true,\"percent\":true},\"omnisendBody\":{\"code\":true,\"percent\":true}}"
+        },
+        {
+          "name": "No conflicting discount percentage",
+          "pass": true,
+          "detail": "10, 10, 10, 10, 10, 10"
+        },
+        {
+          "name": "No unapproved legacy promo code",
+          "pass": true,
+          "detail": "Only HELLO10 is approved."
+        },
+        {
+          "name": "No invented discount deadline",
+          "pass": true,
+          "detail": "No unapproved deadline."
+        },
+        {
+          "name": "No 4.9 rating claim",
+          "pass": true,
+          "detail": "No 4.9 claim."
+        },
+        {
+          "name": "No 2,370 review-count claim",
+          "pass": true,
+          "detail": "No 2,370 claim."
+        },
+        {
+          "name": "No outdated 5,95 € gift-wrap price",
+          "pass": true,
+          "detail": "Outdated gift-wrap price absent."
+        },
+        {
+          "name": "Newsletter HTML stays below Gmail clipping threshold",
+          "pass": true,
+          "detail": "24104/102400 UTF-8 byte(s)."
+        },
+        {
+          "name": "Omnisend body and styles stay below Gmail clipping threshold",
+          "pass": true,
+          "detail": "23737/102400 UTF-8 byte(s)."
+        },
+        {
+          "name": "Plain text includes all relevant destinations",
+          "pass": true,
+          "detail": "4 required URL(s)."
+        },
+        {
+          "name": "HTML content versions include all relevant destinations",
+          "pass": true,
+          "detail": "4 required URL(s) in both HTML versions."
+        }
+      ]
+    },
+    {
+      "id": "03-dovanos",
+      "directory": "emails/03-dovanos",
+      "pass": true,
+      "summary": {
+        "passed": 47,
+        "failed": 0,
+        "total": 47
+      },
+      "files": {
+        "newsletterHtml": {
+          "path": "emails/03-dovanos/newsletter.html",
+          "exists": true,
+          "validUtf8": true,
+          "bytes": 22078
+        },
+        "plainText": {
+          "path": "emails/03-dovanos/newsletter.txt",
+          "exists": true,
+          "validUtf8": true,
+          "bytes": 1494
+        },
+        "omnisendBody": {
+          "path": "emails/03-dovanos/omnisend-body.html",
+          "exists": true,
+          "validUtf8": true,
+          "bytes": 18183
+        },
+        "omnisendStyles": {
+          "path": "emails/03-dovanos/omnisend-styles.css",
+          "exists": true,
+          "validUtf8": true,
+          "bytes": 3360
+        }
+      },
+      "requiredUrls": [
+        "https://www.bakli.lt/lt/dovanu-idejos",
+        "https://www.bakli.lt/lt/dovanu-rinkiniai",
+        "https://www.bakli.lt/lt/personalizuotos-dovanos"
+      ],
+      "newsletterImages": [
+        {
+          "src": "../../assets/brand/bakli-logo.jpg",
+          "type": "local-relative",
+          "approved": true,
+          "exists": true,
+          "resolved": "assets/brand/bakli-logo.jpg"
+        },
+        {
+          "src": "../../assets/generated/gifting-set-v1.jpg",
+          "type": "local-relative",
+          "approved": true,
+          "exists": true,
+          "resolved": "assets/generated/gifting-set-v1.jpg"
+        },
+        {
+          "src": "../../assets/gifts/sofia-vanessa-phone.jpg",
+          "type": "local-relative",
+          "approved": true,
+          "exists": true,
+          "resolved": "assets/gifts/sofia-vanessa-phone.jpg"
+        },
+        {
+          "src": "../../assets/gifts/evan-walter.jpg",
+          "type": "local-relative",
+          "approved": true,
+          "exists": true,
+          "resolved": "assets/gifts/evan-walter.jpg"
+        },
+        {
+          "src": "../../assets/gifts/jacob-fragrance.jpg",
+          "type": "local-relative",
+          "approved": true,
+          "exists": true,
+          "resolved": "assets/gifts/jacob-fragrance.jpg"
+        }
+      ],
+      "omnisendImages": [
+        "https://www.bakli.lt/resized/4065f0e86f548349d849495de0204b08-500x500-max.jpg",
+        "https://www.bakli.lt/resized/63e25ea4a03d72a7e08d883cd1f2ebef-500x500-max.jpg",
+        "https://www.bakli.lt/resized/1acfd4609b53134374f737b4aca158d6-500x500-max.jpg",
+        "https://www.bakli.lt/resized/5d4dd8775ca66cf9a38d0326506545fa-500x500-max.jpg",
+        "https://www.bakli.lt/resized/617b3abb28bc377b899726b78e7cf32c-500x500-max.jpg"
+      ],
+      "checks": [
+        {
+          "name": "newsletter.html exists",
+          "pass": true,
+          "detail": "emails/03-dovanos/newsletter.html"
+        },
+        {
+          "name": "newsletter.html is valid UTF-8",
+          "pass": true,
+          "detail": "22078 byte(s)."
+        },
+        {
+          "name": "newsletter.txt exists",
+          "pass": true,
+          "detail": "emails/03-dovanos/newsletter.txt"
+        },
+        {
+          "name": "newsletter.txt is valid UTF-8",
+          "pass": true,
+          "detail": "1494 byte(s)."
+        },
+        {
+          "name": "omnisend-body.html exists",
+          "pass": true,
+          "detail": "emails/03-dovanos/omnisend-body.html"
+        },
+        {
+          "name": "omnisend-body.html is valid UTF-8",
+          "pass": true,
+          "detail": "18183 byte(s)."
+        },
+        {
+          "name": "omnisend-styles.css exists",
+          "pass": true,
+          "detail": "emails/03-dovanos/omnisend-styles.css"
+        },
+        {
+          "name": "omnisend-styles.css is valid UTF-8",
+          "pass": true,
+          "detail": "3360 byte(s)."
+        },
+        {
+          "name": "Lithuanian language declaration",
+          "pass": true,
+          "detail": "Expected lang=\"lt\" on the local newsletter document."
+        },
+        {
+          "name": "UTF-8 meta declaration",
+          "pass": true,
+          "detail": "Expected UTF-8 charset meta."
+        },
+        {
+          "name": "Responsive viewport meta",
+          "pass": true,
+          "detail": "Expected viewport meta."
+        },
+        {
+          "name": "Apple reformatting protection",
+          "pass": true,
+          "detail": "Expected x-apple-disable-message-reformatting."
+        },
+        {
+          "name": "Format-detection control",
+          "pass": true,
+          "detail": "Expected format-detection meta."
+        },
+        {
+          "name": "Hidden preheader",
+          "pass": true,
+          "detail": "Expected an email-safe hidden preheader in newsletter.html."
+        },
+        {
+          "name": "Newsletter presentation-table semantics",
+          "pass": true,
+          "detail": "15/15 table(s)."
+        },
+        {
+          "name": "Omnisend presentation-table semantics",
+          "pass": true,
+          "detail": "15/15 table(s)."
+        },
+        {
+          "name": "No JavaScript, forms, video, or embedded frames",
+          "pass": true,
+          "detail": "Email markup must not contain executable or webpage-only elements."
+        },
+        {
+          "name": "No em dash",
+          "pass": true,
+          "detail": "Use a short hyphen or Lithuanian punctuation instead of an em dash."
+        },
+        {
+          "name": "No hexadecimal HTML entities",
+          "pass": true,
+          "detail": "Hexadecimal HTML entities are not allowed."
+        },
+        {
+          "name": "No unfinished or legacy placeholders",
+          "pass": true,
+          "detail": "No unfinished placeholders."
+        },
+        {
+          "name": "No dummy URLs or workstation paths",
+          "pass": true,
+          "detail": "No dummy or workstation paths."
+        },
+        {
+          "name": "Newsletter images have non-empty alt text",
+          "pass": true,
+          "detail": "5/5 image(s)."
+        },
+        {
+          "name": "Newsletter images declare numeric dimensions",
+          "pass": true,
+          "detail": "5/5 image(s)."
+        },
+        {
+          "name": "Omnisend images have non-empty alt text",
+          "pass": true,
+          "detail": "5/5 image(s)."
+        },
+        {
+          "name": "Omnisend images declare numeric dimensions",
+          "pass": true,
+          "detail": "5/5 image(s)."
+        },
+        {
+          "name": "Newsletter image sources resolve safely",
+          "pass": true,
+          "detail": "5 image(s) resolve."
+        },
+        {
+          "name": "Omnisend images use exact BAKLI HTTPS image paths",
+          "pass": true,
+          "detail": "5 image(s) use https://www.bakli.lt/resized/."
+        },
+        {
+          "name": "Omnisend body is a body-only fragment",
+          "pass": true,
+          "detail": "DOCTYPE, html, head, body, and style tags belong outside the Omnisend body fragment."
+        },
+        {
+          "name": "Omnisend body includes the exact official BAKLI logo",
+          "pass": true,
+          "detail": "1 exact official logo image(s)."
+        },
+        {
+          "name": "Omnisend body omits native-wrapper footer",
+          "pass": true,
+          "detail": "The Omnisend native wrapper supplies the footer."
+        },
+        {
+          "name": "Omnisend body omits unsubscribe and preference links",
+          "pass": true,
+          "detail": "The Omnisend native wrapper supplies compliance links."
+        },
+        {
+          "name": "Omnisend styles include a responsive media rule",
+          "pass": true,
+          "detail": "Expected an @media (max-width: ...) rule."
+        },
+        {
+          "name": "Omnisend styles define mobile stacking",
+          "pass": true,
+          "detail": "Expected .mobile-stack display:block in the responsive CSS."
+        },
+        {
+          "name": "Newsletter links use approved current BAKLI destinations",
+          "pass": true,
+          "detail": "18 approved link(s)."
+        },
+        {
+          "name": "Omnisend body links use only current BAKLI destinations",
+          "pass": true,
+          "detail": "18 approved link(s)."
+        },
+        {
+          "name": "Approved 10 % HELLO10 offer in all content versions",
+          "pass": true,
+          "detail": "{\"newsletterHtml\":{\"code\":true,\"percent\":true},\"plainText\":{\"code\":true,\"percent\":true},\"omnisendBody\":{\"code\":true,\"percent\":true}}"
+        },
+        {
+          "name": "No conflicting discount percentage",
+          "pass": true,
+          "detail": "10, 10, 10, 10, 10, 10, 10"
+        },
+        {
+          "name": "No unapproved legacy promo code",
+          "pass": true,
+          "detail": "Only HELLO10 is approved."
+        },
+        {
+          "name": "No invented discount deadline",
+          "pass": true,
+          "detail": "No unapproved deadline."
+        },
+        {
+          "name": "No 4.9 rating claim",
+          "pass": true,
+          "detail": "No 4.9 claim."
+        },
+        {
+          "name": "No 2,370 review-count claim",
+          "pass": true,
+          "detail": "No 2,370 claim."
+        },
+        {
+          "name": "No outdated 5,95 € gift-wrap price",
+          "pass": true,
+          "detail": "Outdated gift-wrap price absent."
+        },
+        {
+          "name": "Current 6,95 € gift-wrap price in all content versions",
+          "pass": true,
+          "detail": "newsletter.html: true; newsletter.txt: true; omnisend-body.html: true."
+        },
+        {
+          "name": "Newsletter HTML stays below Gmail clipping threshold",
+          "pass": true,
+          "detail": "22078/102400 UTF-8 byte(s)."
+        },
+        {
+          "name": "Omnisend body and styles stay below Gmail clipping threshold",
+          "pass": true,
+          "detail": "21543/102400 UTF-8 byte(s)."
+        },
+        {
+          "name": "Plain text includes all relevant destinations",
+          "pass": true,
+          "detail": "3 required URL(s)."
+        },
+        {
+          "name": "HTML content versions include all relevant destinations",
+          "pass": true,
+          "detail": "3 required URL(s) in both HTML versions."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1200 @@
+{
+  "generatedAt": "2026-09-04T09:19:28.873Z",
+  "desktopShellWidth": 600,
+  "summary": {
+    "passed": 12,
+    "failed": 0,
+    "total": 12
+  },
+  "pass": true,
+  "pages": [
+    {
+      "email": "01-pasveikinimas",
+      "source": "emails/01-pasveikinimas/newsletter.html",
+      "viewport": "desktop-600",
+      "output": "previews/01-pasveikinimas-desktop-600.png",
+      "title": "Sveiki atvykę į Bakli: 10 % nuolaida Jums | Bakli",
+      "viewportWidth": 760,
+      "documentWidth": 760,
+      "bodyHeight": 2537,
+      "shellFound": true,
+      "shellWidth": 600,
+      "shellWidthPass": true,
+      "imageCount": 6,
+      "missingImages": [],
+      "linkCount": 16,
+      "horizontalOverflow": false,
+      "overflowElements": [],
+      "shellOverflowElements": [],
+      "mobileStack": {
+        "inspected": false,
+        "count": 4,
+        "allDisplayBlock": false,
+        "siblingGroupsDoNotOverlap": false,
+        "withinShell": true,
+        "groups": [
+          {
+            "count": 2,
+            "nonOverlapping": false,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad product-cell",
+                "left": 104,
+                "right": 380,
+                "top": 1249.91,
+                "bottom": 1652.91,
+                "width": 276,
+                "height": 403,
+                "text": "PERKAMIAUSIA Odinė piniginė Jacob Crazy Horse Peržiūrėti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad product-cell",
+                "left": 380,
+                "right": 656,
+                "top": 1249.91,
+                "bottom": 1652.91,
+                "width": 276,
+                "height": 403,
+                "text": "NAUJIENA Odinė piniginė Grant Crazy Horse 3in1 Peržiūrėti"
+              }
+            ]
+          },
+          {
+            "count": 2,
+            "nonOverlapping": false,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad product-cell",
+                "left": 104,
+                "right": 380,
+                "top": 1652.91,
+                "bottom": 2055.91,
+                "width": 276,
+                "height": 403,
+                "text": "GRAVIRUOJAMAS Vyriškas diržas Karter su Vyčiu Peržiūrėti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad product-cell",
+                "left": 380,
+                "right": 656,
+                "top": 1652.91,
+                "bottom": 2055.91,
+                "width": 276,
+                "height": 403,
+                "text": "SU VARDU Antkaklio rinkinys šunims „Pink“ MAXI Peržiūrėti"
+              }
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true,
+      "requestFailures": [],
+      "failedImageRequests": []
+    },
+    {
+      "email": "01-pasveikinimas",
+      "source": "emails/01-pasveikinimas/newsletter.html",
+      "viewport": "mobile-390",
+      "output": "previews/01-pasveikinimas-mobile-390.png",
+      "title": "Sveiki atvykę į Bakli: 10 % nuolaida Jums | Bakli",
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "bodyHeight": 3201,
+      "shellFound": true,
+      "shellWidth": 390,
+      "shellWidthPass": true,
+      "imageCount": 6,
+      "missingImages": [],
+      "linkCount": 16,
+      "horizontalOverflow": false,
+      "overflowElements": [],
+      "shellOverflowElements": [],
+      "mobileStack": {
+        "inspected": true,
+        "count": 4,
+        "allDisplayBlock": true,
+        "siblingGroupsDoNotOverlap": true,
+        "withinShell": true,
+        "groups": [
+          {
+            "count": 2,
+            "nonOverlapping": true,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad product-cell",
+                "left": 24,
+                "right": 366,
+                "top": 1154.88,
+                "bottom": 1561.88,
+                "width": 342,
+                "height": 407,
+                "text": "PERKAMIAUSIA Odinė piniginė Jacob Crazy Horse Peržiūrėti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad product-cell",
+                "left": 24,
+                "right": 366,
+                "top": 1561.88,
+                "bottom": 1968.88,
+                "width": 342,
+                "height": 407,
+                "text": "NAUJIENA Odinė piniginė Grant Crazy Horse 3in1 Peržiūrėti"
+              }
+            ]
+          },
+          {
+            "count": 2,
+            "nonOverlapping": true,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad product-cell",
+                "left": 24,
+                "right": 366,
+                "top": 1968.88,
+                "bottom": 2351.88,
+                "width": 342,
+                "height": 383,
+                "text": "GRAVIRUOJAMAS Vyriškas diržas Karter su Vyčiu Peržiūrėti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad product-cell",
+                "left": 24,
+                "right": 366,
+                "top": 2351.88,
+                "bottom": 2758.88,
+                "width": 342,
+                "height": 407,
+                "text": "SU VARDU Antkaklio rinkinys šunims „Pink“ MAXI Peržiūrėti"
+              }
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true,
+      "requestFailures": [],
+      "failedImageRequests": []
+    },
+    {
+      "email": "01-pasveikinimas",
+      "source": "emails/01-pasveikinimas/newsletter.html",
+      "viewport": "mobile-375",
+      "output": "previews/01-pasveikinimas-mobile-375.png",
+      "title": "Sveiki atvykę į Bakli: 10 % nuolaida Jums | Bakli",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "bodyHeight": 3239,
+      "shellFound": true,
+      "shellWidth": 375,
+      "shellWidthPass": true,
+      "imageCount": 6,
+      "missingImages": [],
+      "linkCount": 16,
+      "horizontalOverflow": false,
+      "overflowElements": [],
+      "shellOverflowElements": [],
+      "mobileStack": {
+        "inspected": true,
+        "count": 4,
+        "allDisplayBlock": true,
+        "siblingGroupsDoNotOverlap": true,
+        "withinShell": true,
+        "groups": [
+          {
+            "count": 2,
+            "nonOverlapping": true,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad product-cell",
+                "left": 24,
+                "right": 351,
+                "top": 1168.89,
+                "bottom": 1575.89,
+                "width": 327,
+                "height": 407,
+                "text": "PERKAMIAUSIA Odinė piniginė Jacob Crazy Horse Peržiūrėti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad product-cell",
+                "left": 24,
+                "right": 351,
+                "top": 1575.89,
+                "bottom": 1982.89,
+                "width": 327,
+                "height": 407,
+                "text": "NAUJIENA Odinė piniginė Grant Crazy Horse 3in1 Peržiūrėti"
+              }
+            ]
+          },
+          {
+            "count": 2,
+            "nonOverlapping": true,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad product-cell",
+                "left": 24,
+                "right": 351,
+                "top": 1982.89,
+                "bottom": 2389.89,
+                "width": 327,
+                "height": 407,
+                "text": "GRAVIRUOJAMAS Vyriškas diržas Karter su Vyčiu Peržiūrėti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad product-cell",
+                "left": 24,
+                "right": 351,
+                "top": 2389.89,
+                "bottom": 2796.89,
+                "width": 327,
+                "height": 407,
+                "text": "SU VARDU Antkaklio rinkinys šunims „Pink“ MAXI Peržiūrėti"
+              }
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true,
+      "requestFailures": [],
+      "failedImageRequests": []
+    },
+    {
+      "email": "01-pasveikinimas",
+      "source": "emails/01-pasveikinimas/newsletter.html",
+      "viewport": "mobile-320",
+      "output": "previews/01-pasveikinimas-mobile-320.png",
+      "title": "Sveiki atvykę į Bakli: 10 % nuolaida Jums | Bakli",
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "bodyHeight": 3122,
+      "shellFound": true,
+      "shellWidth": 320,
+      "shellWidthPass": true,
+      "imageCount": 6,
+      "missingImages": [],
+      "linkCount": 16,
+      "horizontalOverflow": false,
+      "overflowElements": [],
+      "shellOverflowElements": [],
+      "mobileStack": {
+        "inspected": true,
+        "count": 4,
+        "allDisplayBlock": true,
+        "siblingGroupsDoNotOverlap": true,
+        "withinShell": true,
+        "groups": [
+          {
+            "count": 2,
+            "nonOverlapping": true,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad product-cell",
+                "left": 24,
+                "right": 296,
+                "top": 1132.23,
+                "bottom": 1519.23,
+                "width": 272,
+                "height": 387,
+                "text": "PERKAMIAUSIA Odinė piniginė Jacob Crazy Horse Peržiūrėti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad product-cell",
+                "left": 24,
+                "right": 296,
+                "top": 1519.23,
+                "bottom": 1906.23,
+                "width": 272,
+                "height": 387,
+                "text": "NAUJIENA Odinė piniginė Grant Crazy Horse 3in1 Peržiūrėti"
+              }
+            ]
+          },
+          {
+            "count": 2,
+            "nonOverlapping": true,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad product-cell",
+                "left": 24,
+                "right": 296,
+                "top": 1906.23,
+                "bottom": 2293.23,
+                "width": 272,
+                "height": 387,
+                "text": "GRAVIRUOJAMAS Vyriškas diržas Karter su Vyčiu Peržiūrėti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad product-cell",
+                "left": 24,
+                "right": 296,
+                "top": 2293.23,
+                "bottom": 2680.23,
+                "width": 272,
+                "height": 387,
+                "text": "SU VARDU Antkaklio rinkinys šunims „Pink“ MAXI Peržiūrėti"
+              }
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true,
+      "requestFailures": [],
+      "failedImageRequests": []
+    },
+    {
+      "email": "02-personalizavimas",
+      "source": "emails/02-personalizavimas/newsletter.html",
+      "viewport": "desktop-600",
+      "output": "previews/02-personalizavimas-desktop-600.png",
+      "title": "Sukurta Jums, iki mažiausios detalės | Bakli",
+      "viewportWidth": 760,
+      "documentWidth": 760,
+      "bodyHeight": 2156,
+      "shellFound": true,
+      "shellWidth": 600,
+      "shellWidthPass": true,
+      "imageCount": 9,
+      "missingImages": [],
+      "linkCount": 12,
+      "horizontalOverflow": false,
+      "overflowElements": [],
+      "shellOverflowElements": [],
+      "mobileStack": {
+        "inspected": false,
+        "count": 5,
+        "allDisplayBlock": false,
+        "siblingGroupsDoNotOverlap": false,
+        "withinShell": true,
+        "groups": [
+          {
+            "count": 2,
+            "nonOverlapping": false,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack split-copy",
+                "left": 80,
+                "right": 344,
+                "top": 189.16,
+                "bottom": 501.16,
+                "width": 264,
+                "height": 312,
+                "text": "JŪSŲ ISTORIJA Maža detalė. Asmeniška prasmė. Vardas, data ar keli prasmingi žodžiai kasdienį daiktą "
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack",
+                "left": 344,
+                "right": 680,
+                "top": 189.16,
+                "bottom": 501.16,
+                "width": 336,
+                "height": 312,
+                "text": ""
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "nonOverlapping": false,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad category-cell",
+                "left": 100,
+                "right": 286.66,
+                "top": 1183.16,
+                "bottom": 1476.42,
+                "width": 186.66,
+                "height": 293.27,
+                "text": "Piniginės ir dėklai Inicialai, data ar trumpa žinutė. Atrasti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad category-cell",
+                "left": 286.66,
+                "right": 473.31,
+                "top": 1183.16,
+                "bottom": 1476.42,
+                "width": 186.66,
+                "height": 293.27,
+                "text": "Raktų pakabukai Tekstas, simbolis ar Jūsų pačių idėja. Atrasti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad category-cell",
+                "left": 473.31,
+                "right": 660,
+                "top": 1183.16,
+                "bottom": 1476.42,
+                "width": 186.69,
+                "height": 293.27,
+                "text": "Aksesuarai augintiniams Vardas ir telefono numeris visada šalia. Atrasti"
+              }
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true,
+      "requestFailures": [],
+      "failedImageRequests": []
+    },
+    {
+      "email": "02-personalizavimas",
+      "source": "emails/02-personalizavimas/newsletter.html",
+      "viewport": "mobile-390",
+      "output": "previews/02-personalizavimas-mobile-390.png",
+      "title": "Sukurta Jums, iki mažiausios detalės | Bakli",
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "bodyHeight": 3202,
+      "shellFound": true,
+      "shellWidth": 390,
+      "shellWidthPass": true,
+      "imageCount": 9,
+      "missingImages": [],
+      "linkCount": 12,
+      "horizontalOverflow": false,
+      "overflowElements": [],
+      "shellOverflowElements": [],
+      "mobileStack": {
+        "inspected": true,
+        "count": 5,
+        "allDisplayBlock": true,
+        "siblingGroupsDoNotOverlap": true,
+        "withinShell": true,
+        "groups": [
+          {
+            "count": 2,
+            "nonOverlapping": true,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack split-copy",
+                "left": 0,
+                "right": 390,
+                "top": 148.05,
+                "bottom": 374.05,
+                "width": 390,
+                "height": 226,
+                "text": "JŪSŲ ISTORIJA Maža detalė. Asmeniška prasmė. Vardas, data ar keli prasmingi žodžiai kasdienį daiktą "
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack",
+                "left": 0,
+                "right": 390,
+                "top": 374.05,
+                "bottom": 633.88,
+                "width": 390,
+                "height": 259.83,
+                "text": ""
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "nonOverlapping": true,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad category-cell",
+                "left": 20,
+                "right": 370,
+                "top": 1395.88,
+                "bottom": 1763.88,
+                "width": 350,
+                "height": 368,
+                "text": "Piniginės ir dėklai Inicialai, data ar trumpa žinutė. Atrasti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad category-cell",
+                "left": 20,
+                "right": 370,
+                "top": 1763.88,
+                "bottom": 2131.88,
+                "width": 350,
+                "height": 368,
+                "text": "Raktų pakabukai Tekstas, simbolis ar Jūsų pačių idėja. Atrasti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad category-cell",
+                "left": 20,
+                "right": 370,
+                "top": 2131.88,
+                "bottom": 2499.88,
+                "width": 350,
+                "height": 368,
+                "text": "Aksesuarai augintiniams Vardas ir telefono numeris visada šalia. Atrasti"
+              }
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true,
+      "requestFailures": [],
+      "failedImageRequests": []
+    },
+    {
+      "email": "02-personalizavimas",
+      "source": "emails/02-personalizavimas/newsletter.html",
+      "viewport": "mobile-375",
+      "output": "previews/02-personalizavimas-mobile-375.png",
+      "title": "Sukurta Jums, iki mažiausios detalės | Bakli",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "bodyHeight": 3188,
+      "shellFound": true,
+      "shellWidth": 375,
+      "shellWidthPass": true,
+      "imageCount": 9,
+      "missingImages": [],
+      "linkCount": 12,
+      "horizontalOverflow": false,
+      "overflowElements": [],
+      "shellOverflowElements": [],
+      "mobileStack": {
+        "inspected": true,
+        "count": 5,
+        "allDisplayBlock": true,
+        "siblingGroupsDoNotOverlap": true,
+        "withinShell": true,
+        "groups": [
+          {
+            "count": 2,
+            "nonOverlapping": true,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack split-copy",
+                "left": 0,
+                "right": 375,
+                "top": 148.05,
+                "bottom": 374.05,
+                "width": 375,
+                "height": 226,
+                "text": "JŪSŲ ISTORIJA Maža detalė. Asmeniška prasmė. Vardas, data ar keli prasmingi žodžiai kasdienį daiktą "
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack",
+                "left": 0,
+                "right": 375,
+                "top": 374.05,
+                "bottom": 623.89,
+                "width": 375,
+                "height": 249.84,
+                "text": ""
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "nonOverlapping": true,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad category-cell",
+                "left": 20,
+                "right": 355,
+                "top": 1415.89,
+                "bottom": 1772.64,
+                "width": 335,
+                "height": 356.75,
+                "text": "Piniginės ir dėklai Inicialai, data ar trumpa žinutė. Atrasti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad category-cell",
+                "left": 20,
+                "right": 355,
+                "top": 1772.64,
+                "bottom": 2129.39,
+                "width": 335,
+                "height": 356.75,
+                "text": "Raktų pakabukai Tekstas, simbolis ar Jūsų pačių idėja. Atrasti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad category-cell",
+                "left": 20,
+                "right": 355,
+                "top": 2129.39,
+                "bottom": 2486.14,
+                "width": 335,
+                "height": 356.75,
+                "text": "Aksesuarai augintiniams Vardas ir telefono numeris visada šalia. Atrasti"
+              }
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true,
+      "requestFailures": [],
+      "failedImageRequests": []
+    },
+    {
+      "email": "02-personalizavimas",
+      "source": "emails/02-personalizavimas/newsletter.html",
+      "viewport": "mobile-320",
+      "output": "previews/02-personalizavimas-mobile-320.png",
+      "title": "Sukurta Jums, iki mažiausios detalės | Bakli",
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "bodyHeight": 3114,
+      "shellFound": true,
+      "shellWidth": 320,
+      "shellWidthPass": true,
+      "imageCount": 9,
+      "missingImages": [],
+      "linkCount": 12,
+      "horizontalOverflow": false,
+      "overflowElements": [],
+      "shellOverflowElements": [],
+      "mobileStack": {
+        "inspected": true,
+        "count": 5,
+        "allDisplayBlock": true,
+        "siblingGroupsDoNotOverlap": true,
+        "withinShell": true,
+        "groups": [
+          {
+            "count": 2,
+            "nonOverlapping": true,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack split-copy",
+                "left": 0,
+                "right": 320,
+                "top": 148.05,
+                "bottom": 374.05,
+                "width": 320,
+                "height": 226,
+                "text": "JŪSŲ ISTORIJA Maža detalė. Asmeniška prasmė. Vardas, data ar keli prasmingi žodžiai kasdienį daiktą "
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack",
+                "left": 0,
+                "right": 320,
+                "top": 374.05,
+                "bottom": 587.23,
+                "width": 320,
+                "height": 213.19,
+                "text": ""
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "nonOverlapping": true,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad category-cell",
+                "left": 20,
+                "right": 300,
+                "top": 1401.23,
+                "bottom": 1716.73,
+                "width": 280,
+                "height": 315.5,
+                "text": "Piniginės ir dėklai Inicialai, data ar trumpa žinutė. Atrasti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad category-cell",
+                "left": 20,
+                "right": 300,
+                "top": 1716.73,
+                "bottom": 2052.23,
+                "width": 280,
+                "height": 335.5,
+                "text": "Raktų pakabukai Tekstas, simbolis ar Jūsų pačių idėja. Atrasti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad category-cell",
+                "left": 20,
+                "right": 300,
+                "top": 2052.23,
+                "bottom": 2387.73,
+                "width": 280,
+                "height": 335.5,
+                "text": "Aksesuarai augintiniams Vardas ir telefono numeris visada šalia. Atrasti"
+              }
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true,
+      "requestFailures": [],
+      "failedImageRequests": []
+    },
+    {
+      "email": "03-dovanos",
+      "source": "emails/03-dovanos/newsletter.html",
+      "viewport": "desktop-600",
+      "output": "previews/03-dovanos-desktop-600.png",
+      "title": "Dovana, kuri pasako daugiau | Bakli",
+      "viewportWidth": 760,
+      "documentWidth": 760,
+      "bodyHeight": 2177,
+      "shellFound": true,
+      "shellWidth": 600,
+      "shellWidthPass": true,
+      "imageCount": 5,
+      "missingImages": [],
+      "linkCount": 18,
+      "horizontalOverflow": false,
+      "overflowElements": [],
+      "shellOverflowElements": [],
+      "mobileStack": {
+        "inspected": false,
+        "count": 6,
+        "allDisplayBlock": false,
+        "siblingGroupsDoNotOverlap": false,
+        "withinShell": true,
+        "groups": [
+          {
+            "count": 3,
+            "nonOverlapping": false,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack",
+                "left": 80,
+                "right": 280,
+                "top": 802.91,
+                "bottom": 899.91,
+                "width": 200,
+                "height": 97,
+                "text": "PAGAL ŽMOGŲ Rasti artimiausią"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack",
+                "left": 280,
+                "right": 480,
+                "top": 802.91,
+                "bottom": 899.91,
+                "width": 200,
+                "height": 97,
+                "text": "PAGAL PROGĄ Atrasti idėjas"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack",
+                "left": 480,
+                "right": 680,
+                "top": 802.91,
+                "bottom": 899.91,
+                "width": 200,
+                "height": 97,
+                "text": "PAGAL RINKINĮ Derinti lengviau"
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "nonOverlapping": false,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad gift-cell",
+                "left": 100,
+                "right": 286.66,
+                "top": 1023.91,
+                "bottom": 1362.59,
+                "width": 186.66,
+                "height": 338.69,
+                "text": "DOVANŲ RINKINYS Sofia ir Vanessa dovanų rinkinys Peržiūrėti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad gift-cell",
+                "left": 286.66,
+                "right": 473.31,
+                "top": 1023.91,
+                "bottom": 1362.59,
+                "width": 186.66,
+                "height": 338.69,
+                "text": "DOVANŲ RINKINYS Evan ir Walter dovanų rinkinys Peržiūrėti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad gift-cell",
+                "left": 473.31,
+                "right": 660,
+                "top": 1023.91,
+                "bottom": 1362.59,
+                "width": 186.69,
+                "height": 338.69,
+                "text": "DOVANŲ RINKINYS Jacob ir automobilio kvapo rinkinys Peržiūrėti"
+              }
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true,
+      "requestFailures": [],
+      "failedImageRequests": []
+    },
+    {
+      "email": "03-dovanos",
+      "source": "emails/03-dovanos/newsletter.html",
+      "viewport": "mobile-390",
+      "output": "previews/03-dovanos-mobile-390.png",
+      "title": "Dovana, kuri pasako daugiau | Bakli",
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "bodyHeight": 3248,
+      "shellFound": true,
+      "shellWidth": 390,
+      "shellWidthPass": true,
+      "imageCount": 5,
+      "missingImages": [],
+      "linkCount": 18,
+      "horizontalOverflow": false,
+      "overflowElements": [],
+      "shellOverflowElements": [],
+      "mobileStack": {
+        "inspected": true,
+        "count": 6,
+        "allDisplayBlock": true,
+        "siblingGroupsDoNotOverlap": true,
+        "withinShell": true,
+        "groups": [
+          {
+            "count": 3,
+            "nonOverlapping": true,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack",
+                "left": 0,
+                "right": 390,
+                "top": 653.88,
+                "bottom": 750.88,
+                "width": 390,
+                "height": 97,
+                "text": "PAGAL ŽMOGŲ Rasti artimiausią"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack",
+                "left": 0,
+                "right": 390,
+                "top": 750.88,
+                "bottom": 847.88,
+                "width": 390,
+                "height": 97,
+                "text": "PAGAL PROGĄ Atrasti idėjas"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack",
+                "left": 0,
+                "right": 390,
+                "top": 847.88,
+                "bottom": 944.88,
+                "width": 390,
+                "height": 97,
+                "text": "PAGAL RINKINĮ Derinti lengviau"
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "nonOverlapping": true,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad gift-cell",
+                "left": 20,
+                "right": 370,
+                "top": 1106.88,
+                "bottom": 1571.88,
+                "width": 350,
+                "height": 465,
+                "text": "DOVANŲ RINKINYS Sofia ir Vanessa dovanų rinkinys Peržiūrėti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad gift-cell",
+                "left": 20,
+                "right": 370,
+                "top": 1571.88,
+                "bottom": 2012.88,
+                "width": 350,
+                "height": 441,
+                "text": "DOVANŲ RINKINYS Evan ir Walter dovanų rinkinys Peržiūrėti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad gift-cell",
+                "left": 20,
+                "right": 370,
+                "top": 2012.88,
+                "bottom": 2477.88,
+                "width": 350,
+                "height": 465,
+                "text": "DOVANŲ RINKINYS Jacob ir automobilio kvapo rinkinys Peržiūrėti"
+              }
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true,
+      "requestFailures": [],
+      "failedImageRequests": []
+    },
+    {
+      "email": "03-dovanos",
+      "source": "emails/03-dovanos/newsletter.html",
+      "viewport": "mobile-375",
+      "output": "previews/03-dovanos-mobile-375.png",
+      "title": "Dovana, kuri pasako daugiau | Bakli",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "bodyHeight": 3217,
+      "shellFound": true,
+      "shellWidth": 375,
+      "shellWidthPass": true,
+      "imageCount": 5,
+      "missingImages": [],
+      "linkCount": 18,
+      "horizontalOverflow": false,
+      "overflowElements": [],
+      "shellOverflowElements": [],
+      "mobileStack": {
+        "inspected": true,
+        "count": 6,
+        "allDisplayBlock": true,
+        "siblingGroupsDoNotOverlap": true,
+        "withinShell": true,
+        "groups": [
+          {
+            "count": 3,
+            "nonOverlapping": true,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack",
+                "left": 0,
+                "right": 375,
+                "top": 643.89,
+                "bottom": 740.89,
+                "width": 375,
+                "height": 97,
+                "text": "PAGAL ŽMOGŲ Rasti artimiausią"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack",
+                "left": 0,
+                "right": 375,
+                "top": 740.89,
+                "bottom": 837.89,
+                "width": 375,
+                "height": 97,
+                "text": "PAGAL PROGĄ Atrasti idėjas"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack",
+                "left": 0,
+                "right": 375,
+                "top": 837.89,
+                "bottom": 934.89,
+                "width": 375,
+                "height": 97,
+                "text": "PAGAL RINKINĮ Derinti lengviau"
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "nonOverlapping": true,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad gift-cell",
+                "left": 20,
+                "right": 355,
+                "top": 1096.89,
+                "bottom": 1546.89,
+                "width": 335,
+                "height": 450,
+                "text": "DOVANŲ RINKINYS Sofia ir Vanessa dovanų rinkinys Peržiūrėti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad gift-cell",
+                "left": 20,
+                "right": 355,
+                "top": 1546.89,
+                "bottom": 1996.89,
+                "width": 335,
+                "height": 450,
+                "text": "DOVANŲ RINKINYS Evan ir Walter dovanų rinkinys Peržiūrėti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad gift-cell",
+                "left": 20,
+                "right": 355,
+                "top": 1996.89,
+                "bottom": 2446.89,
+                "width": 335,
+                "height": 450,
+                "text": "DOVANŲ RINKINYS Jacob ir automobilio kvapo rinkinys Peržiūrėti"
+              }
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true,
+      "requestFailures": [],
+      "failedImageRequests": []
+    },
+    {
+      "email": "03-dovanos",
+      "source": "emails/03-dovanos/newsletter.html",
+      "viewport": "mobile-320",
+      "output": "previews/03-dovanos-mobile-320.png",
+      "title": "Dovana, kuri pasako daugiau | Bakli",
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "bodyHeight": 3111,
+      "shellFound": true,
+      "shellWidth": 320,
+      "shellWidthPass": true,
+      "imageCount": 5,
+      "missingImages": [],
+      "linkCount": 18,
+      "horizontalOverflow": false,
+      "overflowElements": [],
+      "shellOverflowElements": [],
+      "mobileStack": {
+        "inspected": true,
+        "count": 6,
+        "allDisplayBlock": true,
+        "siblingGroupsDoNotOverlap": true,
+        "withinShell": true,
+        "groups": [
+          {
+            "count": 3,
+            "nonOverlapping": true,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack",
+                "left": 0,
+                "right": 320,
+                "top": 631.23,
+                "bottom": 728.23,
+                "width": 320,
+                "height": 97,
+                "text": "PAGAL ŽMOGŲ Rasti artimiausią"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack",
+                "left": 0,
+                "right": 320,
+                "top": 728.23,
+                "bottom": 825.23,
+                "width": 320,
+                "height": 97,
+                "text": "PAGAL PROGĄ Atrasti idėjas"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack",
+                "left": 0,
+                "right": 320,
+                "top": 825.23,
+                "bottom": 922.23,
+                "width": 320,
+                "height": 97,
+                "text": "PAGAL RINKINĮ Derinti lengviau"
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "nonOverlapping": true,
+            "rects": [
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad gift-cell",
+                "left": 20,
+                "right": 300,
+                "top": 1084.23,
+                "bottom": 1479.23,
+                "width": 280,
+                "height": 395,
+                "text": "DOVANŲ RINKINYS Sofia ir Vanessa dovanų rinkinys Peržiūrėti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad gift-cell",
+                "left": 20,
+                "right": 300,
+                "top": 1479.23,
+                "bottom": 1874.23,
+                "width": 280,
+                "height": 395,
+                "text": "DOVANŲ RINKINYS Evan ir Walter dovanų rinkinys Peržiūrėti"
+              },
+              {
+                "tag": "td",
+                "className": "mobile-stack card-pad gift-cell",
+                "left": 20,
+                "right": 300,
+                "top": 1874.23,
+                "bottom": 2269.23,
+                "width": 280,
+                "height": 395,
+                "text": "DOVANŲ RINKINYS Jacob ir automobilio kvapo rinkinys Peržiūrėti"
+              }
+            ]
+          }
+        ],
+        "pass": true
+      },
+      "pass": true,
+      "requestFailures": [],
+      "failedImageRequests": []
+    }
+  ]
+}
