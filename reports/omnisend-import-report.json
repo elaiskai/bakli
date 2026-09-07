@@ -1,0 +1,1289 @@
+{
+  "generatedAt": "2026-09-07T12:56:29.092Z",
+  "pass": true,
+  "summary": {
+    "passed": 9,
+    "failed": 0,
+    "total": 9
+  },
+  "results": [
+    {
+      "email": "01-pasveikinimas",
+      "viewport": "desktop-600",
+      "source": "omnisend-upload/01-pasveikinimas.html",
+      "output": "previews/omnisend-01-pasveikinimas-desktop-600.png",
+      "sourcePass": true,
+      "failedRequests": [],
+      "shellFound": true,
+      "shellWidth": 600,
+      "documentWidth": 760,
+      "bodyHeight": 2781,
+      "imageCount": 6,
+      "missingImages": [],
+      "overflow": [],
+      "criticalText": [
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "headline",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "34px",
+          "lineHeight": "40px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "code-text",
+          "tag": "span",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "22px",
+          "lineHeight": "26px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "section-title",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "28px",
+          "lineHeight": "34px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "section-title",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "28px",
+          "lineHeight": "34px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        }
+      ],
+      "criticalTextPass": true,
+      "pass": true
+    },
+    {
+      "email": "01-pasveikinimas",
+      "viewport": "mobile-390",
+      "source": "omnisend-upload/01-pasveikinimas.html",
+      "output": "previews/omnisend-01-pasveikinimas-mobile-390.png",
+      "sourcePass": true,
+      "failedRequests": [],
+      "shellFound": true,
+      "shellWidth": 374,
+      "documentWidth": 390,
+      "bodyHeight": 2722,
+      "imageCount": 6,
+      "missingImages": [],
+      "overflow": [],
+      "criticalText": [
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "headline",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "34px",
+          "lineHeight": "40px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "code-text",
+          "tag": "span",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "22px",
+          "lineHeight": "26px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "section-title",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "28px",
+          "lineHeight": "34px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "section-title",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "28px",
+          "lineHeight": "34px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        }
+      ],
+      "criticalTextPass": true,
+      "pass": true
+    },
+    {
+      "email": "01-pasveikinimas",
+      "viewport": "mobile-320",
+      "source": "omnisend-upload/01-pasveikinimas.html",
+      "output": "previews/omnisend-01-pasveikinimas-mobile-320.png",
+      "sourcePass": true,
+      "failedRequests": [],
+      "shellFound": true,
+      "shellWidth": 304,
+      "documentWidth": 320,
+      "bodyHeight": 2861,
+      "imageCount": 6,
+      "missingImages": [],
+      "overflow": [],
+      "criticalText": [
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "headline",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "34px",
+          "lineHeight": "40px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "code-text",
+          "tag": "span",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "22px",
+          "lineHeight": "26px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "section-title",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "28px",
+          "lineHeight": "34px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "section-title",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "28px",
+          "lineHeight": "34px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        }
+      ],
+      "criticalTextPass": true,
+      "pass": true
+    },
+    {
+      "email": "02-personalizavimas",
+      "viewport": "desktop-600",
+      "source": "omnisend-upload/02-personalizavimas.html",
+      "output": "previews/omnisend-02-personalizavimas-desktop-600.png",
+      "sourcePass": true,
+      "failedRequests": [],
+      "shellFound": true,
+      "shellWidth": 600,
+      "documentWidth": 760,
+      "bodyHeight": 3414,
+      "imageCount": 10,
+      "missingImages": [],
+      "overflow": [],
+      "criticalText": [
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "headline",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "34px",
+          "lineHeight": "40px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "section-title",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "28px",
+          "lineHeight": "34px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "section-title",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "28px",
+          "lineHeight": "34px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "section-title",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "28px",
+          "lineHeight": "34px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "code-text",
+          "tag": "span",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "22px",
+          "lineHeight": "26px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        }
+      ],
+      "criticalTextPass": true,
+      "pass": true
+    },
+    {
+      "email": "02-personalizavimas",
+      "viewport": "mobile-390",
+      "source": "omnisend-upload/02-personalizavimas.html",
+      "output": "previews/omnisend-02-personalizavimas-mobile-390.png",
+      "sourcePass": true,
+      "failedRequests": [],
+      "shellFound": true,
+      "shellWidth": 374,
+      "documentWidth": 390,
+      "bodyHeight": 3406,
+      "imageCount": 10,
+      "missingImages": [],
+      "overflow": [],
+      "criticalText": [
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "headline",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "34px",
+          "lineHeight": "40px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "section-title",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "28px",
+          "lineHeight": "34px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "section-title",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "28px",
+          "lineHeight": "34px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "section-title",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "28px",
+          "lineHeight": "34px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "code-text",
+          "tag": "span",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "22px",
+          "lineHeight": "26px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        }
+      ],
+      "criticalTextPass": true,
+      "pass": true
+    },
+    {
+      "email": "02-personalizavimas",
+      "viewport": "mobile-320",
+      "source": "omnisend-upload/02-personalizavimas.html",
+      "output": "previews/omnisend-02-personalizavimas-mobile-320.png",
+      "sourcePass": true,
+      "failedRequests": [],
+      "shellFound": true,
+      "shellWidth": 304,
+      "documentWidth": 320,
+      "bodyHeight": 3512,
+      "imageCount": 10,
+      "missingImages": [],
+      "overflow": [],
+      "criticalText": [
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "headline",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "34px",
+          "lineHeight": "40px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "section-title",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "28px",
+          "lineHeight": "34px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "section-title",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "28px",
+          "lineHeight": "34px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "section-title",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "28px",
+          "lineHeight": "34px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "code-text",
+          "tag": "span",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "22px",
+          "lineHeight": "26px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        }
+      ],
+      "criticalTextPass": true,
+      "pass": true
+    },
+    {
+      "email": "03-dovanos",
+      "viewport": "desktop-600",
+      "source": "omnisend-upload/03-dovanos.html",
+      "output": "previews/omnisend-03-dovanos-desktop-600.png",
+      "sourcePass": true,
+      "failedRequests": [],
+      "shellFound": true,
+      "shellWidth": 600,
+      "documentWidth": 760,
+      "bodyHeight": 3123,
+      "imageCount": 6,
+      "missingImages": [],
+      "overflow": [],
+      "criticalText": [
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "headline",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "34px",
+          "lineHeight": "40px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "9px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "9px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "9px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "section-title",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "28px",
+          "lineHeight": "34px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "section-title",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "28px",
+          "lineHeight": "34px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "code-text",
+          "tag": "span",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "22px",
+          "lineHeight": "26px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        }
+      ],
+      "criticalTextPass": true,
+      "pass": true
+    },
+    {
+      "email": "03-dovanos",
+      "viewport": "mobile-390",
+      "source": "omnisend-upload/03-dovanos.html",
+      "output": "previews/omnisend-03-dovanos-mobile-390.png",
+      "sourcePass": true,
+      "failedRequests": [],
+      "shellFound": true,
+      "shellWidth": 374,
+      "documentWidth": 390,
+      "bodyHeight": 3142,
+      "imageCount": 6,
+      "missingImages": [],
+      "overflow": [],
+      "criticalText": [
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "headline",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "34px",
+          "lineHeight": "40px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "9px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "9px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "9px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "section-title",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "28px",
+          "lineHeight": "34px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "section-title",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "28px",
+          "lineHeight": "34px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "code-text",
+          "tag": "span",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "22px",
+          "lineHeight": "26px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        }
+      ],
+      "criticalTextPass": true,
+      "pass": true
+    },
+    {
+      "email": "03-dovanos",
+      "viewport": "mobile-320",
+      "source": "omnisend-upload/03-dovanos.html",
+      "output": "previews/omnisend-03-dovanos-mobile-320.png",
+      "sourcePass": true,
+      "failedRequests": [],
+      "shellFound": true,
+      "shellWidth": 304,
+      "documentWidth": 320,
+      "bodyHeight": 3144,
+      "imageCount": 6,
+      "missingImages": [],
+      "overflow": [],
+      "criticalText": [
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "headline",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "34px",
+          "lineHeight": "40px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "9px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "9px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "9px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "section-title",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "28px",
+          "lineHeight": "34px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "section-title",
+          "tag": "p",
+          "fontFamily": "Georgia, \"Times New Roman\", serif",
+          "fontSize": "28px",
+          "lineHeight": "34px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "code-text",
+          "tag": "span",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "22px",
+          "lineHeight": "26px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "body-copy",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "15px",
+          "lineHeight": "24px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        },
+        {
+          "className": "eyebrow",
+          "tag": "p",
+          "fontFamily": "Arial, Helvetica, sans-serif",
+          "fontSize": "11px",
+          "lineHeight": "16px",
+          "marginTop": "0px",
+          "marginBottom": "0px"
+        }
+      ],
+      "criticalTextPass": true,
+      "pass": true
+    }
+  ]
+}

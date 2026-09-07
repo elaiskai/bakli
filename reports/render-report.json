@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T09:38:32.599Z",
+  "generatedAt": "2026-09-07T12:49:13.621Z",
   "desktopShellWidth": 600,
   "summary": {
     "passed": 12,
@@ -10,7 +10,7 @@
   "pages": [
     {
       "email": "01-pasveikinimas",
-      "source": "emails/01-pasveikinimas/newsletter.html",
+      "source": "emails/01-pasveikinimas/preview-local.html",
       "viewport": "desktop-600",
       "output": "previews/01-pasveikinimas-desktop-600.png",
       "title": "Sveiki atvykę į Bakli: 10 % nuolaida Jums | Bakli",
@@ -98,7 +98,7 @@
     },
     {
       "email": "01-pasveikinimas",
-      "source": "emails/01-pasveikinimas/newsletter.html",
+      "source": "emails/01-pasveikinimas/preview-local.html",
       "viewport": "mobile-390",
       "output": "previews/01-pasveikinimas-mobile-390.png",
       "title": "Sveiki atvykę į Bakli: 10 % nuolaida Jums | Bakli",
@@ -186,7 +186,7 @@
     },
     {
       "email": "01-pasveikinimas",
-      "source": "emails/01-pasveikinimas/newsletter.html",
+      "source": "emails/01-pasveikinimas/preview-local.html",
       "viewport": "mobile-375",
       "output": "previews/01-pasveikinimas-mobile-375.png",
       "title": "Sveiki atvykę į Bakli: 10 % nuolaida Jums | Bakli",
@@ -274,7 +274,7 @@
     },
     {
       "email": "01-pasveikinimas",
-      "source": "emails/01-pasveikinimas/newsletter.html",
+      "source": "emails/01-pasveikinimas/preview-local.html",
       "viewport": "mobile-320",
       "output": "previews/01-pasveikinimas-mobile-320.png",
       "title": "Sveiki atvykę į Bakli: 10 % nuolaida Jums | Bakli",
@@ -362,7 +362,7 @@
     },
     {
       "email": "02-personalizavimas",
-      "source": "emails/02-personalizavimas/newsletter.html",
+      "source": "emails/02-personalizavimas/preview-local.html",
       "viewport": "desktop-600",
       "output": "previews/02-personalizavimas-desktop-600.png",
       "title": "Sukurta Jums, iki mažiausios detalės | Bakli",
@@ -506,7 +506,7 @@
     },
     {
       "email": "02-personalizavimas",
-      "source": "emails/02-personalizavimas/newsletter.html",
+      "source": "emails/02-personalizavimas/preview-local.html",
       "viewport": "mobile-390",
       "output": "previews/02-personalizavimas-mobile-390.png",
       "title": "Sukurta Jums, iki mažiausios detalės | Bakli",
@@ -650,7 +650,7 @@
     },
     {
       "email": "02-personalizavimas",
-      "source": "emails/02-personalizavimas/newsletter.html",
+      "source": "emails/02-personalizavimas/preview-local.html",
       "viewport": "mobile-375",
       "output": "previews/02-personalizavimas-mobile-375.png",
       "title": "Sukurta Jums, iki mažiausios detalės | Bakli",
@@ -794,7 +794,7 @@
     },
     {
       "email": "02-personalizavimas",
-      "source": "emails/02-personalizavimas/newsletter.html",
+      "source": "emails/02-personalizavimas/preview-local.html",
       "viewport": "mobile-320",
       "output": "previews/02-personalizavimas-mobile-320.png",
       "title": "Sukurta Jums, iki mažiausios detalės | Bakli",
@@ -938,7 +938,7 @@
     },
     {
       "email": "03-dovanos",
-      "source": "emails/03-dovanos/newsletter.html",
+      "source": "emails/03-dovanos/preview-local.html",
       "viewport": "desktop-600",
       "output": "previews/03-dovanos-desktop-600.png",
       "title": "Dovana, kuri pasako daugiau | Bakli",
@@ -1065,13 +1065,13 @@
     },
     {
       "email": "03-dovanos",
-      "source": "emails/03-dovanos/newsletter.html",
+      "source": "emails/03-dovanos/preview-local.html",
       "viewport": "mobile-390",
       "output": "previews/03-dovanos-mobile-390.png",
       "title": "Dovana, kuri pasako daugiau | Bakli",
       "viewportWidth": 390,
       "documentWidth": 390,
-      "bodyHeight": 4257,
+      "bodyHeight": 4113,
       "shellFound": true,
       "shellWidth": 390,
       "shellWidthPass": true,
@@ -1137,9 +1137,9 @@
                 "left": 20,
                 "right": 370,
                 "top": 1076.88,
-                "bottom": 1541.88,
+                "bottom": 1505.88,
                 "width": 350,
-                "height": 465,
+                "height": 429,
                 "text": "RINKINYS JAI Sofia ir Vanessa dovanų rinkinys Peržiūrėti"
               },
               {
@@ -1147,10 +1147,10 @@
                 "className": "mobile-stack card-pad gift-cell",
                 "left": 20,
                 "right": 370,
-                "top": 1541.88,
-                "bottom": 1982.88,
+                "top": 1505.88,
+                "bottom": 1910.88,
                 "width": 350,
-                "height": 441,
+                "height": 405,
                 "text": "RINKINYS JAM Evan ir Walter dovanų rinkinys Peržiūrėti"
               }
             ]
@@ -1164,10 +1164,10 @@
                 "className": "mobile-stack card-pad gift-cell",
                 "left": 20,
                 "right": 370,
-                "top": 1982.88,
-                "bottom": 2447.88,
+                "top": 1910.88,
+                "bottom": 2339.88,
                 "width": 350,
-                "height": 465,
+                "height": 429,
                 "text": "KASDIENAI Jacob ir automobilio kvapo rinkinys Peržiūrėti"
               },
               {
@@ -1175,10 +1175,10 @@
                 "className": "mobile-stack card-pad gift-cell",
                 "left": 20,
                 "right": 370,
-                "top": 2447.88,
-                "bottom": 2912.88,
+                "top": 2339.88,
+                "bottom": 2768.88,
                 "width": 350,
-                "height": 465,
+                "height": 429,
                 "text": "DOVANA AUGINTINIUI Antkaklio rinkinys šunims „Pink“ MAXI Peržiūrėti"
               }
             ]
@@ -1192,13 +1192,13 @@
     },
     {
       "email": "03-dovanos",
-      "source": "emails/03-dovanos/newsletter.html",
+      "source": "emails/03-dovanos/preview-local.html",
       "viewport": "mobile-375",
       "output": "previews/03-dovanos-mobile-375.png",
       "title": "Dovana, kuri pasako daugiau | Bakli",
       "viewportWidth": 375,
       "documentWidth": 375,
-      "bodyHeight": 4241,
+      "bodyHeight": 4157,
       "shellFound": true,
       "shellWidth": 375,
       "shellWidthPass": true,
@@ -1264,9 +1264,9 @@
                 "left": 20,
                 "right": 355,
                 "top": 1096.89,
-                "bottom": 1546.89,
+                "bottom": 1525.89,
                 "width": 335,
-                "height": 450,
+                "height": 429,
                 "text": "RINKINYS JAI Sofia ir Vanessa dovanų rinkinys Peržiūrėti"
               },
               {
@@ -1274,10 +1274,10 @@
                 "className": "mobile-stack card-pad gift-cell",
                 "left": 20,
                 "right": 355,
-                "top": 1546.89,
-                "bottom": 1996.89,
+                "top": 1525.89,
+                "bottom": 1954.89,
                 "width": 335,
-                "height": 450,
+                "height": 429,
                 "text": "RINKINYS JAM Evan ir Walter dovanų rinkinys Peržiūrėti"
               }
             ]
@@ -1291,10 +1291,10 @@
                 "className": "mobile-stack card-pad gift-cell",
                 "left": 20,
                 "right": 355,
-                "top": 1996.89,
-                "bottom": 2446.89,
+                "top": 1954.89,
+                "bottom": 2383.89,
                 "width": 335,
-                "height": 450,
+                "height": 429,
                 "text": "KASDIENAI Jacob ir automobilio kvapo rinkinys Peržiūrėti"
               },
               {
@@ -1302,10 +1302,10 @@
                 "className": "mobile-stack card-pad gift-cell",
                 "left": 20,
                 "right": 355,
-                "top": 2446.89,
-                "bottom": 2896.89,
+                "top": 2383.89,
+                "bottom": 2812.89,
                 "width": 335,
-                "height": 450,
+                "height": 429,
                 "text": "DOVANA AUGINTINIUI Antkaklio rinkinys šunims „Pink“ MAXI Peržiūrėti"
               }
             ]
@@ -1319,7 +1319,7 @@
     },
     {
       "email": "03-dovanos",
-      "source": "emails/03-dovanos/newsletter.html",
+      "source": "emails/03-dovanos/preview-local.html",
       "viewport": "mobile-320",
       "output": "previews/03-dovanos-mobile-320.png",
       "title": "Dovana, kuri pasako daugiau | Bakli",

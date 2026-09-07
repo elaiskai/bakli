@@ -6,6 +6,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
+const OMNISEND_UPLOAD_ROOT = path.join(ROOT, 'omnisend-upload');
 
 const URLS = {
   home: 'https://www.bakli.lt/lt/',
@@ -150,6 +151,76 @@ a { color: inherit; text-decoration: none; }
 }
 `;
 
+const INLINE_CLASS_STYLES = {
+  'email-shell': 'width: 100%; max-width: 600px; margin: 0 auto; table-layout: fixed;',
+  fluid: 'display: block; width: 100%; max-width: 100%; height: auto;',
+  headline: "font-family: Georgia, 'Times New Roman', serif; font-size: 34px; line-height: 40px; font-weight: 400; letter-spacing: -0.5px; color: #141414; margin: 0;",
+  'section-title': "font-family: Georgia, 'Times New Roman', serif; font-size: 28px; line-height: 34px; font-weight: 400; letter-spacing: -0.35px; color: #141414; margin: 0;",
+  'body-copy': "font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 24px; font-weight: 400; color: #45413d; margin: 0;",
+  eyebrow: 'font-family: Arial, Helvetica, sans-serif; font-size: 11px; line-height: 16px; font-weight: 700; letter-spacing: 2px; color: #9d4d07; margin: 0;',
+  'code-text': 'font-family: Arial, Helvetica, sans-serif; font-size: 22px; line-height: 26px; font-weight: 800; letter-spacing: 3px; color: #141414;',
+};
+
+const INLINE_TAG_STYLES = {
+  table: 'border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;',
+  img: 'border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;',
+  a: 'color: #141414; text-decoration: none;',
+  p: 'margin: 0;',
+};
+
+function mergeInlineStyle(tag, declarations) {
+  const stylePattern = /\sstyle\s*=\s*(["'])(.*?)\1/is;
+  if (stylePattern.test(tag)) {
+    return tag.replace(stylePattern, (match, quote, current) => ` style=${quote}${declarations} ${current.trim()}${quote}`);
+  }
+  return tag.replace(/>$/, ` style="${declarations}">`);
+}
+
+function inlineClassStyles(markup) {
+  return markup.replace(/<[a-z][^>]*>/gi, (tag) => {
+    const classMatch = tag.match(/\bclass\s*=\s*(["'])(.*?)\1/is);
+    if (!classMatch) return tag;
+    const classes = classMatch[2].split(/\s+/).filter(Boolean);
+    const declarations = classes
+      .map((className) => INLINE_CLASS_STYLES[className])
+      .filter(Boolean)
+      .join(' ');
+    return declarations ? mergeInlineStyle(tag, declarations) : tag;
+  });
+}
+
+function inlineTagStyles(markup) {
+  return markup.replace(/<([a-z][a-z0-9]*)\b[^>]*>/gi, (tag, tagName) => {
+    const declarations = INLINE_TAG_STYLES[tagName.toLowerCase()];
+    return declarations ? mergeInlineStyle(tag, declarations) : tag;
+  });
+}
+
+function normalizeOmnisendFonts(markup) {
+  return markup
+    .replace(
+      /font-family:\s*'Playfair Display',\s*Georgia,\s*'Times New Roman',\s*serif;/gi,
+      "font-family: Georgia, 'Times New Roman', serif;",
+    )
+    .replace(
+      /font-family:\s*Inter,\s*-apple-system,\s*BlinkMacSystemFont,\s*'Segoe UI',\s*Arial,\s*sans-serif;/gi,
+      'font-family: Arial, Helvetica, sans-serif;',
+    );
+}
+
+function buildOmnisendImport(markup) {
+  let output = inlineClassStyles(markup)
+    .replace(/<!-- AI HERO SLOT:[\s\S]*?-->/gi, '')
+    .replace(/<!-- The legal footer is intentionally supplied by the native Omnisend wrapper\. -->/gi, '')
+    .replace(/<div\b/gi, '<p')
+    .replace(/<\/div>/gi, '</p>')
+    .replace(/<h[1-6]\b/gi, '<p')
+    .replace(/<\/h[1-6]>/gi, '</p>');
+  output = normalizeOmnisendFonts(inlineTagStyles(output));
+  output = output.replace(/[ \t]+$/gm, '');
+  return `${output.trim()}\n<p style="display: none; margin: 0; font-size: 0; line-height: 0;"></p>\n`;
+}
+
 function asset(name, send) {
   return ASSETS[name][send ? 'remote' : 'local'];
 }
@@ -253,7 +324,7 @@ function proofStrip(items) {
           <tr>
             ${items.map((item) => `
             <td class="proof-cell" width="33.33%" align="center" valign="top" style="padding: 20px 8px; color: #ffffff;">
-              <div class="proof-number" style="font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-size: 19px; line-height: 23px;">${item.value}</div>
+              <div class="proof-number" style="font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-size: 19px; line-height: 23px; white-space: nowrap;">${item.value}</div>
               <div class="proof-label" style="padding-top: 4px; font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 9px; line-height: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #e9d9cc;">${item.label}</div>
             </td>`).join('')}
           </tr>
@@ -264,10 +335,10 @@ function proofStrip(items) {
 
 function shellStart(preheader, send) {
   return `
-  <div class="preheader" style="display: none; visibility: hidden; opacity: 0; color: transparent; height: 0; width: 0; max-height: 0; max-width: 0; overflow: hidden; mso-hide: all;">${preheader}&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;</div>
-  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#eee8e0">
+  ${send ? '' : `<div class="preheader" style="display: none; visibility: hidden; opacity: 0; color: transparent; height: 0; width: 0; max-height: 0; max-width: 0; overflow: hidden; mso-hide: all;">${preheader}&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;</div>`}
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#eee8e0" style="width: 100%; table-layout: fixed;">
     <tr>
-      <td class="outer-pad" align="center" style="padding: 24px 12px 40px;">
+      <td class="outer-pad" align="center" style="padding: ${send ? '0' : '24px 12px 40px'};">
         <!--[if mso]><table role="presentation" width="600" cellspacing="0" cellpadding="0" border="0"><tr><td><![endif]-->
         <table role="presentation" class="email-shell" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" style="width: 100%; max-width: 600px; margin: 0 auto; border-top: 4px solid #9d4d07;">
           <tr class="brand-header">
@@ -349,7 +420,7 @@ function e1Markup(send, preheader) {
   return `${shellStart(preheader, send)}
           ${send ? '<!-- AI HERO SLOT: upload assets/generated/welcome-wallets-v1.jpg to Omnisend, then replace the fallback image URL below before launch. -->' : ''}
           <tr class="section-e1-hero">
-            <td bgcolor="#f3eee8" style="font-size: 0; line-height: 0;">${imageLink({ src: asset('welcomeHero', send), href: URLS.wallets, width: 600, height: 400, alt: 'Dvi Bakli odinės piniginės šviesioje produktų fotosesijoje', className: 'fluid hero-image' })}</td>
+            <td bgcolor="#f3eee8" style="font-size: 0; line-height: 0;">${imageLink({ src: asset('welcomeHero', send), href: URLS.wallets, width: 600, height: send ? 450 : 400, alt: 'Dvi Bakli odinės piniginės šviesioje produktų fotosesijoje', className: 'fluid hero-image' })}</td>
           </tr>
           <tr>
             <td class="hero-pad" align="center" bgcolor="#faf7f2" style="padding: 46px 44px 38px;">
@@ -385,9 +456,9 @@ function e1Markup(send, preheader) {
             </td>
           </tr>
           ${proofStrip([
-            { value: '50 000+', label: 'klientų' },
+            { value: '50&nbsp;000+', label: 'klientų' },
             { value: 'Rankomis', label: 'pagaminta' },
-            { value: 'Jums', label: 'personalizuojama' },
+            { value: 'Jums', label: 'Jūsų detalė' },
           ])}
           <tr class="section-final">
             <td class="section-pad" align="center" bgcolor="#faf7f2" style="padding: 42px 34px 46px;">
@@ -413,20 +484,49 @@ function e2Markup(send, preheader) {
     { src: asset('karter', send), href: URLS.karter, alt: 'Juodas diržas Karter su Vyčio graviūra', name: 'Vyriškas diržas Karter su Vyčiu', kicker: 'Su Vyčiu' },
     { src: asset('pinkSet', send), href: URLS.pinkSet, alt: 'Personalizuojamas antkaklio rinkinys šunims Pink MAXI', name: 'Antkaklio rinkinys šunims „Pink“ MAXI', kicker: 'Su vardu' },
   ];
+  const heroCopy = `
+                    <div class="eyebrow" style="color: #d6a37c;">JŪSŲ ISTORIJA</div>
+                    <h1 class="headline" style="padding-top: 11px; color: #ffffff;">Maža detalė. Asmeniška prasmė.</h1>
+                    <div class="body-copy" style="padding-top: 15px; color: #eadfd6;">Vardas, data ar keli prasmingi žodžiai kasdienį daiktą gali paversti tikrai Jūsų.</div>`;
+  const heroImage = imageLink({
+    src: asset('personalizationHero', send),
+    href: URLS.keychains,
+    width: 600,
+    height: send ? 450 : 400,
+    alt: 'Personalizuotas Bakli raktų pakabukas amatininko darbo aplinkoje',
+    className: 'fluid hero-image',
+  });
+  const heroRows = send
+    ? `<tr><td width="100%" valign="middle" bgcolor="#2f211b" style="width: 100%; padding: 40px 34px 38px;">${heroCopy}</td></tr>
+                <tr><td width="100%" valign="middle" bgcolor="#6f422d" style="width: 100%; font-size: 0; line-height: 0;">${heroImage}</td></tr>`
+    : `<tr>
+                  <td class="mobile-stack split-copy" width="44%" valign="middle" bgcolor="#2f211b" style="width: 44%; padding: 40px 28px 38px 34px;">${heroCopy}</td>
+                  <td class="mobile-stack" width="56%" valign="middle" bgcolor="#6f422d" style="width: 56%; font-size: 0; line-height: 0;">${heroImage}</td>
+                </tr>`;
+  const specimenMark = `
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+                      <tr><td align="center" style="padding: 20px 24px; border: 1px solid #9d4d07; font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-size: 38px; line-height: 42px; color: #2f211b;">A · K</td></tr>
+                    </table>
+                    <div style="padding-top: 13px; font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 9px; line-height: 14px; font-weight: 700; letter-spacing: 1.3px; color: #9d4d07;">VARDAS · DATA · ŽINUTĖ</div>`;
+  const specimenCopy = `
+                    <div class="eyebrow" style="color: #d6a37c;">KĄ UŽRAŠYTUMĖTE JŪS?</div>
+                    <h2 class="section-title" style="padding-top: 10px; color: #ffffff;">Maža detalė, kuri kasdien primena</h2>
+                    <div class="body-copy" style="padding-top: 13px; color: #eadfd6;">Inicialai, svarbi data ar trumpa žinutė daiktą susieja su žmogumi ir prisiminimu.</div>
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"><tr><td style="padding-top: 22px;">${button('Sukurti savo aksesuarą', URLS.personalize, '#9d4d07')}</td></tr></table>`;
+  const specimenRows = send
+    ? `<tr><td width="100%" align="center" valign="middle" bgcolor="#efe0d4" style="width: 100%; padding: 38px 24px;">${specimenMark}</td></tr>
+                <tr><td width="100%" valign="middle" bgcolor="#2f211b" style="width: 100%; padding: 43px 38px 42px;">${specimenCopy}</td></tr>`
+    : `<tr>
+                  <td class="mobile-stack" width="42%" align="center" valign="middle" bgcolor="#efe0d4" style="width: 42%; padding: 38px 24px;">${specimenMark}</td>
+                  <td class="mobile-stack split-copy" width="58%" valign="middle" bgcolor="#2f211b" style="width: 58%; padding: 43px 38px 42px;">${specimenCopy}</td>
+                </tr>`;
 
   return `${shellStart(preheader, send)}
           ${send ? '<!-- AI HERO SLOT: upload assets/generated/personalization-keychain-v1.jpg to Omnisend, then replace the fallback image URL below before launch. -->' : ''}
           <tr class="section-e2-hero">
             <td bgcolor="#ffffff">
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                <tr>
-                  <td class="mobile-stack split-copy" width="44%" valign="middle" bgcolor="#2f211b" style="width: 44%; padding: 40px 28px 38px 34px;">
-                    <div class="eyebrow" style="color: #d6a37c;">JŪSŲ ISTORIJA</div>
-                    <h1 class="headline" style="padding-top: 11px; color: #ffffff;">Maža detalė. Asmeniška prasmė.</h1>
-                    <div class="body-copy" style="padding-top: 15px; color: #eadfd6;">Vardas, data ar keli prasmingi žodžiai kasdienį daiktą gali paversti tikrai Jūsų.</div>
-                  </td>
-                  <td class="mobile-stack" width="56%" valign="middle" bgcolor="#6f422d" style="width: 56%; font-size: 0; line-height: 0;">${imageLink({ src: asset('personalizationHero', send), href: URLS.keychains, width: 600, height: 400, alt: 'Personalizuotas Bakli raktų pakabukas amatininko darbo aplinkoje', className: 'fluid hero-image' })}</td>
-                </tr>
+                ${heroRows}
               </table>
             </td>
           </tr>
@@ -442,7 +542,7 @@ function e2Markup(send, preheader) {
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
                 ${[steps.slice(0, 2), steps.slice(2, 4)].map((row) => `<tr class="step-row">${row.map((step) => `
                   <td class="step-cell" width="50%" align="center" valign="top" style="width: 50%; padding: 12px 8px 18px;">
-                    <img src="${step.src}" width="92" height="92" alt="${step.alt}" style="display: block; width: 92px; height: 92px; margin: 0 auto;">
+                    <img src="${step.src}" width="92" height="${step.number === '01' ? '84' : '92'}" alt="${step.alt}" style="display: block; width: 92px; height: ${step.number === '01' ? '84px' : '92px'}; margin: 0 auto;">
                     <div style="padding-top: 10px; font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 10px; line-height: 14px; font-weight: 700; letter-spacing: 1.5px; color: #9d4d07;">${step.number}</div>
                     <div style="padding-top: 4px; font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-size: 17px; line-height: 22px; color: #141414;">${step.title}</div>
                   </td>`).join('')}</tr>`).join('')}
@@ -485,20 +585,7 @@ function e2Markup(send, preheader) {
           <tr class="section-personalization-specimen">
             <td bgcolor="#efe0d4">
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-                <tr>
-                  <td class="mobile-stack" width="42%" align="center" valign="middle" bgcolor="#efe0d4" style="width: 42%; padding: 38px 24px;">
-                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
-                      <tr><td align="center" style="padding: 20px 24px; border: 1px solid #9d4d07; font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-size: 38px; line-height: 42px; color: #2f211b;">A · K</td></tr>
-                    </table>
-                    <div style="padding-top: 13px; font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 9px; line-height: 14px; font-weight: 700; letter-spacing: 1.3px; color: #9d4d07;">VARDAS · DATA · ŽINUTĖ</div>
-                  </td>
-                  <td class="mobile-stack split-copy" width="58%" valign="middle" bgcolor="#2f211b" style="width: 58%; padding: 43px 38px 42px;">
-                    <div class="eyebrow" style="color: #d6a37c;">KĄ UŽRAŠYTUMĖTE JŪS?</div>
-                    <h2 class="section-title" style="padding-top: 10px; color: #ffffff;">Maža detalė, kuri kasdien primena</h2>
-                    <div class="body-copy" style="padding-top: 13px; color: #eadfd6;">Inicialai, svarbi data ar trumpa žinutė daiktą susieja su žmogumi ir prisiminimu.</div>
-                    <div style="padding-top: 22px;">${button('Sukurti savo aksesuarą', URLS.personalize, '#9d4d07')}</div>
-                  </td>
-                </tr>
+                ${specimenRows}
               </table>
             </td>
           </tr>
@@ -521,7 +608,7 @@ function e3Markup(send, preheader) {
   return `${shellStart(preheader, send)}
           ${send ? '<!-- AI HERO SLOT: upload assets/generated/gifting-set-v1.jpg to Omnisend, then replace the fallback image URL below before launch. -->' : ''}
           <tr class="section-e3-hero">
-            <td bgcolor="#4a3028" style="font-size: 0; line-height: 0;">${imageLink({ src: asset('giftingHero', send), href: URLS.giftSets, width: 600, height: 400, alt: 'Bakli piniginė ir raktų pakabukas profesionalioje dovanų fotosesijoje', className: 'fluid hero-image' })}</td>
+            <td bgcolor="#4a3028" style="font-size: 0; line-height: 0;">${imageLink({ src: asset('giftingHero', send), href: URLS.giftSets, width: 600, height: send ? 600 : 400, alt: 'Bakli piniginė ir raktų pakabukas profesionalioje dovanų fotosesijoje', className: 'fluid hero-image' })}</td>
           </tr>
           <tr>
             <td class="hero-pad" align="center" bgcolor="#2f211b" style="padding: 44px 42px 40px; color: #ffffff;">
@@ -560,8 +647,8 @@ function e3Markup(send, preheader) {
             <td bgcolor="#ffffff" style="padding: 0 20px 34px;">
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
                 ${[gifts.slice(0, 2), gifts.slice(2, 4)].map((row) => `<tr class="gift-row">
-                  <td class="mobile-stack card-pad gift-cell" width="50%" valign="top" style="width: 50%; padding: 0 8px 16px 0;">${productCard({ ...row[0], width: 500, height: 500 })}</td>
-                  <td class="mobile-stack card-pad gift-cell" width="50%" valign="top" style="width: 50%; padding: 0 0 16px 8px;">${productCard({ ...row[1], width: 500, height: 500 })}</td>
+                  <td class="mobile-stack card-pad gift-cell" width="50%" valign="top" style="width: 50%; padding: 0 8px 16px 0;">${productCard({ ...row[0], width: 272, height: 272 })}</td>
+                  <td class="mobile-stack card-pad gift-cell" width="50%" valign="top" style="width: 50%; padding: 0 0 16px 8px;">${productCard({ ...row[1], width: 272, height: 272 })}</td>
                 </tr>`).join('')}
               </table>
               <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center"><tr><td style="padding-top: 4px;">${button('Peržiūrėti rinkinius', URLS.giftSets, '#9d4d07')}</td></tr></table>
@@ -596,7 +683,7 @@ function e3Markup(send, preheader) {
           ${proofStrip([
             { value: 'Nuo 60 €', label: 'nemokamas pristatymas' },
             { value: '6,95 €', label: 'dovanų pakavimas' },
-            { value: '50 000+', label: 'klientų' },
+            { value: '50&nbsp;000+', label: 'klientų' },
           ])}
           ${offerBlock({
             eyebrow: 'KODAS JŪSŲ DOVANAI',
@@ -719,15 +806,22 @@ Bakli: ${URLS.home}`;
 }
 
 function build() {
+  fs.mkdirSync(OMNISEND_UPLOAD_ROOT, { recursive: true });
   for (const email of EMAILS) {
     const dir = path.join(ROOT, 'emails', email.dir);
     fs.mkdirSync(dir, { recursive: true });
-    fs.writeFileSync(path.join(dir, 'newsletter.html'), fullDocument(email), 'utf8');
+    const previewHtml = fullDocument(email).replace(/[ \t]+$/gm, '');
+    const omnisendHtml = buildOmnisendImport(email.markup(true, email.preheader));
+    fs.writeFileSync(path.join(dir, 'preview-local.html'), previewHtml, 'utf8');
+    fs.writeFileSync(path.join(dir, 'newsletter.html'), omnisendHtml, 'utf8');
     fs.writeFileSync(path.join(dir, 'newsletter.txt'), plainDocument(email), 'utf8');
-    fs.writeFileSync(path.join(dir, 'omnisend-body.html'), `${email.markup(true, email.preheader)}\n`, 'utf8');
-    fs.writeFileSync(path.join(dir, 'omnisend-styles.css'), `${COMMON_STYLES.trim()}\n`, 'utf8');
+    fs.writeFileSync(path.join(dir, 'omnisend-body.html'), omnisendHtml, 'utf8');
+    fs.writeFileSync(path.join(dir, 'OMNISEND-IKELTI.html'), omnisendHtml, 'utf8');
+    fs.writeFileSync(path.join(OMNISEND_UPLOAD_ROOT, `${email.dir}.html`), omnisendHtml, 'utf8');
+    const legacyStyles = path.join(dir, 'omnisend-styles.css');
+    if (fs.existsSync(legacyStyles)) fs.unlinkSync(legacyStyles);
   }
-  process.stdout.write(`Built ${EMAILS.length} Bakli welcome emails.\n`);
+  process.stdout.write(`Built ${EMAILS.length} Bakli welcome emails and single-file Omnisend imports.\n`);
 }
 
 build();

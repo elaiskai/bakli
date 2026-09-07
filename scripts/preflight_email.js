@@ -48,10 +48,9 @@ const EMAILS = [
 ];
 
 const FILE_NAMES = {
-  newsletterHtml: 'newsletter.html',
+  newsletterHtml: 'preview-local.html',
   plainText: 'newsletter.txt',
-  omnisendBody: 'omnisend-body.html',
-  omnisendStyles: 'omnisend-styles.css',
+  omnisendBody: 'OMNISEND-IKELTI.html',
 };
 
 const APPROVED_SOCIAL_URLS = new Set([
@@ -241,8 +240,7 @@ function main() {
     const html = files.newsletterHtml.text;
     const plain = files.plainText.text;
     const omnisendBody = files.omnisendBody.text;
-    const omnisendStyles = files.omnisendStyles.text;
-    const combined = [html, plain, omnisendBody, omnisendStyles].join('\n');
+    const combined = [html, plain, omnisendBody].join('\n');
     const visibleCombined = normalizeVisibleCopy([html, plain, omnisendBody].join('\n'));
     const checks = [];
     const check = (name, pass, detail) => checks.push({ name, pass: Boolean(pass), detail });
@@ -251,6 +249,27 @@ function main() {
       check(`${FILE_NAMES[key]} exists`, file.exists, path.relative(ROOT, filePaths[key]));
       check(`${FILE_NAMES[key]} is valid UTF-8`, file.validUtf8, `${file.bytes} byte(s).`);
     }
+
+    const importAliasPaths = [
+      path.join(emailDir, 'newsletter.html'),
+      path.join(emailDir, 'omnisend-body.html'),
+      path.join(ROOT, 'omnisend-upload', `${config.id}.html`),
+    ];
+    const importAliases = importAliasPaths.map(readUtf8);
+    importAliases.forEach((file, index) => {
+      check(`Import alias exists: ${path.basename(importAliasPaths[index])}`, file.exists, path.relative(ROOT, importAliasPaths[index]));
+      check(`Import alias is valid UTF-8: ${path.basename(importAliasPaths[index])}`, file.validUtf8, `${file.bytes} byte(s).`);
+    });
+    check(
+      'All Omnisend import copies are byte-identical',
+      importAliases.every((file) => file.text === omnisendBody),
+      importAliasPaths.map((filePath) => path.relative(ROOT, filePath)).join(', '),
+    );
+    check(
+      'Legacy external Omnisend CSS removed',
+      !fs.existsSync(path.join(emailDir, 'omnisend-styles.css')),
+      'The import must not depend on a separate CSS file.',
+    );
 
     check('Lithuanian language declaration', /<html\b[^>]*\blang=["']lt(?:-LT)?["']/i.test(html), 'Expected lang="lt" on the local newsletter document.');
     check('UTF-8 meta declaration', /<meta\b[^>]*charset=["']?utf-8/i.test(html), 'Expected UTF-8 charset meta.');
@@ -323,9 +342,25 @@ function main() {
       'Expected brand links and info@bakli.lt in newsletter.txt.',
     );
 
-    const responsiveStyles = /@media\b[\s\S]*?\(\s*max-width\s*:/i.test(omnisendStyles);
-    check('Omnisend styles include a responsive media rule', responsiveStyles, 'Expected an @media (max-width: ...) rule.');
-    check('Omnisend styles define mobile stacking', /\.mobile-stack\b[\s\S]*?display\s*:\s*block/i.test(omnisendStyles), 'Expected .mobile-stack display:block in the responsive CSS.');
+    const criticalInlineClasses = ['headline', 'section-title', 'body-copy', 'eyebrow', 'code-text'];
+    const missingCriticalInlineStyles = criticalInlineClasses.flatMap((className) => (
+      [...omnisendBody.matchAll(new RegExp(`<[^>]+class=["'][^"']*\\b${className}\\b[^"']*["'][^>]*>`, 'gi'))]
+        .map((match) => match[0])
+        .filter((tag) => {
+          const style = tagAttributes(tag).style || '';
+          return !/font-family\s*:/i.test(style)
+            || !/font-size\s*:/i.test(style)
+            || !/line-height\s*:/i.test(style);
+        })
+        .map(() => className)
+    ));
+    check('Critical Omnisend typography is inline', missingCriticalInlineStyles.length === 0, missingCriticalInlineStyles.join(', ') || 'All critical text styles are inline.');
+    check(
+      'Omnisend import uses web-safe font stacks only',
+      !/font-family\s*:[^;]*(?:Playfair Display|\bInter\b)/i.test(omnisendBody),
+      'Expected Arial/Helvetica and Georgia/Times font stacks without external font dependencies.',
+    );
+    check('Omnisend import avoids sanitizer-risk div tags', !/<div\b/i.test(omnisendBody), 'Expected table, p and span markup without div tags.');
 
     const newsletterLinks = hrefs(html);
     const omnisendLinks = hrefs(omnisendBody);
@@ -383,8 +418,8 @@ function main() {
     }
 
     check('Newsletter HTML stays below Gmail clipping threshold', files.newsletterHtml.bytes < GMAIL_CLIP_BYTES, `${files.newsletterHtml.bytes}/${GMAIL_CLIP_BYTES} UTF-8 byte(s).`);
-    const omnisendDeliveredBytes = files.omnisendBody.bytes + files.omnisendStyles.bytes;
-    check('Omnisend body and styles stay below Gmail clipping threshold', omnisendDeliveredBytes < GMAIL_CLIP_BYTES, `${omnisendDeliveredBytes}/${GMAIL_CLIP_BYTES} UTF-8 byte(s).`);
+    const omnisendDeliveredBytes = files.omnisendBody.bytes;
+    check('Single-file Omnisend import stays below Gmail clipping threshold', omnisendDeliveredBytes < GMAIL_CLIP_BYTES, `${omnisendDeliveredBytes}/${GMAIL_CLIP_BYTES} UTF-8 byte(s).`);
 
     const missingPlainUrls = config.requiredUrls.filter((url) => !plain.includes(url));
     check('Plain text includes all relevant destinations', missingPlainUrls.length === 0, missingPlainUrls.join(', ') || `${config.requiredUrls.length} required URL(s).`);

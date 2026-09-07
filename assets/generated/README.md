@@ -10,4 +10,4 @@ Vaizdai sukurti integruotu `imagegen` režimu, redaguojant konkrečias oficialia
 
 Visų trijų generavimo užklausų bendri apribojimai: išlaikyti produkto formą, spalvą, siūles, metalines detales ir Bakli ženklinimą; nepridėti teksto, nuolaidos kodo, žmonių, papildomų produktų ar vandens ženklo; kurti fotorealistišką 3:2 horizontalų kadrą.
 
-Prieš paleidimą klientas turi patvirtinti kiekvieną AI asistuotą vaizdą. Patvirtintus JPG reikia įkelti į Omnisend vaizdų biblioteką ir `omnisend-body.html` pakeisti komentaruose pažymėtus oficialių vaizdų fallback URL.
+Prieš paleidimą klientas turi patvirtinti kiekvieną AI asistuotą vaizdą. Patvirtintą JPG reikia įkelti į Omnisend Image Library, tada atitinkamame `omnisend-upload/*.html` faile hero paveikslėlio `<img src="https://www.bakli.lt/resized/...">` pakeisti gautu Omnisend HTTPS adresu. Tą patį galima atlikti laiško aplanko `OMNISEND-IKELTI.html` kopijoje; privataus GitHub `raw` URL naudoti negalima.

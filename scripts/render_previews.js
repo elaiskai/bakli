@@ -15,9 +15,9 @@ const DESKTOP_SHELL_WIDTH = 600;
 const PIXEL_TOLERANCE = 1;
 
 const EMAILS = [
-  { id: '01-pasveikinimas', source: path.join(EMAIL_ROOT, '01-pasveikinimas', 'newsletter.html') },
-  { id: '02-personalizavimas', source: path.join(EMAIL_ROOT, '02-personalizavimas', 'newsletter.html') },
-  { id: '03-dovanos', source: path.join(EMAIL_ROOT, '03-dovanos', 'newsletter.html') },
+  { id: '01-pasveikinimas', source: path.join(EMAIL_ROOT, '01-pasveikinimas', 'preview-local.html') },
+  { id: '02-personalizavimas', source: path.join(EMAIL_ROOT, '02-personalizavimas', 'preview-local.html') },
+  { id: '03-dovanos', source: path.join(EMAIL_ROOT, '03-dovanos', 'preview-local.html') },
 ];
 
 const VIEWPORTS = [

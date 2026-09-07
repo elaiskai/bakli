@@ -115,18 +115,15 @@ Teiginys „100 % natūrali oda“ netaikomas visam katalogui, nes dalis auginti
 
 Produktų kortelės, kategorijos, žingsniai ir logotipas yra iš viešų `www.bakli.lt/resized/` URL. Kiekvienam welcome laiškui papildomai sukurtas skirtingas AI asistuotas profesionalios produktų fotosesijos hero vaizdas, paremtas konkrečia Bakli produkto nuotrauka. Juose neįterptas tekstas ar nuolaidos kodas. Pagal kliento klausimyną kiekvieną AI vizualą klientas turi patvirtinti prieš paleidimą.
 
-Lokaliuose `newsletter.html` naudojami optimizuoti JPG failai iš `assets/generated/`. Kadangi vietinis failas neveikia gavėjo pašto dėžutėje, `omnisend-body.html` laikinai palikti oficialūs Bakli fallback vaizdai ir HTML komentaras su tiksliu AI failu, kurį reikia įkelti į Omnisend biblioteką.
+Lokaliuose `preview-local.html` naudojami optimizuoti JPG failai iš `assets/generated/`. Kadangi privatus GitHub repozitorijus nėra viešas paveikslėlių CDN, vieno failo Omnisend importuose naudojami veikiantys oficialūs Bakli vaizdai. Norint paleisti AI hero, jo JPG reikia įkelti iš kompiuterio į Omnisend Image Library ir pakeisti `src` į gautą Omnisend HTTPS URL.
 
 Sezoniniai 2026 m. vasaros homepage baneriai sąmoningai nenaudojami, nes jie nėra evergreen. Laiško header naudoja tikslų oficialų Bakli logotipo failą, jo geometrija ir grafika nekeistos. Po logo pateikiama naudinga navigacija į pinigines, personalizavimą ir dovanas.
 
 ## Omnisend diegimas
 
-Kiekvieno laiško aplanke yra:
+Kataloge `omnisend-upload/` yra trys galutiniai vieno failo importai. Kiekvieno laiško aplanke tas pats failas pateiktas kaip `OMNISEND-IKELTI.html`, `newsletter.html` ir `omnisend-body.html`, o `preview-local.html` skirtas tik vietinei AI dizaino peržiūrai. Importo HTML yra body fragmentas be `DOCTYPE`, `<head>`, `<body>`, `<style>`, išorinio CSS ir lokalių vaizdų. Kritinė tipografija bei išdėstymas įrašyti inline, todėl atskiro Styles failo nereikia.
 
-- `newsletter.html` - lokali pilno dokumento peržiūra su vietiniais vaizdais;
-- `newsletter.txt` - plain-text turinys, subject variantai ir preheader;
-- `omnisend-body.html` - Omnisend body fragmentas su absoliučiais HTTPS vaizdų URL;
-- `omnisend-styles.css` - CSS, kurį reikia įklijuoti į Omnisend Styles lauką.
+Preheaderį reikia įrašyti native Omnisend laiško nustatymuose pagal `newsletter.txt`; jis sąmoningai nedubliuojamas HTML fragmente.
 
 Native Omnisend wrapper privalo pridėti:
 
