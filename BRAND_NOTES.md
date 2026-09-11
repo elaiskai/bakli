@@ -147,3 +147,9 @@ Galutinį testą daryti su realiu testiniu kontaktu, nes editoriaus testas gali 
 
 Klausimyno šaltinis: kliento pateiktas Bakli klausimynas.  
 Automatikos plano šaltinis: kliento pateiktas 2026-09 automatizacijų briefas.
+
+## 2026-09-11 kliento pataisos
+
+Welcome CTA ir navigacijos „Sukurkite“ nukreipimai pakeisti į https://www.bakli.lt/lt/populiariausios-prekes. Dovanos hero pakeistas oficialia Marco ir Scott rinkinio 7-ąja nuotrauka, kur matyti išgraviruota žinutė. Vietinių peržiūrų hero suvienodinti su importų tikromis produktų nuotraukomis; AI fotosesijų hero nebenaudojami. Sugeneruotos visos HTML importo kopijos ir tekstinės versijos. Ankstesni aukščiau aprašyti AI peržiūrų naudojimo nurodymai šiai versijai nebetaikomi. Kiti 5 flow yra `elaiskai/email-client-assets/docs/bakli/automations`.
+
+Naujausia welcome patikra: 169/169 preflight; 3 importai naršyklėje po 600 ir 390 px, visi vaizdai užsikrauna, horizontalaus slinkimo nėra.
