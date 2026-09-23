@@ -1,0 +1,9 @@
+Use case: compositing / ads-marketing.
+Create ONE polished Lithuanian email hero graphic, portrait 4:5, at least 1200px wide. The supplied image is an OFFICIAL BAKLI PRODUCT PHOTOGRAPH and is the compositing source, not loose inspiration. Preserve the black open Moment leather keychain EXACTLY: its outline, key ring, two snaps, rectangular silver engraving plate, leather loop, original engraved English message and kraft gift box with printed Bakli logo. Do not invent products, change the engraving or simplify the hardware. Use the exact existing product photographic appearance as far as possible. No AI-looking props or fake hands.
+Art direction: refined European leather-goods editorial, warm kraft and ivory, restrained deep brown #3C3228 and cream #F1EBDD. Composition unified: typography in generous upper third, the official photograph's keychain and gift box prominent in lower two thirds, natural authentic texture and warm light. Let surrounding cream negative space extend the real photo, no obvious rectangular photo pasted on a card. Don't crop the keychain. No decorative ribbons, autumn leaves, discount badges or new logos.
+Text must be accurately rendered with Lithuanian diacritics. Exact text only:
+small uppercase Arial-like: "DOVANA BE PROGOS"
+large elegant Georgia-like serif headline, 2 lines: "Tiesiog pagalvojau" / "apie Tave."
+one short line Arial-like: "Mažas gestas. Jūsų žodžiai."
+Integrated deep-brown CTA button near bottom, large white Arial-like bold text: "Atrasti dovanas"
+Typography large enough when the whole graphic is displayed at 320px wide. Maintain safe margins. Don't cover the product with text. Flat solid #F1EBDD band at top and bottom 30px, feather scene into those bands; layout should flow into email cream surroundings. Premium restraint, crisp readable type, real product photo character. One final complete hero, no mockup device, no added external border.

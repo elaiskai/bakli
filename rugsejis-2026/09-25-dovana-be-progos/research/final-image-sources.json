@@ -1,0 +1,50 @@
+[
+  {
+    "file": "bakli-logo.jpg",
+    "source": "https://www.bakli.lt/resized/4065f0e86f548349d849495de0204b08-500x500-max.jpg",
+    "sha256": "6b2457c48841b4d3ef4a239c5e40824aae0f3a8a488e8f6613c16db59d88da94",
+    "bytes": 17300
+  },
+  {
+    "file": "hero-dovana-v1.png",
+    "source": "AI composition of moment-5.jpg; see hero-prompt.txt",
+    "sha256": "2b192616c1afefd0a01a567108ac100b8f0207690a90e533b1df5dfea7a11d35",
+    "bytes": 2078175
+  },
+  {
+    "file": "hooks-7.jpg",
+    "source": "https://www.bakli.lt/resized/23aa792d9cd7a2eae32292bf77e4f5ea-1000x1000-crop/juodas-rakt-pakabukas-hooks-7.jpg",
+    "sha256": "837c7b31641e331c2e487d01ecb040f4711d47e6fc125d7d41be292f4fce42c0",
+    "bytes": 483093
+  },
+  {
+    "file": "moment-5.jpg",
+    "source": "https://www.bakli.lt/resized/e0f6186a99979d5de6553faff72ae70e-1000x1000-crop/juodas-rakt-pakabukas-moment-su-gravi-ra-5.jpg",
+    "sha256": "ce5f947b416b3a99114415241640eb6f17d47f36323cbf1af3dcdde563ad5ee2",
+    "bytes": 733653
+  },
+  {
+    "file": "tanner.jpg",
+    "source": "https://www.bakli.lt/resized/bad665367871dd215fa3198acb83b184-1000x1000-crop/odinis-korteli-d-klas-tanner-su-vardu-1.jpg",
+    "sha256": "d89b40ee7b85d2ed21f8c3fd1f93bb680bfb0e8e0ff00d35608abd437335890d",
+    "bytes": 383144
+  },
+  {
+    "file": "karter.jpg",
+    "source": "https://www.bakli.lt/resized/a951968027c82fb512d8e928cf225885-1000x1000-crop/vyri-kas-dir-as-karter-su-vy-iu-40mm-1.jpg",
+    "sha256": "8f39ccf49e8c4976b4320f7b19c96803f5f1f96f102413b0e5644a633d30fbb8",
+    "bytes": 200879
+  },
+  {
+    "file": "tanner-moment.jpg",
+    "source": "https://www.bakli.lt/resized/4a0024ef7db29d3114673c970ce91603-1000x1000-max/korteli-d-klo-ir-moment-pakabuko-rinkinys-1.jpg",
+    "sha256": "185ecc2c441e12b311d213d0d7e51dcde6717964631de1ffc57f93eba9947aa9",
+    "bytes": 360048
+  },
+  {
+    "file": "connor-moment.jpg",
+    "source": "https://www.bakli.lt/resized/9ac8f150fdb6f090231da8e8709475b0-1000x1000-max/connor-pinigin-s-ir-moment-pakabuko-rinkinys-1.jpg",
+    "sha256": "262af11ecb79f730c8eb491c23fa3fa74efebbb5d7670ccc4abf719155abbb6e",
+    "bytes": 368178
+  }
+]

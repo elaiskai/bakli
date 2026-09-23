@@ -1,0 +1,66 @@
+{
+  "verified": "2026-09-23",
+  "campaign_date": "2026-09-25",
+  "products": [
+    {
+      "key": "hooks",
+      "name": "Hooks",
+      "kind": "RAKTŲ PAKABUKAS",
+      "desc": "Trumpai žinutei, kuri lydės kaskart paėmus raktus.",
+      "price": "21,95",
+      "file": "hooks-7.jpg",
+      "obs": 1,
+      "url": "https://www.bakli.lt/lt/graviruojami-raktu-pakabukai/juodas-raktu-pakabukas-hooks"
+    },
+    {
+      "key": "moment",
+      "name": "Moment",
+      "kind": "PAKABUKAS SU GRAVIŪRA",
+      "desc": "Po odiniu atvartu – žodžiai, skirti tik vienam žmogui.",
+      "price": "21,95",
+      "file": "moment-5.jpg",
+      "obs": 2,
+      "url": "https://www.bakli.lt/lt/raktu-pakabukai/moment-pakabukas-su-graviravimu/juodas-raktu-pakabukas-moment-su-graviura"
+    },
+    {
+      "key": "tanner",
+      "name": "Tanner su vardu",
+      "kind": "KORTELIŲ DĖKLAS",
+      "desc": "Kompaktiškas odinis dėklas su pasirinktu vardu ar inicialais.",
+      "price": "29,95",
+      "file": "tanner.jpg",
+      "obs": 4,
+      "url": "https://www.bakli.lt/lt/pinigines-deklai/odinis-korteliu-deklas-tanner-su-vardu"
+    },
+    {
+      "key": "karter",
+      "name": "Karter su Vyčiu",
+      "kind": "ODINIS DIRŽAS · 40 MM",
+      "desc": "Kasdienis aksesuaras su išgraviruotu Vyčiu ant sagties.",
+      "price": "59,00",
+      "file": "karter.jpg",
+      "obs": 5,
+      "url": "https://www.bakli.lt/lt/dirzai/vyriskas-dirzas-karter-su-vyciu-40mm"
+    },
+    {
+      "key": "tanner-moment",
+      "name": "Kortelių dėklas + Moment",
+      "kind": "DOVANŲ RINKINYS",
+      "desc": "Svarbiausios kortelės ir brangi nuotrauka – visada šalia.",
+      "price": "45,90",
+      "file": "tanner-moment.jpg",
+      "obs": 0,
+      "url": "https://www.bakli.lt/lt/dovanu-idejos/korteliu-deklo-ir-moment-pakabuko-rinkinys"
+    },
+    {
+      "key": "connor-moment",
+      "name": "Connor + Moment",
+      "kind": "DOVANŲ RINKINYS",
+      "desc": "Odinė piniginė ir pakabukas su Jūsų pasirinkta nuotrauka.",
+      "price": "55,90",
+      "file": "connor-moment.jpg",
+      "obs": 6,
+      "url": "https://www.bakli.lt/lt/dovanu-idejos/connor-pinigines-ir-moment-pakabuko-rinkinys"
+    }
+  ]
+}
