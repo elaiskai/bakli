@@ -24,4 +24,6 @@ Hero sukurtas built-in imagegen įrankiu iš oficialios `moment-5.jpg` fotografi
 
 Spalvos: #3C3228, #F1EBDD, #A58059. Šriftai: Arial ir Georgia. 640 px konteineris, inline stiliai, lentelės, paveikslėliai su aiškiais matmenimis. Hero nuo gretimų blokų sąmoningai skiria 2 px ruda linija; baltos ir kreminės sekcijos naudoja vienodus tarpus, tamsus uždarymas pereina į kreminę sąlygų sekciją.
 
-Kainos ir galimybės patikrintos 2026-09-23 naršyklėje. `research/products.json`, `research/products-observed.json` ir `research/image-sources.json` saugo kilmės duomenis. Maketas patikrintas 640, 390 ir 320 px pločiuose – nėra horizontalaus slinkimo, visi 9 vaizdai užsikrauna. Testinis laiškas el. pašto klientams nesiųstas.
+Kainos ir galimybės patikrintos 2026-09-23 naršyklėje. `research/products.json`, `research/products-observed.json` ir `research/final-image-sources.json` saugo kilmės duomenis. Maketas patikrintas 640, 390 ir 320 px pločiuose – nėra horizontalaus slinkimo, visi 9 vaizdai užsikrauna. Testinis laiškas el. pašto klientams nesiųstas.
+
+Visi 8 unikalūs GitHub vaizdų adresai po įkėlimo patikrinti be prisijungimo: HTTP 200 ir image/* MIME. Rezultatai – `research/public-image-check.json`.
