@@ -1,0 +1,159 @@
+{
+  "verified": "2026-09-22",
+  "products": [
+    {
+      "key": "brandon",
+      "name": "Brandon",
+      "variant": "ODINIS DIRŽAS · 96 CM",
+      "desc": "40 mm pločio. Tinka 87–105 cm liemens apimčiai.",
+      "price": "47.20",
+      "was": "59.00",
+      "group": "belts",
+      "file": "brandon.jpg",
+      "url": "https://www.bakli.lt/lt/specialus-pasiulymai/vyriskas-dirzas-brandon-96cm"
+    },
+    {
+      "key": "harrison",
+      "name": "Harrison",
+      "variant": "ODINIS DIRŽAS · 99 CM",
+      "desc": "40 mm pločio. Tinka 90–108 cm liemens apimčiai.",
+      "price": "63.20",
+      "was": "79.00",
+      "group": "belts",
+      "file": "harrison.jpg",
+      "url": "https://www.bakli.lt/lt/specialus-pasiulymai/vyriskas-dirzas-harrison-99cm"
+    },
+    {
+      "key": "elliot-2",
+      "name": "Elliot-2",
+      "variant": "ODINĖ PINIGINĖ",
+      "desc": "Kompaktiška, su kortelių išstūmimo mechanizmu.",
+      "price": "39.00",
+      "was": "64.95",
+      "group": "wallets",
+      "file": "elliot-2.jpg",
+      "url": "https://www.bakli.lt/lt/specialus-pasiulymai/odine-pinigine-elliot-2"
+    },
+    {
+      "key": "aron",
+      "name": "Aron Crazy Horse",
+      "variant": "ODINĖ PINIGINĖ",
+      "desc": "Klasikinis modelis su 6 vietomis kortelėms.",
+      "price": "39.00",
+      "was": "59.00",
+      "group": "wallets",
+      "file": "aron.jpg",
+      "url": "https://www.bakli.lt/lt/specialus-pasiulymai/odine-pinigine-aron-2-crazy-horse"
+    },
+    {
+      "key": "evan-2",
+      "name": "Evan 2",
+      "variant": "ODINĖ PINIGINĖ",
+      "desc": "Banknotams, monetoms ir 4 kortelėms.",
+      "price": "39.00",
+      "was": "65.00",
+      "group": "wallets",
+      "file": "evan-2.jpg",
+      "url": "https://www.bakli.lt/lt/specialus-pasiulymai/odine-pinigine-evan-2"
+    },
+    {
+      "key": "marco",
+      "name": "Marco Crazy Horse",
+      "variant": "TAMSIAI RUDA · GELTONI SIŪLAI",
+      "desc": "Išskirtinis apsiuvimas ir RFID kortelių dėklas.",
+      "price": "41.30",
+      "was": "59.00",
+      "group": "wallets",
+      "file": "marco.jpg",
+      "url": "https://www.bakli.lt/lt/specialus-pasiulymai/odine-tamsiai-ruda-pinigine-marco-crazy-horse-su-geltonais-siulais"
+    },
+    {
+      "key": "mini-set",
+      "name": "„Apvalus“ MINI",
+      "variant": "ANTKAKLIO IR PAKABUKO RINKINYS",
+      "desc": "Odinis antkaklis ir graviruojamas pakabukas.",
+      "price": "26.15",
+      "was": "31.90",
+      "group": "pets",
+      "file": "mini-3.jpg",
+      "url": "https://www.bakli.lt/lt/aksesuarai-augintiniams/antkaklio-rinkinys-sunims-apvalus-mini-product-295"
+    },
+    {
+      "key": "collar",
+      "name": "Classy Daring",
+      "variant": "RUDAS ANTKAKLIS · M",
+      "desc": "Biotanas. 36–46 cm kaklo apimčiai.",
+      "price": "13.17",
+      "was": "21.95",
+      "group": "pets",
+      "file": "collar.jpg",
+      "url": "https://www.bakli.lt/lt/specialus-pasiulymai/rudas-antkaklis-augintiniui-classy-daring-m-a27"
+    },
+    {
+      "key": "hexa",
+      "name": "Classy Hexa",
+      "variant": "ŽALIAS PAVADĖLIS · 3 M",
+      "desc": "Raštuotas biotanas ir auksinės spalvos detalės.",
+      "price": "21.95",
+      "was": "32.95",
+      "group": "pets",
+      "file": "hexa.jpg",
+      "url": "https://www.bakli.lt/lt/specialus-pasiulymai/zalias-pavadelis-augintiniui-classy-hexa-3-m-a17"
+    },
+    {
+      "key": "watermelon",
+      "name": "Classy Watermelon",
+      "variant": "PAVADĖLIS · 1,5 M",
+      "desc": "Lengvas raštuotas pavadėlis kasdienai.",
+      "price": "14.95",
+      "was": "19.95",
+      "group": "pets",
+      "file": "watermelon.jpg",
+      "url": "https://www.bakli.lt/lt/specialus-pasiulymai/pavadelis-augintiniui-classy-watermelon-1-5-m-a25"
+    },
+    {
+      "key": "balm",
+      "name": "Odos priežiūros balzamas",
+      "variant": "250 ML",
+      "desc": "Lygios odos piniginėms, diržams ir kitiems gaminiams.",
+      "price": "9.99",
+      "was": "16.99",
+      "group": "care",
+      "file": "balm.jpg",
+      "url": "https://www.bakli.lt/lt/bakli-balzamas-odos-gaminiu-prieziurai-250ml-product-2312"
+    },
+    {
+      "key": "paw-wax",
+      "name": "Pėdučių vaškas",
+      "variant": "50 ML",
+      "desc": "Šunų ir kačių pėdučių priežiūrai.",
+      "price": "9.95",
+      "was": "12.95",
+      "group": "care",
+      "file": "paw-wax.jpg",
+      "url": "https://www.bakli.lt/lt/aksesuarai-augintiniams/bakli-apsauginis-peduciu-vaskas-sunims-ir-katems-50ml"
+    }
+  ],
+  "images": {
+    "bakli-logo.jpg": "https://www.bakli.lt/resized/4065f0e86f548349d849495de0204b08-500x500-max.jpg",
+    "evan-lifestyle.jpg": "https://www.bakli.lt/resized/1d1673d024973fcb6351291209dc5ecf-1000x1000-crop/odin-pinigin-evan-2-2.jpg",
+    "evan-2.jpg": "https://www.bakli.lt/resized/30b7412f9a447c55803580c5bfea7cee-1000x1000-crop/odin-pinigin-evan-2-1.jpg",
+    "elliot-2.jpg": "https://www.bakli.lt/resized/dae694e34093ef9f2a66c23ef8c98c33-1000x1000-crop/odin-pinigin-elliot-2-1.jpg",
+    "aron.jpg": "https://www.bakli.lt/resized/9bc54a83d6411ccb394e49e5f6a5d8d5-1000x1000-crop/odin-juoda-pinigin-aron-crazy-horse-1.jpg",
+    "marco.jpg": "https://www.bakli.lt/resized/7e56728d4c0cdd1a5d709d125d966b2c-1000x1000-crop/odin-tamsiai-ruda-pinigin-marco-crazy-horse-su-geltonais-si-lais-1.jpg",
+    "brandon.jpg": "https://www.bakli.lt/resized/e956a3ca65128746b9e241876b5d00c7-1000x1000-crop/vyri-kas-dir-as-brandon-96cm-1.jpg",
+    "harrison.jpg": "https://www.bakli.lt/resized/bdf4b8922aec52909dfa567a87f12a4f-1000x1000-crop/vyri-kas-dir-as-harrison-99cm-1.jpg",
+    "blue-leash.jpg": "https://www.bakli.lt/resized/3544a75244979a3bc5a62480cd92a1bd-1000x1000-crop/m-lynas-pavad-lis-augintiniui-classy-daring-3-m-a21-1.jpg",
+    "hexa.jpg": "https://www.bakli.lt/resized/d9df8ef10e29a8c7a89959e69fd3eab1-1000x1000-crop/-alias-pavad-lis-augintiniui-classy-hexa-3-m-a17-1.jpg",
+    "watermelon.jpg": "https://www.bakli.lt/resized/c5071de13eabe63d0bc3af8dbf7e533a-1000x1000-crop/pavad-lis-augintiniui-classy-watermelon-1-5-m-a25-1.jpg",
+    "collar.jpg": "https://www.bakli.lt/resized/bb4865912ca09a26e9cb4a0b53e3c627-1000x1000-crop/rudas-antkaklis-augintiniui-classy-daring-m-a27-1.jpg",
+    "balm.jpg": "https://www.bakli.lt/resized/855ad3f281e88a200bcad8dee88fd625-1000x1000-crop/bakli-balzamas-odos-gamini-prie-i-rai-250ml-1.jpg",
+    "mini-set.jpg": "https://www.bakli.lt/resized/74329731773057489a0426a3b6efcfe3-1000x1000-max/antkaklio-rinkinys-unims-apvalus-mini-1.jpg",
+    "paw-wax.jpg": "https://www.bakli.lt/resized/3fb55cb38e5bb73111aca4feee262357-1000x1000-max/bakli-apsauginis-p-du-i-va-kas-unims-ir-kat-ms-50ml-1.jpg",
+    "mini-3.jpg": "https://www.bakli.lt/resized/a361e50bff2636e01a94836602f45412-1000x1000-max/antkaklio-rinkinys-unims-apvalus-mini-3.jpg",
+    "mini-4.jpg": "https://www.bakli.lt/resized/a8b06cf3afbfd2115ceb90dc708a6365-1000x1000-max/antkaklio-rinkinys-unims-apvalus-mini-4.jpg",
+    "hero-rudens-v2.png": "assets/hero-rudens-v2.png",
+    "hero-rudens-v3.png": "assets/hero-rudens-v3.png"
+  },
+  "count": 12
+}

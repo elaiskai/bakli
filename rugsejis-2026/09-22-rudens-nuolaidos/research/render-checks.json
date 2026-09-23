@@ -1,0 +1,29 @@
+[
+  {
+    "backgroundEditedImages": 5,
+    "height": 5828,
+    "hero": "https://www.bakli.lt/lt/specialus-pasiulymai?utm_source=omnisend&utm_medium=email&utm_campaign=20260922_rudens_nuolaidos&utm_content=image_hero-rudens-v3",
+    "images": 16,
+    "loaded": 16,
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "backgroundEditedImages": 5,
+    "height": 5748,
+    "hero": "https://www.bakli.lt/lt/specialus-pasiulymai?utm_source=omnisend&utm_medium=email&utm_campaign=20260922_rudens_nuolaidos&utm_content=image_hero-rudens-v3",
+    "images": 16,
+    "loaded": 16,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "backgroundEditedImages": 5,
+    "height": 6424,
+    "hero": "https://www.bakli.lt/lt/specialus-pasiulymai?utm_source=omnisend&utm_medium=email&utm_campaign=20260922_rudens_nuolaidos&utm_content=image_hero-rudens-v3",
+    "images": 16,
+    "loaded": 16,
+    "scrollWidth": 640,
+    "width": 640
+  }
+]

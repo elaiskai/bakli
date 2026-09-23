@@ -1,0 +1,16 @@
+Mode: built-in image_gen; no explicit model selector available.
+
+Use case: ads-marketing / compositing.
+Create a finished premium Lithuanian email hero banner, ONE raster image containing both the photographic composition and all typography. Portrait 4:5 composition, ideally 1536x1920 or equivalent high resolution. This replaces a 640px-wide email hero.
+References: image 1 is the exact real Bakli Brandon cognac leather belt, image 2 the exact real black Aron leather wallet, image 3 real personalized round Bakli pet tags. Preserve the products' construction, shape, buckle geometry, leather colors, stitches, textures and relative real-world scale. Select only the engraved gold Charlie tag from reference 3 as a small supporting object. Do not make tag wallet-sized. The belt is 4cm wide; wallet roughly 11cm wide; tag roughly 2.5cm diameter.
+Art direction: quietly luxurious European leather accessories editorial, tangible real studio photography. Warm matte cream background matching #F1EBDD with an understated physical tabletop at lower portion. Soft angled natural window light from upper left, believable contact shadows, fine natural leather pores and slightly imperfect surfaces. No CGI sheen, no exaggerated bokeh, no floating items, no autumn leaves, no ornaments, no pedestals, no craft-paper gift cliches. Image should feel shot with a real camera and professionally art directed. Not a collage of separate rectangular photos.
+Layout: generously spaced typography occupying upper 43%, lower 52% a carefully balanced still life. The cognac belt coiled as in its reference on left/midground, black wallet resting naturally on its side in front/right, small engraved gold Charlie tag nearby on tabletop. Products are visible fully with safe margin and are the visual focus below headline. Top text dark warm brown #3C3228. Bold Arial/Helvetica headline and elegant restrained typography; preserve readability when image is only 320px wide. No logo (existing email header already contains brand).
+Exact Lithuanian text, accents mandatory, NO other text:
+small but readable uppercase eyebrow: "JUMS. DOVANOMS. AUGINTINIAMS."
+very large bold two-line headline:
+"RUDENS"
+"NUOLAIDOS"
+beneath headline, two shorter lines in clean Arial:
+"Mažesnės kainos."
+"Daugiau gerų atradimų."
+Do NOT draw a button; HTML CTA will sit outside this image. Do not put discount percentages/prices or artificial sales stickers in image. Do not alter or invent products. Bottom 2% should finish in clean warm cream #F1EBDD for seamless handoff to cream CTA section. Excellent text kerning and optical alignment, polished real commercial campaign, no AI-looking artifacts.

@@ -1,3 +1,5 @@
+Nauja kampanija: [2026-09-22 · Rudens nuolaidos – 12 produktų](rugsejis-2026/09-22-rudens-nuolaidos/README.md).
+
 # Bakli welcome flow · Omnisend automation
 
 Šiame pakete realizuotas **Flow 1 iš 5 - Welcome / Sign-up**. Krepšelio, checkout, naršymo ir po pirkimo automatizacijos dar nėra šio paketo dalis.
