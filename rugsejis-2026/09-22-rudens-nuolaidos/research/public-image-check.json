@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-23",
+  "rendered_images": 16,
+  "unique_images": 15,
+  "checks": [
+    {
+      "url": "https://raw.githubusercontent.com/elaiskai/bakli/4b75f4270cc00870c26f87f34f3686ed5bb539c4/rugsejis-2026/09-22-rudens-nuolaidos/assets/aron-white-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 1448982,
+      "anonymous": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/elaiskai/bakli/4b75f4270cc00870c26f87f34f3686ed5bb539c4/rugsejis-2026/09-22-rudens-nuolaidos/assets/bakli-logo.jpg",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 17300,
+      "anonymous": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/elaiskai/bakli/4b75f4270cc00870c26f87f34f3686ed5bb539c4/rugsejis-2026/09-22-rudens-nuolaidos/assets/balm.jpg",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 191462,
+      "anonymous": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/elaiskai/bakli/4b75f4270cc00870c26f87f34f3686ed5bb539c4/rugsejis-2026/09-22-rudens-nuolaidos/assets/brandon-white-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 1334660,
+      "anonymous": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/elaiskai/bakli/4b75f4270cc00870c26f87f34f3686ed5bb539c4/rugsejis-2026/09-22-rudens-nuolaidos/assets/collar.jpg",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 87860,
+      "anonymous": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/elaiskai/bakli/4b75f4270cc00870c26f87f34f3686ed5bb539c4/rugsejis-2026/09-22-rudens-nuolaidos/assets/elliot-2.jpg",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 169201,
+      "anonymous": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/elaiskai/bakli/4b75f4270cc00870c26f87f34f3686ed5bb539c4/rugsejis-2026/09-22-rudens-nuolaidos/assets/evan-2.jpg",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 153789,
+      "anonymous": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/elaiskai/bakli/4b75f4270cc00870c26f87f34f3686ed5bb539c4/rugsejis-2026/09-22-rudens-nuolaidos/assets/harrison-white-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 1286641,
+      "anonymous": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/elaiskai/bakli/4b75f4270cc00870c26f87f34f3686ed5bb539c4/rugsejis-2026/09-22-rudens-nuolaidos/assets/hero-rudens-v3.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 1765772,
+      "anonymous": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/elaiskai/bakli/4b75f4270cc00870c26f87f34f3686ed5bb539c4/rugsejis-2026/09-22-rudens-nuolaidos/assets/hexa.jpg",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 46597,
+      "anonymous": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/elaiskai/bakli/4b75f4270cc00870c26f87f34f3686ed5bb539c4/rugsejis-2026/09-22-rudens-nuolaidos/assets/marco-white-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 1253204,
+      "anonymous": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/elaiskai/bakli/4b75f4270cc00870c26f87f34f3686ed5bb539c4/rugsejis-2026/09-22-rudens-nuolaidos/assets/mini-3.jpg",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 904087,
+      "anonymous": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/elaiskai/bakli/4b75f4270cc00870c26f87f34f3686ed5bb539c4/rugsejis-2026/09-22-rudens-nuolaidos/assets/mini-4-white-v2.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 1020105,
+      "anonymous": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/elaiskai/bakli/4b75f4270cc00870c26f87f34f3686ed5bb539c4/rugsejis-2026/09-22-rudens-nuolaidos/assets/paw-wax.jpg",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 228406,
+      "anonymous": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/elaiskai/bakli/4b75f4270cc00870c26f87f34f3686ed5bb539c4/rugsejis-2026/09-22-rudens-nuolaidos/assets/watermelon.jpg",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 114634,
+      "anonymous": true
+    }
+  ]
+}

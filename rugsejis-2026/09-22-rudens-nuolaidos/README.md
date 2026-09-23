@@ -7,8 +7,8 @@
 ## Peržiūra ir failai
 
 - `preview-local.html` – visas laiškas su vietinėmis nuotraukomis; patogiausia peržiūrai.
-- `newsletter.html` – versija su viešais produktų nuotraukų adresais; naujo hero viešą URL dar reikia pridėti.
-- `OMNISEND-IKELTI.html` – turinio fragmentas su inline stiliais; prieš importą pridėti viešą hero URL (žr. žemiau).
+- `newsletter.html` – visas laiškas su viešomis HTTPS nuorodomis į visus vaizdus.
+- `OMNISEND-IKELTI.html` – importo turinio fragmentas su inline stiliais ir viešais visų vaizdų adresais.
 - `newsletter.txt` – tema, preheaderis ir tekstinė versija.
 - `build.py` – HTML ir tekstinės versijos generatorius.
 - `research/products.json` – 12 pasirinktų prekių, jų kainos, variantai ir šaltiniai.
@@ -53,7 +53,9 @@ Vartotojo minėto Google Drive aplanko nuoroda vis dar nepateikta. Šios fotogra
 
 ## Įkėlimas į Omnisend
 
-Į vieną HTML turinio bloką įkelti `OMNISEND-IKELTI.html`, išorinį padding nustatyti į 0. Prieš siuntimą į Omnisend biblioteką įkelti šešis naujus failus: `assets/hero-rudens-v3.png` ir penkis `assets/*-white-v2.png`. Hero viešą HTTPS adresą įrašyti į `hero-config.json`, kitų penkių – į `asset-overrides.json` atitinkamus `public_url` laukus. Paleisti `python3 build.py`. Kol adresai neįrašyti, šie vaizdai naudoja vietinius `assets/` kelius ir importo failas dar netinka siuntimui. Likusios produktų fotografijos turi oficialius viešus HTTPS adresus.
+Į vieną HTML turinio bloką įkelti `OMNISEND-IKELTI.html`, išorinį padding nustatyti į 0. Visos 16 paveikslėlių nuorodų (15 unikalių vaizdų) yra pilni HTTPS adresai į viešą `elaiskai/bakli` repozitoriją. Jos prisegtos prie konkretaus Git commit, todėl failų pakeitimai ateityje nepakeis jau paruošto laiško vaizdų. Atskirai įkelti nuotraukų į Omnisend šiai versijai nereikia.
+
+`public-assets.json` saugo vaizdų adresus. `preview-local.html` ir toliau naudoja kartu pateiktą `assets/` aplanką. Gamybinio HTML generatorius atmeta trūkstamus arba ne HTTPS vaizdų adresus.
 
 Hero mygtukas įkomponuotas į paveikslėlį. Visas hero apgaubtas įprasta HTML nuoroda į Bakli specialių pasiūlymų puslapį; nereikia image map, JavaScript ar CSS sluoksnių. Taigi mygtuko vieta paspaudžiama visais ekrano dydžiais. Tai veikia HTML laiške; JPG peržiūra yra statinis paveikslėlis.
 
@@ -69,4 +71,4 @@ Temą ir preheaderį įrašyti iš `newsletter.txt`. Omnisend paskyros native fo
 
 Atnaujintas maketas patikrintas 320, 390 ir 640 px pločiuose: visos 16 nuotraukų užsikrauna, nėra horizontalaus slinkimo. Duomenys – `research/render-checks.json`. Hero mygtukas paspaustas naršyklėje ir sėkmingai atidarė „Specialūs pasiūlymai - Bakli.lt“; rezultatas – `research/hero-click-check.json`. Testinis laiškas į el. pašto klientus nesiųstas.
 
-GitHub repozitorijoje esantys failai skirti peržiūrai ir versijavimui. Privataus GitHub raw adresų nenaudoti laiško vaizdams. Šešiems atnaujintiems vaizdams vis dar reikia viešų Omnisend bibliotekos URL.
+2026-09-23 pataisytas nuotraukų krovimas: repozitorijos viešumas patvirtintas per GitHub API, visi 15 unikalių vaizdų patikrinti be autentifikacijos (HTTP 200 ir image/* MIME). Rezultatai: `research/public-image-check.json`. Laiškas nebuvo išsiųstas.

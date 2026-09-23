@@ -2,6 +2,7 @@ from pathlib import Path
 from decimal import Decimal, ROUND_DOWN
 from html import escape
 import json
+from urllib.parse import urlsplit
 R=Path(__file__).parent
 SANS='Arial,Helvetica,sans-serif'; SERIF="Georgia,'Times New Roman',serif"
 B='#3C3228'; C='#F1EBDD'; T='#A58059'; M='#70675D'; I='#211D18'
@@ -11,6 +12,7 @@ observed=json.loads((R/'research/expanded-products-observed.json').read_text())
 urls=existing['images'].copy()
 hero=json.loads((R/'hero-config.json').read_text())
 overrides=json.loads((R/'asset-overrides.json').read_text())
+public_assets=json.loads((R/'public-assets.json').read_text())
 urls[hero['filename']]=hero['public_url'] or 'assets/'+hero['filename']
 keys=['marco','brandon','harrison','blue-leash','hexa','watermelon','collar','balm','mini-set','paw-wax']
 obs=dict(zip(keys,observed))
@@ -47,7 +49,8 @@ def eyebrow(x,color=T):return text(x,11,17,color,'letter-spacing:1.8px;font-weig
 def title(x,size=32,color=B):return f'<h2 style="margin:0;font-family:{SERIF};font-size:{size}px;line-height:{size+6}px;font-weight:normal;color:{color}">{x}</h2>'
 def image(file,alt,w,local,url=None):
  selected=overrides.get(file)
- src=('assets/'+selected['file'] if local or not selected['public_url'] else selected['public_url']) if selected else ('assets/'+file if local else urls[file])
+ asset_file=selected['file'] if selected else file
+ src='assets/'+asset_file if local else public_assets[asset_file]
  s=f'<img src="{escape(src)}" width="{w}" alt="{escape(alt)}" style="display:block;width:100%;max-width:{w}px;height:auto;border:0;margin:0 auto" />'
  return f'<a href="{href(url,"image_"+file.split(".")[0])}" target="_blank" style="text-decoration:none">{s}</a>' if url else s
 
@@ -86,7 +89,18 @@ def section(number,label,heading,copy,bg='#FFFFFF'):
  inside=eyebrow(number+' / '+label)+f'<div style="height:12px;line-height:12px;font-size:1px">&nbsp;</div>'+title(heading)+f'<div style="height:12px;line-height:12px;font-size:1px">&nbsp;</div>'+text(copy,15,24,M)
  return tr(inside,f'padding:38px 26px 29px;background-color:{bg};text-align:left;')
 
+def require_public_images():
+ pending=[]
+ for label,entry in [('hero',hero),*overrides.items(),*[(name,{'public_url':url}) for name,url in public_assets.items()]]:
+  value=entry.get('public_url') or ''
+  parsed=urlsplit(value)
+  if parsed.scheme!='https' or not parsed.netloc:
+   pending.append(label)
+ if pending:
+  raise ValueError('Email export requires public HTTPS image URLs in hero-config.json / asset-overrides.json: '+', '.join(pending))
+
 def render(local=False):
+ if not local:require_public_images()
  s=[]
  header='<tr>'+td(image('bakli-logo.jpg','Bakli',122,local,BASE),'width:50%;padding:23px 26px;','width="50%"')+td(text('LEATHER CRAFTS',10,16,M,'letter-spacing:1.5px;')+text('RUDENS ATRANKA',10,16,B,'letter-spacing:1.5px;font-weight:bold;'),'padding:23px 26px;text-align:right;','align="right"')+'</tr>'
  s.append(tr(table(header,css='width:100%;background-color:#FFFFFF;')))

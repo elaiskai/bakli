@@ -7,6 +7,8 @@
   "hero_link_click_verified": true,
   "cat_original_unchanged": true,
   "html_fragment_bytes": 61206,
-  "new_asset_public_urls_pending": 6,
-  "ready_for_send": false
+  "ready_for_send": false,
+  "public_image_urls_verified": true,
+  "local_paths_in_email_export": 0,
+  "ready_for_import": true
 }
