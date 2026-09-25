@@ -16,5 +16,10 @@ Georgia antraštės, Arial tekstas; kreminė ir ruda Bakli paletė. Išlaikyta n
 Produktų packshotai ir kainos iš bakli.lt, patikrinta 2026-09-24. Hero sukurtas AI pagal tikrus Hexa MIDI bei Marine packshotus ir vartotojo reference; tai stilizuota fotografijos kompozicija, ne originali produkto nuotrauka. Visose produktų kortelėse originalūs Bakli vaizdai.
 Nuolaidos nėra, pagal vartotojo pasirinkimą sekti reference. Reference: https://github.com/elaiskai/bakli/blob/main/rugsejis-2026/09-25-dovana-be-progos/newsletter.html
 
+## Graviravimo nuotraukos
+Pridėtos dvi originalios Bakli personalizavimo nuotraukos: Classy Solid metalinė plokštelė su vardu ir numeriu bei vardo graviūra ant odinės detalės. Antras vaizdas yra graviravimo pavyzdys iš Marine produkto puslapio, ne Marine rašto demonstracija.
+- https://www.bakli.lt/resized/821b9ddc0e10655103df8ff376ec7691-1000x1000-max.png
+- https://www.bakli.lt/resized/8d413ca081e1552a78b2dcfde40e6ed7-1000x1000-max.png
+
 ## Patikra
 Naršyklėje patikrinti desktop ir 390/320 px telefonų išdėstymai. Nėra horizontalaus persipildymo, visos šešios kortelės telpa, desktop porų CTA lygiuoja. Viešos assetų nuorodos tikrinamos po įkėlimo. Tikras Omnisend siuntimas neatliekamas automatiškai.
