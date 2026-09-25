@@ -13,7 +13,7 @@
 Georgia antraštės, Arial tekstas; kreminė ir ruda Bakli paletė. Išlaikyta nauja pakabintų aksesuarų hero kompozicija ir centruotas 168 px logotipas. Desktop 640 px, produktai poromis. Abiejų produktų nuotraukos, etiketės, pavadinimai, aprašymai, kainos ir CTA yra bendrose lentelės eilutėse, todėl kainų ir mygtukų lygiavimas nepriklauso nuo teksto ilgio ar media query palaikymo. Telefone dvi kolonos, 16 px kraštai, 14/21 px aprašymai, 50 px CTA.
 
 ## Tikrumas ir šaltiniai
-Produktų packshotai ir kainos iš bakli.lt, patikrinta 2026-09-24. Hero sukurtas AI pagal tikrus Hexa MIDI bei Marine packshotus ir vartotojo reference; tai stilizuota fotografijos kompozicija, ne originali produkto nuotrauka. Visose produktų kortelėse originalūs Bakli vaizdai.
+Produktų packshotai ir kainos iš bakli.lt, patikrinta 2026-09-24. Hero sukurtas AI pagal tikrus Hexa MIDI bei Marine packshotus ir vartotojo reference; tai stilizuota fotografijos kompozicija, ne originali produkto nuotrauka. Hero v4 pridėtas vardas Bruno ant petnešų odinės detalės ir antkaklio metalinės sagties, pagal tikrus Bakli graviravimo pavyzdžius. Tai AI vizualizacija. Visose produktų kortelėse originalūs Bakli vaizdai.
 Nuolaidos nėra, pagal vartotojo pasirinkimą sekti reference. Reference: https://github.com/elaiskai/bakli/blob/main/rugsejis-2026/09-25-dovana-be-progos/newsletter.html
 
 ## Graviravimo nuotraukos
