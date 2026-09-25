@@ -10,7 +10,7 @@
 - Prieš kampanijos siuntimą atlikti tikrą Omnisend testą ir patikrinti sistemos siuntėjo informaciją.
 
 ## Dizainas ir telefonas
-Georgia antraštės, Arial tekstas; kreminė ir ruda Bakli paletė. Išlaikyta nauja pakabintų aksesuarų hero kompozicija ir centruotas 168 px logotipas. Desktop 640 px, produktai poromis. Iki 480 px ekranams kortelės po vieną, 16/24 px aprašymai, pilno pločio 50 px aukščio mygtukai, 20 px šoniniai tarpai, automatinis kortelių teksto aukštis. Produktų poros sudėtos į tikras 50 % pločio lentelės kolonas, todėl telpa ir 600 px Omnisend konteineryje. Mobilus persirikiavimas taikomas iki 480 px.
+Georgia antraštės, Arial tekstas; kreminė ir ruda Bakli paletė. Išlaikyta nauja pakabintų aksesuarų hero kompozicija ir centruotas 168 px logotipas. Desktop 640 px, produktai poromis. Abiejų produktų nuotraukos, etiketės, pavadinimai, aprašymai, kainos ir CTA yra bendrose lentelės eilutėse, todėl kainų ir mygtukų lygiavimas nepriklauso nuo teksto ilgio ar media query palaikymo. Telefone dvi kolonos, 16 px kraštai, 14/21 px aprašymai, 50 px CTA.
 
 ## Tikrumas ir šaltiniai
 Produktų packshotai ir kainos iš bakli.lt, patikrinta 2026-09-24. Hero sukurtas AI pagal tikrus Hexa MIDI bei Marine packshotus ir vartotojo reference; tai stilizuota fotografijos kompozicija, ne originali produkto nuotrauka. Visose produktų kortelėse originalūs Bakli vaizdai.
