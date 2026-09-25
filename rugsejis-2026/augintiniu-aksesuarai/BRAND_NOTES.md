@@ -10,7 +10,7 @@
 - Prieš kampanijos siuntimą atlikti tikrą Omnisend testą ir patikrinti sistemos siuntėjo informaciją.
 
 ## Dizainas ir telefonas
-Georgia antraštės, Arial tekstas; kreminė ir ruda Bakli paletė. Išlaikyta nauja pakabintų aksesuarų hero kompozicija ir centruotas 168 px logotipas. Desktop 640 px, produktai poromis. Abiejų produktų nuotraukos, etiketės, pavadinimai, aprašymai, kainos ir CTA yra bendrose lentelės eilutėse, todėl kainų ir mygtukų lygiavimas nepriklauso nuo teksto ilgio ar media query palaikymo. Telefone dvi kolonos, 16 px kraštai, 14/21 px aprašymai, 50 px CTA.
+Georgia antraštės, Arial tekstas; kreminė ir ruda Bakli paletė. Išlaikyta nauja pakabintų aksesuarų hero kompozicija ir centruotas 168 px logotipas. Desktop 640 px, produktai poromis. Abiejų produktų nuotraukos, etiketės, pavadinimai, aprašymai, kainos ir CTA yra bendrose lentelės eilutėse, todėl kainų ir mygtukų lygiavimas nepriklauso nuo teksto ilgio ar media query palaikymo. Telefone dvi kolonos, 16 px kraštai, 15/22 px aprašymai, 50 px CTA, 10/15 px produktų etiketės.
 
 ## Tikrumas ir šaltiniai
 Produktų packshotai ir kainos iš bakli.lt, patikrinta 2026-09-24. Hero sukurtas AI pagal tikrus Hexa MIDI bei Marine packshotus ir vartotojo reference; tai stilizuota fotografijos kompozicija, ne originali produkto nuotrauka. Hero v5 vardai: Bruno ant petnešų odinės detalės ir Bella ant antkaklio metalinės sagties. Bella šaltinis: https://www.bakli.lt/resized/e90d3012cb6faa022cb9de3bc49d52a1-1000x1000-max.png, pagal tikrus Bakli graviravimo pavyzdžius. Tai AI vizualizacija. Visose produktų kortelėse originalūs Bakli vaizdai.
