@@ -27,7 +27,7 @@ const EMAILS = [
       'https://www.bakli.lt/lt/pinigines-deklai',
       'https://www.bakli.lt/lt/raktu-pakabukai',
       'https://www.bakli.lt/lt/aksesuarai-augintiniams',
-      'https://www.bakli.lt/lt/personalizuotos-dovanos',
+      'https://www.bakli.lt/lt/populiariausios-prekes',
       'https://www.bakli.lt/lt/dovanu-idejos/boso-diena/odine-pinigine-jacob-crazy-horse',
       'https://www.bakli.lt/lt/70-100-eur/odine-pinigine-grant-crazy-horse-3in1',
       'https://www.bakli.lt/lt/dirzai/vyriskas-dirzas-karter-su-vyciu-40mm',
@@ -40,7 +40,7 @@ const EMAILS = [
     requiredUrls: [
       'https://www.bakli.lt/lt/dovanu-idejos',
       'https://www.bakli.lt/lt/dovanu-rinkiniai',
-      'https://www.bakli.lt/lt/personalizuotos-dovanos',
+      'https://www.bakli.lt/lt/populiariausios-prekes',
       'https://www.bakli.lt/lt/aksesuarai-augintiniams/antkaklio-rinkinys-sunims-pink-maxi',
     ],
     requiresGiftWrapPrice: true,
@@ -63,7 +63,7 @@ const APPROVED_SOCIAL_URLS = new Set([
 const REQUIRED_BRAND_END_URLS = [
   'https://www.bakli.lt/lt/',
   'https://www.bakli.lt/lt/pinigines-deklai',
-  'https://www.bakli.lt/lt/personalizuotos-dovanos',
+  'https://www.bakli.lt/lt/populiariausios-prekes',
   'https://www.bakli.lt/lt/dovanu-idejos',
   'https://www.instagram.com/thebakli',
   'https://www.facebook.com/BakliLT',
