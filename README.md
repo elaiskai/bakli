@@ -2,7 +2,7 @@ Nauja kampanija: [2026-09-22 · Rudens nuolaidos – 12 produktų](rugsejis-2026
 
 # Bakli welcome flow · Omnisend automation
 
-Šiame pakete realizuotas **Flow 1 iš 5 - Welcome / Sign-up**. Krepšelio, checkout, naršymo ir po pirkimo automatizacijos dar nėra šio paketo dalis.
+Šiame pakete realizuotas **Flow 1 iš 6 - Welcome / Sign-up**. Krepšelio, checkout, naršymo, po pirkimo ir winback automatizacijos yra `elaiskai/email-client-assets/docs/bakli/automations`.
 
 [Atidaryti vizualų welcome automation overview](index.html)
 
@@ -30,7 +30,7 @@ Omnisend kelias: **Store settings → Saved templates → Import template → Im
 
 - `OMNISEND-IKELTI.html` - tas pats saugus vieno failo importas;
 - `newsletter.html` ir `omnisend-body.html` - identiškos importo kopijos, kad pasirinkus ankstesnį pavadinimą niekas nesulūžtų;
-- `preview-local.html` - tik vietinė dizaino peržiūra su AI fotosesijos hero vaizdu; į Omnisend šio failo kelti negalima;
+- `preview-local.html` - vietinė dizaino peržiūra su tomis pačiomis oficialiomis produktų nuotraukomis kaip importuose; į Omnisend šio failo kelti negalima;
 - `newsletter.txt` - plain-text versija, temos A/B ir preheader.
 
 Visuose laiškuose yra oficialus brand header ir tamsus Bakli turinio footeris su kategorijomis, socialiniais kanalais bei `info@bakli.lt`. Native Omnisend wrapper po juo turi pridėti teisinę informaciją ir veikiančią atsisakymo nuorodą, bet neturi dubliuoti headerio.
@@ -66,6 +66,12 @@ Pilni duomenys: `reports/preflight-report.json`, `reports/omnisend-import-report
 2. Išsiųsti realų testinį laišką į Gmail, Apple Mail ir Outlook.
 3. Dar kartą patikrinti pasirinktų produktų bei rinkinių aktyvumą.
 4. Patikrinti, kad `HELLO10` aktyvus ir taiko 10 % nuolaidą. Galiojimo terminas bei išimtys laiškuose nerodomi, nes jie nepateikti.
-5. Importai iš karto veikia su oficialiais Bakli hero vaizdais. Jei norite naudoti AI fotosesijų versijas, atitinkamą JPG iš `assets/generated/` įkelkite iš kompiuterio į Omnisend Image Library ir tik tada pakeiskite hero `src`; privataus GitHub `raw` URL naudoti negalima.
+5. Importuose ir vietinėse HTML peržiūrose naudojamos oficialios Bakli produktų nuotraukos. Ankstesni AI hero nebenaudojami.
 
 Strategija, šaltiniai ir faktų korekcijos aprašyti `BRAND_NOTES.md`.
+
+## 2026-09-11 pataisos
+
+Personalizavimo ir „Sukurkite“ nuorodos veda į populiariausias prekes. Dovanos hero naudojama autentiška nuotrauka su matoma graviruota žinute ant Scott pakabuko. Visos peržiūros ir importai naudoja oficialias produktų nuotraukas. Senų AI hero įkelti nebereikia.
+
+Naujausia patikra: 600 ir 390 px, trūkstamų vaizdų ir horizontalaus slinkimo nėra. `previews/` PNG ir ankstesni renderių JSON saugomi kaip ankstesnės versijos archyvas; naujausią rezultatą atidarykite per `emails/*/preview-local.html`.

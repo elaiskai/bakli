@@ -14,7 +14,7 @@ const URLS = {
   wallets: 'https://www.bakli.lt/lt/pinigines-deklai',
   keychains: 'https://www.bakli.lt/lt/raktu-pakabukai',
   pets: 'https://www.bakli.lt/lt/aksesuarai-augintiniams',
-  personalize: 'https://www.bakli.lt/lt/personalizuotos-dovanos',
+  personalize: 'https://www.bakli.lt/lt/populiariausios-prekes',
   gifts: 'https://www.bakli.lt/lt/dovanu-idejos',
   giftSets: 'https://www.bakli.lt/lt/dovanu-rinkiniai',
   karter: 'https://www.bakli.lt/lt/dirzai/vyriskas-dirzas-karter-su-vyciu-40mm',
@@ -36,7 +36,7 @@ const ASSETS = {
     remote: 'https://www.bakli.lt/resized/95d9c31f1c22f62c3c2c58c57f782d99-500x500-maxq.jpg',
   },
   welcomeHero: {
-    local: '../../assets/generated/welcome-wallets-v1.jpg',
+    local: '../../assets/categories/wallets.jpg',
     remote: 'https://www.bakli.lt/resized/95d9c31f1c22f62c3c2c58c57f782d99-500x500-maxq.jpg',
   },
   keychains: {
@@ -44,7 +44,7 @@ const ASSETS = {
     remote: 'https://www.bakli.lt/resized/a372aa0f952b42d908eb2107dd4519cd-500x500-maxq.jpg',
   },
   personalizationHero: {
-    local: '../../assets/generated/personalization-keychain-v1.jpg',
+    local: '../../assets/categories/keychains.jpg',
     remote: 'https://www.bakli.lt/resized/a372aa0f952b42d908eb2107dd4519cd-500x500-maxq.jpg',
   },
   pets: {
@@ -84,12 +84,12 @@ const ASSETS = {
     remote: 'https://www.bakli.lt/resized/f1f878cad649a6418c62d66cd89411ae-500x500-max.jpg',
   },
   giftHero: {
-    local: '../../assets/gifts/marco-scott.jpg',
-    remote: 'https://www.bakli.lt/resized/63e25ea4a03d72a7e08d883cd1f2ebef-500x500-max.jpg',
+    local: '../../assets/gifts/marco-scott-personalized.jpg',
+    remote: 'https://www.bakli.lt/resized/3bfa9d3d7d6fb0a325cbb3d88bf2fc59-1000x1000-max/marco-pinigin-s-ir-scott-pakabuko-rinkinys-7.jpg',
   },
   giftingHero: {
-    local: '../../assets/generated/gifting-set-v1.jpg',
-    remote: 'https://www.bakli.lt/resized/63e25ea4a03d72a7e08d883cd1f2ebef-500x500-max.jpg',
+    local: '../../assets/gifts/marco-scott-personalized.jpg',
+    remote: 'https://www.bakli.lt/resized/3bfa9d3d7d6fb0a325cbb3d88bf2fc59-1000x1000-max/marco-pinigin-s-ir-scott-pakabuko-rinkinys-7.jpg',
   },
   giftSofia: {
     local: '../../assets/gifts/sofia-vanessa-phone.jpg',
@@ -420,7 +420,7 @@ function e1Markup(send, preheader) {
   return `${shellStart(preheader, send)}
           ${send ? '<!-- AI HERO SLOT: upload assets/generated/welcome-wallets-v1.jpg to Omnisend, then replace the fallback image URL below before launch. -->' : ''}
           <tr class="section-e1-hero">
-            <td bgcolor="#f3eee8" style="font-size: 0; line-height: 0;">${imageLink({ src: asset('welcomeHero', send), href: URLS.wallets, width: 600, height: send ? 450 : 400, alt: 'Dvi Bakli odinės piniginės šviesioje produktų fotosesijoje', className: 'fluid hero-image' })}</td>
+            <td bgcolor="#f3eee8" style="font-size: 0; line-height: 0;">${imageLink({ src: asset('welcomeHero', send), href: URLS.wallets, width: 600, height: 450, alt: 'Dvi Bakli odinės piniginės šviesioje produktų fotosesijoje', className: 'fluid hero-image' })}</td>
           </tr>
           <tr>
             <td class="hero-pad" align="center" bgcolor="#faf7f2" style="padding: 46px 44px 38px;">
@@ -492,7 +492,7 @@ function e2Markup(send, preheader) {
     src: asset('personalizationHero', send),
     href: URLS.keychains,
     width: 600,
-    height: send ? 450 : 400,
+    height: 450,
     alt: 'Personalizuotas Bakli raktų pakabukas amatininko darbo aplinkoje',
     className: 'fluid hero-image',
   });
@@ -608,7 +608,7 @@ function e3Markup(send, preheader) {
   return `${shellStart(preheader, send)}
           ${send ? '<!-- AI HERO SLOT: upload assets/generated/gifting-set-v1.jpg to Omnisend, then replace the fallback image URL below before launch. -->' : ''}
           <tr class="section-e3-hero">
-            <td bgcolor="#4a3028" style="font-size: 0; line-height: 0;">${imageLink({ src: asset('giftingHero', send), href: URLS.giftSets, width: 600, height: send ? 600 : 400, alt: 'Bakli piniginė ir raktų pakabukas profesionalioje dovanų fotosesijoje', className: 'fluid hero-image' })}</td>
+            <td bgcolor="#4a3028" style="font-size: 0; line-height: 0;">${imageLink({ src: asset('giftingHero', send), href: URLS.giftSets, width: 600, height: 600, alt: 'Bakli piniginė ir Scott pakabukas su išgraviruota asmenine žinute', className: 'fluid hero-image' })}</td>
           </tr>
           <tr>
             <td class="hero-pad" align="center" bgcolor="#2f211b" style="padding: 44px 42px 40px; color: #ffffff;">

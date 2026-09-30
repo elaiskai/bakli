@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T12:59:07.095Z",
+  "generatedAt": "2026-09-11T13:36:12.082Z",
   "gmailClipThresholdBytes": 102400,
   "approvedRemoteImagePattern": "https://www.bakli.lt/resized/...",
   "pass": true,
@@ -25,19 +25,19 @@
           "path": "emails/01-pasveikinimas/preview-local.html",
           "exists": true,
           "validUtf8": true,
-          "bytes": 25763
+          "bytes": 25751
         },
         "plainText": {
           "path": "emails/01-pasveikinimas/newsletter.txt",
           "exists": true,
           "validUtf8": true,
-          "bytes": 1743
+          "bytes": 1742
         },
         "omnisendBody": {
           "path": "emails/01-pasveikinimas/OMNISEND-IKELTI.html",
           "exists": true,
           "validUtf8": true,
-          "bytes": 25081
+          "bytes": 25079
         }
       },
       "requiredUrls": [
@@ -53,11 +53,11 @@
           "resolved": "assets/brand/bakli-logo.jpg"
         },
         {
-          "src": "../../assets/generated/welcome-wallets-v1.jpg",
+          "src": "../../assets/categories/wallets.jpg",
           "type": "local-relative",
           "approved": true,
           "exists": true,
-          "resolved": "assets/generated/welcome-wallets-v1.jpg"
+          "resolved": "assets/categories/wallets.jpg"
         },
         {
           "src": "../../assets/products/jacob.jpg",
@@ -105,7 +105,7 @@
         {
           "name": "preview-local.html is valid UTF-8",
           "pass": true,
-          "detail": "25763 byte(s)."
+          "detail": "25751 byte(s)."
         },
         {
           "name": "newsletter.txt exists",
@@ -115,7 +115,7 @@
         {
           "name": "newsletter.txt is valid UTF-8",
           "pass": true,
-          "detail": "1743 byte(s)."
+          "detail": "1742 byte(s)."
         },
         {
           "name": "OMNISEND-IKELTI.html exists",
@@ -125,7 +125,7 @@
         {
           "name": "OMNISEND-IKELTI.html is valid UTF-8",
           "pass": true,
-          "detail": "25081 byte(s)."
+          "detail": "25079 byte(s)."
         },
         {
           "name": "Import alias exists: newsletter.html",
@@ -135,7 +135,7 @@
         {
           "name": "Import alias is valid UTF-8: newsletter.html",
           "pass": true,
-          "detail": "25081 byte(s)."
+          "detail": "25079 byte(s)."
         },
         {
           "name": "Import alias exists: omnisend-body.html",
@@ -145,7 +145,7 @@
         {
           "name": "Import alias is valid UTF-8: omnisend-body.html",
           "pass": true,
-          "detail": "25081 byte(s)."
+          "detail": "25079 byte(s)."
         },
         {
           "name": "Import alias exists: 01-pasveikinimas.html",
@@ -155,7 +155,7 @@
         {
           "name": "Import alias is valid UTF-8: 01-pasveikinimas.html",
           "pass": true,
-          "detail": "25081 byte(s)."
+          "detail": "25079 byte(s)."
         },
         {
           "name": "All Omnisend import copies are byte-identical",
@@ -360,12 +360,12 @@
         {
           "name": "Newsletter HTML stays below Gmail clipping threshold",
           "pass": true,
-          "detail": "25763/102400 UTF-8 byte(s)."
+          "detail": "25751/102400 UTF-8 byte(s)."
         },
         {
           "name": "Single-file Omnisend import stays below Gmail clipping threshold",
           "pass": true,
-          "detail": "25081/102400 UTF-8 byte(s)."
+          "detail": "25079/102400 UTF-8 byte(s)."
         },
         {
           "name": "Plain text includes all relevant destinations",
@@ -393,26 +393,26 @@
           "path": "emails/02-personalizavimas/preview-local.html",
           "exists": true,
           "validUtf8": true,
-          "bytes": 31371
+          "bytes": 31351
         },
         "plainText": {
           "path": "emails/02-personalizavimas/newsletter.txt",
           "exists": true,
           "validUtf8": true,
-          "bytes": 2211
+          "bytes": 2209
         },
         "omnisendBody": {
           "path": "emails/02-personalizavimas/OMNISEND-IKELTI.html",
           "exists": true,
           "validUtf8": true,
-          "bytes": 31517
+          "bytes": 31514
         }
       },
       "requiredUrls": [
         "https://www.bakli.lt/lt/pinigines-deklai",
         "https://www.bakli.lt/lt/raktu-pakabukai",
         "https://www.bakli.lt/lt/aksesuarai-augintiniams",
-        "https://www.bakli.lt/lt/personalizuotos-dovanos",
+        "https://www.bakli.lt/lt/populiariausios-prekes",
         "https://www.bakli.lt/lt/dovanu-idejos/boso-diena/odine-pinigine-jacob-crazy-horse",
         "https://www.bakli.lt/lt/70-100-eur/odine-pinigine-grant-crazy-horse-3in1",
         "https://www.bakli.lt/lt/dirzai/vyriskas-dirzas-karter-su-vyciu-40mm",
@@ -427,11 +427,11 @@
           "resolved": "assets/brand/bakli-logo.jpg"
         },
         {
-          "src": "../../assets/generated/personalization-keychain-v1.jpg",
+          "src": "../../assets/categories/keychains.jpg",
           "type": "local-relative",
           "approved": true,
           "exists": true,
-          "resolved": "assets/generated/personalization-keychain-v1.jpg"
+          "resolved": "assets/categories/keychains.jpg"
         },
         {
           "src": "../../assets/steps/step-1.jpg",
@@ -511,7 +511,7 @@
         {
           "name": "preview-local.html is valid UTF-8",
           "pass": true,
-          "detail": "31371 byte(s)."
+          "detail": "31351 byte(s)."
         },
         {
           "name": "newsletter.txt exists",
@@ -521,7 +521,7 @@
         {
           "name": "newsletter.txt is valid UTF-8",
           "pass": true,
-          "detail": "2211 byte(s)."
+          "detail": "2209 byte(s)."
         },
         {
           "name": "OMNISEND-IKELTI.html exists",
@@ -531,7 +531,7 @@
         {
           "name": "OMNISEND-IKELTI.html is valid UTF-8",
           "pass": true,
-          "detail": "31517 byte(s)."
+          "detail": "31514 byte(s)."
         },
         {
           "name": "Import alias exists: newsletter.html",
@@ -541,7 +541,7 @@
         {
           "name": "Import alias is valid UTF-8: newsletter.html",
           "pass": true,
-          "detail": "31517 byte(s)."
+          "detail": "31514 byte(s)."
         },
         {
           "name": "Import alias exists: omnisend-body.html",
@@ -551,7 +551,7 @@
         {
           "name": "Import alias is valid UTF-8: omnisend-body.html",
           "pass": true,
-          "detail": "31517 byte(s)."
+          "detail": "31514 byte(s)."
         },
         {
           "name": "Import alias exists: 02-personalizavimas.html",
@@ -561,7 +561,7 @@
         {
           "name": "Import alias is valid UTF-8: 02-personalizavimas.html",
           "pass": true,
-          "detail": "31517 byte(s)."
+          "detail": "31514 byte(s)."
         },
         {
           "name": "All Omnisend import copies are byte-identical",
@@ -766,12 +766,12 @@
         {
           "name": "Newsletter HTML stays below Gmail clipping threshold",
           "pass": true,
-          "detail": "31371/102400 UTF-8 byte(s)."
+          "detail": "31351/102400 UTF-8 byte(s)."
         },
         {
           "name": "Single-file Omnisend import stays below Gmail clipping threshold",
           "pass": true,
-          "detail": "31517/102400 UTF-8 byte(s)."
+          "detail": "31514/102400 UTF-8 byte(s)."
         },
         {
           "name": "Plain text includes all relevant destinations",
@@ -799,25 +799,25 @@
           "path": "emails/03-dovanos/preview-local.html",
           "exists": true,
           "validUtf8": true,
-          "bytes": 29610
+          "bytes": 29609
         },
         "plainText": {
           "path": "emails/03-dovanos/newsletter.txt",
           "exists": true,
           "validUtf8": true,
-          "bytes": 2171
+          "bytes": 2169
         },
         "omnisendBody": {
           "path": "emails/03-dovanos/OMNISEND-IKELTI.html",
           "exists": true,
           "validUtf8": true,
-          "bytes": 29256
+          "bytes": 29296
         }
       },
       "requiredUrls": [
         "https://www.bakli.lt/lt/dovanu-idejos",
         "https://www.bakli.lt/lt/dovanu-rinkiniai",
-        "https://www.bakli.lt/lt/personalizuotos-dovanos",
+        "https://www.bakli.lt/lt/populiariausios-prekes",
         "https://www.bakli.lt/lt/aksesuarai-augintiniams/antkaklio-rinkinys-sunims-pink-maxi"
       ],
       "newsletterImages": [
@@ -829,11 +829,11 @@
           "resolved": "assets/brand/bakli-logo.jpg"
         },
         {
-          "src": "../../assets/generated/gifting-set-v1.jpg",
+          "src": "../../assets/gifts/marco-scott-personalized.jpg",
           "type": "local-relative",
           "approved": true,
           "exists": true,
-          "resolved": "assets/generated/gifting-set-v1.jpg"
+          "resolved": "assets/gifts/marco-scott-personalized.jpg"
         },
         {
           "src": "../../assets/gifts/sofia-vanessa-phone.jpg",
@@ -866,7 +866,7 @@
       ],
       "omnisendImages": [
         "https://www.bakli.lt/resized/4065f0e86f548349d849495de0204b08-500x500-max.jpg",
-        "https://www.bakli.lt/resized/63e25ea4a03d72a7e08d883cd1f2ebef-500x500-max.jpg",
+        "https://www.bakli.lt/resized/3bfa9d3d7d6fb0a325cbb3d88bf2fc59-1000x1000-max/marco-pinigin-s-ir-scott-pakabuko-rinkinys-7.jpg",
         "https://www.bakli.lt/resized/1acfd4609b53134374f737b4aca158d6-500x500-max.jpg",
         "https://www.bakli.lt/resized/5d4dd8775ca66cf9a38d0326506545fa-500x500-max.jpg",
         "https://www.bakli.lt/resized/617b3abb28bc377b899726b78e7cf32c-500x500-max.jpg",
@@ -881,7 +881,7 @@
         {
           "name": "preview-local.html is valid UTF-8",
           "pass": true,
-          "detail": "29610 byte(s)."
+          "detail": "29609 byte(s)."
         },
         {
           "name": "newsletter.txt exists",
@@ -891,7 +891,7 @@
         {
           "name": "newsletter.txt is valid UTF-8",
           "pass": true,
-          "detail": "2171 byte(s)."
+          "detail": "2169 byte(s)."
         },
         {
           "name": "OMNISEND-IKELTI.html exists",
@@ -901,7 +901,7 @@
         {
           "name": "OMNISEND-IKELTI.html is valid UTF-8",
           "pass": true,
-          "detail": "29256 byte(s)."
+          "detail": "29296 byte(s)."
         },
         {
           "name": "Import alias exists: newsletter.html",
@@ -911,7 +911,7 @@
         {
           "name": "Import alias is valid UTF-8: newsletter.html",
           "pass": true,
-          "detail": "29256 byte(s)."
+          "detail": "29296 byte(s)."
         },
         {
           "name": "Import alias exists: omnisend-body.html",
@@ -921,7 +921,7 @@
         {
           "name": "Import alias is valid UTF-8: omnisend-body.html",
           "pass": true,
-          "detail": "29256 byte(s)."
+          "detail": "29296 byte(s)."
         },
         {
           "name": "Import alias exists: 03-dovanos.html",
@@ -931,7 +931,7 @@
         {
           "name": "Import alias is valid UTF-8: 03-dovanos.html",
           "pass": true,
-          "detail": "29256 byte(s)."
+          "detail": "29296 byte(s)."
         },
         {
           "name": "All Omnisend import copies are byte-identical",
@@ -1141,12 +1141,12 @@
         {
           "name": "Newsletter HTML stays below Gmail clipping threshold",
           "pass": true,
-          "detail": "29610/102400 UTF-8 byte(s)."
+          "detail": "29609/102400 UTF-8 byte(s)."
         },
         {
           "name": "Single-file Omnisend import stays below Gmail clipping threshold",
           "pass": true,
-          "detail": "29256/102400 UTF-8 byte(s)."
+          "detail": "29296/102400 UTF-8 byte(s)."
         },
         {
           "name": "Plain text includes all relevant destinations",
