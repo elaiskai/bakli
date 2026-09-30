@@ -1,0 +1,18 @@
+{
+  "hashes": {
+    "newsletter.html": "abd74192173d628a3f6005b46dc0896be3d3eb20159c3b3b93c898b68db2387e",
+    "OMNISEND-IKELTI.html": "7d1832f9c94203a7b84462a2f6b6b7b2f6a38016e525d621c9ce2d5a829aa484"
+  },
+  "status": "PASS",
+  "reviewed": "Fresh screenshots of exact staged newsletter, stripped-head variant, and Omnisend body at 600, 320, 390, 430 px",
+  "findings": [
+    "Readable offer and coupon in hero",
+    "Six intact product names",
+    "Photo and CTA remain associated in complete stacked cards",
+    "Natural photo aspect ratios",
+    "No excess empty columns",
+    "Consistent spacing and aligned desktop buttons",
+    "All CTA links fully clickable and 54px high"
+  ],
+  "deliveryTest": "Not a real email client test; native Omnisend test remains required"
+}

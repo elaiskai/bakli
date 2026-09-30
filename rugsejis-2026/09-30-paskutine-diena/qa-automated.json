@@ -1,0 +1,309 @@
+{
+  "hashes": {
+    "newsletter.html": "abd74192173d628a3f6005b46dc0896be3d3eb20159c3b3b93c898b68db2387e",
+    "OMNISEND-IKELTI.html": "7d1832f9c94203a7b84462a2f6b6b7b2f6a38016e525d621c9ce2d5a829aa484"
+  },
+  "method": "Exact final HTML with public asset URLs served from staged asset bytes before publication; browser simulation only",
+  "results": [
+    {
+      "name": "full",
+      "width": 600,
+      "overflow": false,
+      "images": true,
+      "dashes": false,
+      "ctaHeights": [
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54
+      ],
+      "cardAssociations": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "name": "full",
+      "width": 320,
+      "overflow": false,
+      "images": true,
+      "dashes": false,
+      "ctaHeights": [
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54
+      ],
+      "cardAssociations": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "name": "full",
+      "width": 390,
+      "overflow": false,
+      "images": true,
+      "dashes": false,
+      "ctaHeights": [
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54
+      ],
+      "cardAssociations": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "name": "full",
+      "width": 430,
+      "overflow": false,
+      "images": true,
+      "dashes": false,
+      "ctaHeights": [
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54
+      ],
+      "cardAssociations": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "name": "stripped",
+      "width": 600,
+      "overflow": false,
+      "images": true,
+      "dashes": false,
+      "ctaHeights": [
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54
+      ],
+      "cardAssociations": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "name": "stripped",
+      "width": 320,
+      "overflow": false,
+      "images": true,
+      "dashes": false,
+      "ctaHeights": [
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54
+      ],
+      "cardAssociations": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "name": "stripped",
+      "width": 390,
+      "overflow": false,
+      "images": true,
+      "dashes": false,
+      "ctaHeights": [
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54
+      ],
+      "cardAssociations": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "name": "stripped",
+      "width": 430,
+      "overflow": false,
+      "images": true,
+      "dashes": false,
+      "ctaHeights": [
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54
+      ],
+      "cardAssociations": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "name": "omnisend",
+      "width": 600,
+      "overflow": false,
+      "images": true,
+      "dashes": false,
+      "ctaHeights": [
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54
+      ],
+      "cardAssociations": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "name": "omnisend",
+      "width": 320,
+      "overflow": false,
+      "images": true,
+      "dashes": false,
+      "ctaHeights": [
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54
+      ],
+      "cardAssociations": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "name": "omnisend",
+      "width": 390,
+      "overflow": false,
+      "images": true,
+      "dashes": false,
+      "ctaHeights": [
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54
+      ],
+      "cardAssociations": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "name": "omnisend",
+      "width": 430,
+      "overflow": false,
+      "images": true,
+      "dashes": false,
+      "ctaHeights": [
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54
+      ],
+      "cardAssociations": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  ]
+}
